@@ -1,22 +1,24 @@
 {
   "main": {
-    "id": "1b6a7a2b42b1240e",
+    "id": "e463662873a80661",
     "type": "split",
     "children": [
       {
-        "id": "4a925f4f4b213fc4",
+        "id": "02b9d62fdcd9575c",
         "type": "tabs",
         "children": [
           {
-            "id": "4c35702649d96170",
+            "id": "2cc4b08ec70d2301",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Modellering af elektromekaniske systemer/Materiale/An_Introduction_to_Fourier_Analysis.pdf"
+                "file": "Unavngivet.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "An_Introduction_to_Fourier_Analysis"
+              "icon": "lucide-file",
+              "title": "Unavngivet"
             }
           }
         ]
@@ -25,30 +27,28 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "450b4fc70d684112",
+    "id": "20f65e8cc9be05dd",
     "type": "split",
     "children": [
       {
-        "id": "1d744a1a7808105c",
+        "id": "34dfaabba520f359",
         "type": "tabs",
         "children": [
           {
-            "id": "32a6da8d54f1060c",
+            "id": "f6f21b40915f9bd3",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false,
-                "showSearch": false,
-                "searchQuery": ""
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Stifinder"
             }
           },
           {
-            "id": "75e3959a1642fd9b",
+            "id": "31b226cb0c161132",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,20 +61,17 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Søg"
             }
           },
           {
-            "id": "fec375328f1ac5b9",
+            "id": "074fd383b4c1b00e",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {
-                "showSearch": false,
-                "searchQuery": ""
-              },
+              "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "Bogmærker"
             }
           }
         ]
@@ -84,19 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "5b1d950ff6215eae",
+    "id": "6a4fe44a545325f1",
     "type": "split",
     "children": [
       {
-        "id": "f9576fee2db47119",
+        "id": "08e7617405497b8c",
         "type": "tabs",
         "children": [
           {
-            "id": "2796b9df56518f4f",
+            "id": "b5b1b80087ee61af",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Unavngivet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,24 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Tilbagelinks for Unavngivet"
             }
           },
           {
-            "id": "52032156f5cd37d0",
+            "id": "642382d1b633aab9",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Unavngivet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Udgående links fra Unavngivet"
             }
           },
           {
-            "id": "e651f6ea99ed1e91",
+            "id": "1d58bcd38e41b536",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -138,7 +137,7 @@
             }
           },
           {
-            "id": "cb8fd7b7af89430a",
+            "id": "dc02d491899ff4b3",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -148,25 +147,26 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "All properties"
+              "title": "Alle egenskaber"
             }
           },
           {
-            "id": "46e8095b8baf7cbe",
+            "id": "e0dbd1747b9d6c0e",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "Unavngivet.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Disposition af Unavngivet"
             }
           },
           {
-            "id": "e179a25ad132955e",
+            "id": "998bfd8a42d2ddfb",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -180,33 +180,30 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:Åbn hurtig skifter": false,
+      "graph:Åbn grafvisning": false,
+      "canvas:Opret nyt lærred": false,
+      "daily-notes:Åbn dagens note": false,
+      "templates:Indsæt skabelon": false,
+      "command-palette:Åbn fastgjorte kommandoer": false,
+      "bases:Opret ny base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4c35702649d96170",
+  "active": "2cc4b08ec70d2301",
   "lastOpenFiles": [
-    "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
-    "Modellering af elektromekaniske systemer/Materiale",
+    "Unavngivet.md",
+    "Unavngivet.base",
     "Modellering af elektromekaniske systemer/Materiale/An_Introduction_to_Fourier_Analysis.pdf",
-    "Prøve.md",
-    "Computerarkitektur og operativsystemer/Materiale",
-    "Semesterprojekt i mobile robotsystemer",
-    "Datakommunikation",
-    "Computerarkitektur og operativsystemer",
-    "Signalbehandling",
+    "Modellering af elektromekaniske systemer/Materiale",
     "Modellering af elektromekaniske systemer",
-    "3_semester_obsidian"
+    "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
+    "Computerarkitektur og operativsystemer/Materiale",
+    "Computerarkitektur og operativsystemer"
   ]
 }
