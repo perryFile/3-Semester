@@ -11,14 +11,10 @@
             "id": "4c35702649d96170",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Prøve.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Prøve"
+              "title": "New tab"
             }
           }
         ]
@@ -197,8 +193,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4c35702649d96170",
+  "active": "32a6da8d54f1060c",
   "lastOpenFiles": [
+    "Modelering",
     "Prøve.md",
     "3_semester_obsidian"
   ]
