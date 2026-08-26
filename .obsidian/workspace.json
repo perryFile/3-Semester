@@ -195,9 +195,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "32a6da8d54f1060c",
+  "active": "4c35702649d96170",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "Datakommunikation/Materiale/Computer Networking.pdf",
+    "Hej.md",
     "Datakommunikation/Materiale",
     "Datakommunikation/Untitled.md",
     "Modellering af elektromekaniske systemer/Materiale/An_Introduction_to_Fourier_Analysis.pdf",
@@ -208,7 +210,6 @@
     "Semesterprojekt i mobile robotsystemer",
     "Datakommunikation",
     "Computerarkitektur og operativsystemer",
-    "Signalbehandling",
-    "Modellering af elektromekaniske systemer"
+    "Signalbehandling"
   ]
 }
