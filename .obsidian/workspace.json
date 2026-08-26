@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Modellering af elektromekaniske systemer/Materiale/An_Introduction_to_Fourier_Analysis.pdf"
+                "file": "Datakommunikation/Materiale/Computer Networking.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "An_Introduction_to_Fourier_Analysis"
+              "title": "Computer Networking"
             }
           }
         ]
@@ -195,18 +195,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4c35702649d96170",
+  "active": "32a6da8d54f1060c",
   "lastOpenFiles": [
+    "Datakommunikation/Materiale/Computer Networking.pdf",
+    "Datakommunikation/Materiale",
+    "Datakommunikation/Untitled.md",
+    "Modellering af elektromekaniske systemer/Materiale/An_Introduction_to_Fourier_Analysis.pdf",
     "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
     "Modellering af elektromekaniske systemer/Materiale",
-    "Modellering af elektromekaniske systemer/Materiale/An_Introduction_to_Fourier_Analysis.pdf",
     "Prøve.md",
     "Computerarkitektur og operativsystemer/Materiale",
     "Semesterprojekt i mobile robotsystemer",
     "Datakommunikation",
     "Computerarkitektur og operativsystemer",
     "Signalbehandling",
-    "Modellering af elektromekaniske systemer",
-    "3_semester_obsidian"
+    "Modellering af elektromekaniske systemer"
   ]
 }
