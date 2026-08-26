@@ -11,10 +11,12 @@
             "id": "4c35702649d96170",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "pdf",
+              "state": {
+                "file": "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Structured Computer Organization, 6th Edition"
             }
           }
         ]
@@ -193,13 +195,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "32a6da8d54f1060c",
+  "active": "4c35702649d96170",
   "lastOpenFiles": [
+    "Prøve.md",
+    "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
+    "Computerarkitektur og operativsystemer/Materiale",
+    "Semesterprojekt i mobile robotsystemer",
     "Datakommunikation",
     "Computerarkitektur og operativsystemer",
     "Signalbehandling",
     "Modellering af elektromekaniske systemer",
-    "Prøve.md",
     "3_semester_obsidian"
   ]
 }
