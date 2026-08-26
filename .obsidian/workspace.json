@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf"
+                "file": "Modellering af elektromekaniske systemer/Materiale/An_Introduction_to_Fourier_Analysis.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Structured Computer Organization, 6th Edition"
+              "title": "An_Introduction_to_Fourier_Analysis"
             }
           }
         ]
@@ -197,8 +197,10 @@
   },
   "active": "4c35702649d96170",
   "lastOpenFiles": [
-    "Prøve.md",
     "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
+    "Modellering af elektromekaniske systemer/Materiale",
+    "Modellering af elektromekaniske systemer/Materiale/An_Introduction_to_Fourier_Analysis.pdf",
+    "Prøve.md",
     "Computerarkitektur og operativsystemer/Materiale",
     "Semesterprojekt i mobile robotsystemer",
     "Datakommunikation",
