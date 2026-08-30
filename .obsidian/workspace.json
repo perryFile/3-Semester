@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computerarkitektur og operativsystemer/ALU/1 bit ALU.md",
+                "file": "Computerarkitektur og operativsystemer/ALU/Carry on bit.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1 bit ALU"
+              "title": "Carry on bit"
             }
           },
           {
@@ -33,8 +33,7 @@
               "title": "Structured Computer Organization, 6th Edition"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -211,11 +210,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "df0fd7459e5ea2f9",
+  "active": "4c35702649d96170",
   "lastOpenFiles": [
-    "Computerarkitektur og operativsystemer/ALU/1 bit ALU.md",
-    "Pasted image 20260830150051.png",
     "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
+    "Computerarkitektur og operativsystemer/ALU/Carry on bit.md",
+    "Computerarkitektur og operativsystemer/ALU/1 bit ALU.md",
+    "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+    "Computerarkitektur og operativsystemer/Slides",
+    "Pasted image 20260830150140.png",
+    "Pasted image 20260830150051.png",
     "Computerarkitektur og operativsystemer/Logic gates.md",
     "Computerarkitektur og operativsystemer/ALU",
     "Computerarkitektur og operativsystemer/Boolean algebra.md",
@@ -231,8 +234,6 @@
     "Modellering af elektromekaniske systemer/Materiale",
     "Prøve.md",
     "Computerarkitektur og operativsystemer/Materiale",
-    "Semesterprojekt i mobile robotsystemer",
-    "Datakommunikation",
-    "Computerarkitektur og operativsystemer"
+    "Semesterprojekt i mobile robotsystemer"
   ]
 }
