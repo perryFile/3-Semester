@@ -96,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "5b1d950ff6215eae",
@@ -211,7 +212,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "32a6da8d54f1060c",
+  "active": "df0fd7459e5ea2f9",
   "lastOpenFiles": [
     "Computerarkitektur og operativsystemer/Binær tallysstem.md",
     "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
