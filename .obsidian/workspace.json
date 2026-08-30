@@ -11,12 +11,14 @@
             "id": "ce131221c29ce6b7",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Modellering af elektromekaniske systemer/Materiale/An_Introduction_to_Fourier_Analysis.pdf"
+                "file": "Bøger der skal købes.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "An_Introduction_to_Fourier_Analysis"
+              "icon": "lucide-file",
+              "title": "Bøger der skal købes"
             }
           }
         ]
@@ -198,8 +200,11 @@
   },
   "active": "ce131221c29ce6b7",
   "lastOpenFiles": [
-    "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
+    "Bilag/Pasted image 20260830224029.png",
+    "Bilag",
     "Modellering af elektromekaniske systemer/Materiale/An_Introduction_to_Fourier_Analysis.pdf",
+    "Bøger der skal købes.md",
+    "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
     "Computerarkitektur og operativsystemer/ALU/1 bit ALU.md",
     "Signalbehandling/Bilag",
     "Semesterprojekt i mobile robotsystemer/Bilag",
@@ -214,10 +219,8 @@
     "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
     "Computerarkitektur og operativsystemer/Slides",
     "Computerarkitektur og operativsystemer/Logic gates.md",
-    "Computerarkitektur og operativsystemer/ALU",
     "Computerarkitektur og operativsystemer/Boolean algebra.md",
     "Computerarkitektur og operativsystemer/Binær tallysstem.md",
-    "Datakommunikation/Materiale/Computer Networking.pdf",
     "Hej.md",
     "conflict-files-obsidian-git.md",
     "Datakommunikation/Untitled.md",
