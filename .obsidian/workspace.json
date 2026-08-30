@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Datakommunikation/Materiale/Computer Networking.pdf"
+                "file": "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Computer Networking"
+              "title": "Structured Computer Organization, 6th Edition"
             }
           }
         ]
@@ -195,10 +195,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e179a25ad132955e",
+  "active": "4c35702649d96170",
   "lastOpenFiles": [
-    "Hej.md",
     "Datakommunikation/Materiale/Computer Networking.pdf",
+    "Hej.md",
     "conflict-files-obsidian-git.md",
     "Datakommunikation/Materiale",
     "Datakommunikation/Untitled.md",
