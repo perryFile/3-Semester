@@ -11,14 +11,12 @@
             "id": "ce131221c29ce6b7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Bøger der skal købes.md",
-                "mode": "source",
-                "source": false
+                "file": "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Bøger der skal købes"
+              "icon": "lucide-file-text",
+              "title": "Structured Computer Organization, 6th Edition"
             }
           }
         ]
@@ -200,10 +198,10 @@
   },
   "active": "ce131221c29ce6b7",
   "lastOpenFiles": [
+    "Bøger der skal købes.md",
     "Bilag/Pasted image 20260830224029.png",
     "Bilag",
     "Modellering af elektromekaniske systemer/Materiale/An_Introduction_to_Fourier_Analysis.pdf",
-    "Bøger der skal købes.md",
     "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
     "Computerarkitektur og operativsystemer/ALU/1 bit ALU.md",
     "Signalbehandling/Bilag",
