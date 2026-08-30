@@ -13,15 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computerarkitektur og operativsystemer/Untitled.md",
+                "file": "Computerarkitektur og operativsystemer/Binær tallysstem.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Binær tallysstem"
+            }
+          },
+          {
+            "id": "df0fd7459e5ea2f9",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Structured Computer Organization, 6th Edition"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -198,10 +211,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4c35702649d96170",
+  "active": "32a6da8d54f1060c",
   "lastOpenFiles": [
+    "Computerarkitektur og operativsystemer/Binær tallysstem.md",
     "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
-    "Computerarkitektur og operativsystemer/Untitled.md",
     "Datakommunikation/Materiale/Computer Networking.pdf",
     "Hej.md",
     "conflict-files-obsidian-git.md",
