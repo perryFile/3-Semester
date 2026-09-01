@@ -25,10 +25,10 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Drawing 2026-09-01 17.27.18.excalidraw.md"
+                "file": "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Opgave 1.md"
               },
               "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-01 17.27.18.excalidraw"
+              "title": "Opgave 1"
             }
           }
         ],
@@ -94,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "5b1d950ff6215eae",
@@ -193,7 +194,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -210,8 +212,10 @@
   },
   "active": "44e09f33089fc47c",
   "lastOpenFiles": [
+    "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901172831_858.png",
+    "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Bilag",
     "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Lektion 1 - Opgaver.pdf",
-    "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Drawing 2026-09-01 17.27.18.excalidraw.md",
+    "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Opgave 1.md",
     "Modellering af elektromekaniske systemer/Opgaver/Lektion 1",
     "Modellering af elektromekaniske systemer/Opgaver",
     "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
@@ -243,7 +247,6 @@
     "Computerarkitektur og operativsystemer/Opgaver/Untitled.md",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1",
     "Computerarkitektur og operativsystemer/Talsystem/Binær tallysstem.md",
-    "Computerarkitektur og operativsystemer/Talsystem/Bilag",
     "Computerarkitektur og operativsystemer/Talsystem/Computer talsystem.md",
     "Computerarkitektur og operativsystemer/Talsystem/Hexadecimal talsystem.md",
     "Computerarkitektur og operativsystemer/Talsystem/Oktal talsystem.md",
