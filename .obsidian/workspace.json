@@ -30,9 +30,21 @@
               "icon": "excalidraw-icon",
               "title": "Opgave 1"
             }
+          },
+          {
+            "id": "cc154b0889ba37c0",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Opgave 2.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Opgave 2"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -210,12 +222,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "44e09f33089fc47c",
+  "active": "cc154b0889ba37c0",
   "lastOpenFiles": [
+    "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901174207_072.png",
+    "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Lektion 1 - Opgaver.pdf",
+    "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Opgave 2.md",
+    "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Opgave 1.md",
     "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901172831_858.png",
     "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Bilag",
-    "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Lektion 1 - Opgaver.pdf",
-    "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Opgave 1.md",
     "Modellering af elektromekaniske systemer/Opgaver/Lektion 1",
     "Modellering af elektromekaniske systemer/Opgaver",
     "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
@@ -240,7 +254,6 @@
     "Computerarkitektur og operativsystemer/ALU/Decoder.md",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag",
     "Computerarkitektur og operativsystemer/ALU/Bilag/Pasted image 20260901132446.png",
-    "Computerarkitektur og operativsystemer/ALU/Bilag/Pasted image 20260901132134.png",
     "Computerarkitektur og operativsystemer/ALU/Bilag",
     "Computerarkitektur og operativsystemer/ALU/ALU.md",
     "Computerarkitektur og operativsystemer/Boolean algebra.md",
@@ -256,7 +269,6 @@
     "Signalbehandling/hej.md",
     "Bøger der skal købes.md",
     "Computerarkitektur og operativsystemer/ALU/Carry bit.md",
-    "Hej.md",
-    "conflict-files-obsidian-git.md"
+    "Hej.md"
   ]
 }
