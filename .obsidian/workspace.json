@@ -58,7 +58,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -235,14 +235,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "60ebc3ff465f900d",
+  "active": "2d753c82a0ca2394",
   "lastOpenFiles": [
+    "Computerarkitektur og operativsystemer/Boolean algebra.md",
+    "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion1.md",
+    "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901113704.png",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901113654.png",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901113637.png",
-    "Computerarkitektur og operativsystemer/Opgaver/Lektion1.md",
-    "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
     "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf",
-    "Computerarkitektur og operativsystemer/Boolean algebra.md",
     "Computerarkitektur og operativsystemer/Opgaver/Bilag/Pasted Image 20260901111355_599.png",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901111225.png",
     "Computerarkitektur og operativsystemer/Opgaver/Bilag/Pasted Image 20260901110909_529.png",
@@ -265,8 +266,6 @@
     "Computerarkitektur og operativsystemer/ALU/Carry on bit.md",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260830133025.png",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260830150051.png",
-    "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260830150140.png",
-    "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260830130708.png",
     "Computerarkitektur og operativsystemer/Logic gates.md",
     "Computerarkitektur og operativsystemer/Binær tallysstem.md",
     "Hej.md",
