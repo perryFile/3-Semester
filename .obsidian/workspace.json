@@ -11,24 +11,24 @@
             "id": "ce131221c29ce6b7",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "excalidraw",
               "state": {
-                "file": "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf"
+                "file": "Computerarkitektur og operativsystemer/Opgaver/Lektion1.md"
               },
-              "icon": "lucide-file-text",
-              "title": "lektionsplan"
+              "icon": "excalidraw-icon",
+              "title": "Lektion1"
             }
           },
           {
-            "id": "87606daaaf8a92ed",
+            "id": "c029abe0a691d41a",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Drawing 2026-09-01 10.38.16.excalidraw.md"
+                "file": "Computerarkitektur og operativsystemer/Opgaver/Lektion1.md"
               },
               "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-01 10.38.16.excalidraw"
+              "title": "Lektion1"
             }
           }
         ],
@@ -208,14 +208,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "87606daaaf8a92ed",
+  "active": "c029abe0a691d41a",
   "lastOpenFiles": [
-    "Drawing 2026-09-01 10.38.16.excalidraw.md",
+    "Computerarkitektur og operativsystemer/Opgaver/Bilag/Pasted Image 20260901110909_529.png",
     "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion1.md",
+    "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1.md",
     "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
+    "Drawing 2026-09-01 10.38.16.excalidraw.md",
     "Semesterprojekt i mobile robotsystemer/Hej.md",
     "Signalbehandling/hej.md",
-    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1.md",
     "Signalbehandling/Bilag",
     "Signalbehandling",
     "Semesterprojekt i mobile robotsystemer/Signalbehandling/Bilag",
@@ -223,7 +226,6 @@
     "Semesterprojekt i mobile robotsystemer/Bilag",
     "Semesterprojekt i mobile robotsystemer",
     "Modellering af elektromekaniske systemer/Semesterprojekt i mobile robotsystemer/Signalbehandling/Bilag",
-    "Modellering af elektromekaniske systemer/Semesterprojekt i mobile robotsystemer/Signalbehandling",
     "Computerarkitektur og operativsystemer/Opgaver/Bilag/Pasted image 20260901100033.png",
     "Bøger der skal købes.md",
     "Bilag/Pasted image 20260830224029.png",
