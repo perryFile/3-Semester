@@ -22,4 +22,3 @@ Mod: modulus. Giver antal decimaler. Altså resten
 ![[Pasted image 20260901124526.png]]
 
 ![[Pasted image 20260901124536.png]]![[Pasted image 20260901124554.png]]
-
