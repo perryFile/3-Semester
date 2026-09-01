@@ -22,6 +22,30 @@
             }
           },
           {
+            "id": "37bdc0700dc0f882",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "UTF-8''COS_lecture01"
+            }
+          },
+          {
+            "id": "d46f439cd4dd24a2",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Structured Computer Organization, 6th Edition"
+            }
+          },
+          {
             "id": "2d753c82a0ca2394",
             "type": "leaf",
             "state": {
@@ -43,18 +67,6 @@
               },
               "icon": "lucide-file-text",
               "title": "lektionsplan"
-            }
-          },
-          {
-            "id": "d46f439cd4dd24a2",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Structured Computer Organization, 6th Edition"
             }
           }
         ],
@@ -120,8 +132,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "5b1d950ff6215eae",
@@ -235,20 +246,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2d753c82a0ca2394",
+  "active": "37bdc0700dc0f882",
   "lastOpenFiles": [
     "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
-    "Computerarkitektur og operativsystemer/Opgaver/Lektion1.md",
-    "Computerarkitektur og operativsystemer/Opgaver/Bilag/Pasted Image 20260901115222_199.png",
-    "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf",
+    "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
     "Computerarkitektur og operativsystemer/Boolean algebra.md",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion1.md",
+    "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf",
+    "Computerarkitektur og operativsystemer/Opgaver/Bilag/Pasted Image 20260901115952_482.png",
+    "Computerarkitektur og operativsystemer/Opgaver/Bilag/Pasted Image 20260901115222_199.png",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901113704.png",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901113654.png",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901113637.png",
     "Computerarkitektur og operativsystemer/Opgaver/Bilag/Pasted Image 20260901111355_599.png",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901111225.png",
     "Computerarkitektur og operativsystemer/Opgaver/Bilag/Pasted Image 20260901110909_529.png",
-    "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1.md",
     "Drawing 2026-09-01 10.38.16.excalidraw.md",
     "Semesterprojekt i mobile robotsystemer/Hej.md",
@@ -265,7 +277,6 @@
     "Bilag/Pasted image 20260830224029.png",
     "Computerarkitektur og operativsystemer/ALU/1 bit ALU.md",
     "Computerarkitektur og operativsystemer/ALU/Carry on bit.md",
-    "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260830133025.png",
     "Computerarkitektur og operativsystemer/Logic gates.md",
     "Computerarkitektur og operativsystemer/Binær tallysstem.md",
     "Hej.md",
