@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Signalbehandling/hej.md",
+                "file": "Semesterprojekt i mobile robotsystemer/Hej.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "hej"
+              "title": "Hej"
             }
           }
         ]
@@ -199,8 +199,9 @@
   },
   "active": "ce131221c29ce6b7",
   "lastOpenFiles": [
-    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1.md",
     "Signalbehandling/hej.md",
+    "Semesterprojekt i mobile robotsystemer/Hej.md",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1.md",
     "Signalbehandling/Bilag",
     "Signalbehandling",
     "Semesterprojekt i mobile robotsystemer/Signalbehandling/Bilag",
