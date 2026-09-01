@@ -37,14 +37,12 @@
             "id": "60ebc3ff465f900d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Computerarkitektur og operativsystemer/Boolean algebra.md",
-                "mode": "source",
-                "source": false
+                "file": "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Boolean algebra"
+              "icon": "lucide-file-text",
+              "title": "lektionsplan"
             }
           },
           {
@@ -239,10 +237,11 @@
   },
   "active": "2d753c82a0ca2394",
   "lastOpenFiles": [
-    "Computerarkitektur og operativsystemer/Boolean algebra.md",
-    "Computerarkitektur og operativsystemer/Opgaver/Lektion1.md",
+    "Computerarkitektur og operativsystemer/Opgaver/Bilag/Pasted Image 20260901115222_199.png",
     "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
     "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion1.md",
+    "Computerarkitektur og operativsystemer/Boolean algebra.md",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901113704.png",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901113654.png",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901113637.png",
