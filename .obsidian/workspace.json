@@ -42,6 +42,18 @@
               "icon": "lucide-file-text",
               "title": "lektionsplan"
             }
+          },
+          {
+            "id": "28011e8e475ebad1",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Structured Computer Organization, 6th Edition"
+            }
           }
         ]
       }
@@ -220,8 +232,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9a16cb4e71cac68e",
+  "active": "2d753c82a0ca2394",
   "lastOpenFiles": [
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901141646_278.png",
+    "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
+    "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Lektion1.md",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bolsk ligning.md",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901132628_087.png",
@@ -230,8 +245,6 @@
     "Computerarkitektur og operativsystemer/ALU/Logisk enhed (LU).md",
     "Computerarkitektur og operativsystemer/ALU/Full adder.md",
     "Computerarkitektur og operativsystemer/ALU/8 bit ALU.md",
-    "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf",
-    "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
     "Computerarkitektur og operativsystemer/Logic gates.md",
     "Computerarkitektur og operativsystemer/ALU/Bilag/Pasted image 20260901134038.png",
     "Computerarkitektur og operativsystemer/ALU/Bilag/Pasted image 20260901133856.png",
