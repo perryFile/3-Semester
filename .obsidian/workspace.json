@@ -11,14 +11,12 @@
             "id": "2d753c82a0ca2394",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Computerarkitektur og operativsystemer/Computer talsystem.md",
-                "mode": "source",
-                "source": false
+                "file": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Computer talsystem"
+              "icon": "lucide-file-text",
+              "title": "UTF-8''COS_lecture01"
             }
           },
           {
@@ -251,15 +249,15 @@
   },
   "active": "2d753c82a0ca2394",
   "lastOpenFiles": [
+    "Computerarkitektur og operativsystemer/Computer talsystem.md",
+    "Computerarkitektur og operativsystemer/Oktal talsystem.md",
     "Computerarkitektur og operativsystemer/Hexadecimal talsystem.md",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901122700.png",
     "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
-    "Computerarkitektur og operativsystemer/Oktal talsystem.md",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901122624.png",
     "Computerarkitektur og operativsystemer/Binær tallysstem.md",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901122533.png",
     "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
-    "Computerarkitektur og operativsystemer/Computer talsystem.md",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901122413.png",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion1.md",
     "Computerarkitektur og operativsystemer/Boolean algebra.md",
