@@ -11,12 +11,14 @@
             "id": "ce131221c29ce6b7",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Modellering af elektromekaniske systemer/Materiale/An_Introduction_to_Fourier_Analysis.pdf"
+                "file": "Computerarkitektur og operativsystemer/Opgaver/Lektion 1.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "An_Introduction_to_Fourier_Analysis"
+              "icon": "lucide-file",
+              "title": "Lektion 1"
             }
           }
         ]
@@ -81,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "5b1d950ff6215eae",
@@ -199,11 +200,15 @@
   },
   "active": "ce131221c29ce6b7",
   "lastOpenFiles": [
+    "Computerarkitektur og operativsystemer/Opgaver/Bilag/Pasted image 20260901100033.png",
+    "Computerarkitektur og operativsystemer/Opgaver/Bilag",
+    "Modellering af elektromekaniske systemer/Materiale/An_Introduction_to_Fourier_Analysis.pdf",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1.md",
+    "Computerarkitektur og operativsystemer/Opgaver",
     "Bøger der skal købes.md",
     "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
     "Bilag/Pasted image 20260830224029.png",
     "Bilag",
-    "Modellering af elektromekaniske systemer/Materiale/An_Introduction_to_Fourier_Analysis.pdf",
     "Computerarkitektur og operativsystemer/ALU/1 bit ALU.md",
     "Signalbehandling/Bilag",
     "Semesterprojekt i mobile robotsystemer/Bilag",
@@ -215,8 +220,6 @@
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260830150140.png",
     "Computerarkitektur og operativsystemer/Bilag",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260830130708.png",
-    "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
-    "Computerarkitektur og operativsystemer/Slides",
     "Computerarkitektur og operativsystemer/Logic gates.md",
     "Computerarkitektur og operativsystemer/Boolean algebra.md",
     "Computerarkitektur og operativsystemer/Binær tallysstem.md",
