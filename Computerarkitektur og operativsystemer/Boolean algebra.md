@@ -5,4 +5,4 @@
 
 ## Bolsk ligning 
 
-Når man opstiller en bolsk ligning fra en sanhedstabel, kigger man kun på hvornår x er 
+Når man opstiller en bolsk ligning fra en sanhedstabel, kigger man kun på hvornår x er 1 og derefter kigger på inputs. Hvis et input er 0 så skal den stadig med, men inveteret.
