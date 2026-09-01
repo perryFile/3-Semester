@@ -11,26 +11,26 @@
             "id": "2d753c82a0ca2394",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Computerarkitektur og operativsystemer/ALU/ALU.md",
-                "mode": "source",
-                "source": false
+                "file": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf"
               },
-              "icon": "lucide-file",
-              "title": "ALU"
+              "icon": "lucide-file-text",
+              "title": "UTF-8''COS_lecture01"
             }
           },
           {
             "id": "3379869289f216d3",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Lektion1.md"
+                "file": "Computerarkitektur og operativsystemer/ALU/1 bit ALU.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Lektion1"
+              "icon": "lucide-file",
+              "title": "1 bit ALU"
             }
           },
           {
@@ -83,8 +83,7 @@
               "title": "lektionsplan"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -260,10 +259,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3379869289f216d3",
+  "active": "2d753c82a0ca2394",
   "lastOpenFiles": [
-    "Computerarkitektur og operativsystemer/ALU/ALU.md",
+    "Computerarkitektur og operativsystemer/ALU/1 bit ALU.md",
+    "Computerarkitektur og operativsystemer/ALU/Bilag/Pasted image 20260901132134.png",
+    "Computerarkitektur og operativsystemer/ALU/Bilag",
     "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+    "Computerarkitektur og operativsystemer/ALU/ALU.md",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Lektion1.md",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bolsk ligning.md",
     "Computerarkitektur og operativsystemer/Boolean algebra.md",
@@ -286,7 +288,6 @@
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901123806.png",
     "Computerarkitektur og operativsystemer/Talsystem/Oktal talsystem.md",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901122700.png",
-    "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901122624.png",
     "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1.md",
     "Drawing 2026-09-01 10.38.16.excalidraw.md",
@@ -295,9 +296,7 @@
     "Signalbehandling/Bilag",
     "Signalbehandling",
     "Semesterprojekt i mobile robotsystemer/Signalbehandling/Bilag",
-    "Semesterprojekt i mobile robotsystemer/Signalbehandling",
     "Bøger der skal købes.md",
-    "Computerarkitektur og operativsystemer/ALU/1 bit ALU.md",
     "Computerarkitektur og operativsystemer/ALU/Carry on bit.md",
     "Hej.md",
     "conflict-files-obsidian-git.md",
