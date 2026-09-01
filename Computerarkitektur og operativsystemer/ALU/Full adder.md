@@ -1,1 +1,1 @@
-![[Pasted image 20260901133856.png]]Bruges til at lægge 2 bits sammen. Har en [[Carry bit]] som 
+![[Pasted image 20260901133856.png]]Bruges til at lægge 2 bits sammen. Har en [[Carry bit]] som tager med i beregningen. Vi kan combinere [[Decoder]] og [[Logisk enhed (LU)]] til at lave en [[1 bit ALU]] 
