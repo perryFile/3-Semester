@@ -11,26 +11,24 @@
             "id": "2d753c82a0ca2394",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "excalidraw",
               "state": {
-                "file": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf"
+                "file": "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Lektion1.md"
               },
-              "icon": "lucide-file-text",
-              "title": "UTF-8''COS_lecture01"
+              "icon": "excalidraw-icon",
+              "title": "Lektion1"
             }
           },
           {
             "id": "3379869289f216d3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Computerarkitektur og operativsystemer/ALU/8 bit ALU.md",
-                "mode": "source",
-                "source": false
+                "file": "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bolsk ligning.md"
               },
-              "icon": "lucide-file",
-              "title": "8 bit ALU"
+              "icon": "excalidraw-icon",
+              "title": "Bolsk ligning"
             }
           },
           {
@@ -45,8 +43,7 @@
               "title": "lektionsplan"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -222,28 +219,29 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "60ebc3ff465f900d",
+  "active": "2d753c82a0ca2394",
   "lastOpenFiles": [
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bolsk ligning.md",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901132628_087.png",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Lektion1.md",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Drawing 2026-09-01 13.26.27.excalidraw.md",
+    "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+    "Computerarkitektur og operativsystemer/ALU/Logisk enhed (LU).md",
+    "Computerarkitektur og operativsystemer/ALU/Full adder.md",
+    "Computerarkitektur og operativsystemer/ALU/8 bit ALU.md",
+    "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf",
     "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
     "Computerarkitektur og operativsystemer/Logic gates.md",
-    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bolsk ligning.md",
-    "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
-    "Computerarkitektur og operativsystemer/ALU/8 bit ALU.md",
     "Computerarkitektur og operativsystemer/ALU/Bilag/Pasted image 20260901134038.png",
-    "Computerarkitektur og operativsystemer/ALU/Full adder.md",
     "Computerarkitektur og operativsystemer/ALU/Bilag/Pasted image 20260901133856.png",
-    "Computerarkitektur og operativsystemer/ALU/Logisk enhed (LU).md",
     "Computerarkitektur og operativsystemer/ALU/Bilag/Pasted image 20260901133759.png",
     "Computerarkitektur og operativsystemer/ALU/Decoder.md",
-    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Drawing 2026-09-01 13.26.27.excalidraw.md",
-    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901132628_087.png",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag",
     "Computerarkitektur og operativsystemer/ALU/1 bit ALU.md",
     "Computerarkitektur og operativsystemer/ALU/Bilag/Pasted image 20260901132446.png",
     "Computerarkitektur og operativsystemer/ALU/Bilag/Pasted image 20260901132134.png",
     "Computerarkitektur og operativsystemer/ALU/Bilag",
     "Computerarkitektur og operativsystemer/ALU/ALU.md",
-    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Lektion1.md",
     "Computerarkitektur og operativsystemer/Boolean algebra.md",
     "Computerarkitektur og operativsystemer/Opgaver/Untitled.md",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1",
@@ -257,7 +255,6 @@
     "Computerarkitektur og operativsystemer/Talsystem/Hexadecimal talsystem.md",
     "Computerarkitektur og operativsystemer/Talsystem",
     "Computerarkitektur og operativsystemer/Talsystem/Oktal talsystem.md",
-    "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1.md",
     "Drawing 2026-09-01 10.38.16.excalidraw.md",
     "Semesterprojekt i mobile robotsystemer/Hej.md",
