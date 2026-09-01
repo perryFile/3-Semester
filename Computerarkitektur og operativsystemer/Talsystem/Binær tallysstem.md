@@ -12,3 +12,13 @@ Ved kode skriver man et b efter 0 for at fortælle det er binær:
 
 Floor: Finder tættest integer
 Mod: modulus. Giver antal decimaler. Altså resten
+
+
+
+## Negative binære tal
+
+![[Pasted image 20260901124459.png]]
+
+![[Pasted image 20260901124526.png]]
+
+![[Pasted image 20260901124536.png]]
