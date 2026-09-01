@@ -45,8 +45,7 @@
               "title": "Boolean algebra"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "5b1d950ff6215eae",
@@ -222,11 +222,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2d753c82a0ca2394",
+  "active": "ce131221c29ce6b7",
   "lastOpenFiles": [
-    "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
-    "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf",
+    "Computerarkitektur og operativsystemer/Boolean algebra.md",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion1.md",
+    "Computerarkitektur og operativsystemer/Opgaver/Bilag/Pasted Image 20260901111355_599.png",
+    "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf",
+    "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901111225.png",
+    "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
     "Computerarkitektur og operativsystemer/Opgaver/Bilag/Pasted Image 20260901110909_529.png",
     "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1.md",
@@ -250,7 +253,6 @@
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260830150140.png",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260830130708.png",
     "Computerarkitektur og operativsystemer/Logic gates.md",
-    "Computerarkitektur og operativsystemer/Boolean algebra.md",
     "Computerarkitektur og operativsystemer/Binær tallysstem.md",
     "Hej.md",
     "conflict-files-obsidian-git.md",
