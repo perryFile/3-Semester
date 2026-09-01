@@ -55,7 +55,8 @@
               "title": "Structured Computer Organization, 6th Edition"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -232,14 +233,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2d753c82a0ca2394",
+  "active": "60ebc3ff465f900d",
   "lastOpenFiles": [
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bolsk ligning.md",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Lektion1.md",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901142635_672.png",
     "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf",
-    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Lektion1.md",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901142623_174.png",
     "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
-    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bolsk ligning.md",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901142444_114.png",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901141646_278.png",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901132628_087.png",
@@ -262,7 +263,6 @@
     "Computerarkitektur og operativsystemer/Boolean algebra.md",
     "Computerarkitektur og operativsystemer/Opgaver/Untitled.md",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1",
-    "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901130341.png",
     "Computerarkitektur og operativsystemer/Talsystem/Binær tallysstem.md",
     "Computerarkitektur og operativsystemer/Talsystem/Bilag",
     "Computerarkitektur og operativsystemer/Talsystem/Computer talsystem.md",
