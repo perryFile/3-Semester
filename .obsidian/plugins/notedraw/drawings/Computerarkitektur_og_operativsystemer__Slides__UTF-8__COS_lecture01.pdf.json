@@ -1,0 +1,2498 @@
+{
+  "version": 3,
+  "sourcePath": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+  "sourceRevision": "1788094978827:1788094978828:264743",
+  "visible": true,
+  "strokes": [
+    {
+      "elementId": "el-mtijnwf5-0-7neaezw",
+      "embedType": "file",
+      "brush": "pen",
+      "variant": "default",
+      "color": "#e53935",
+      "width": 3,
+      "opacity": 1,
+      "count": 1,
+      "text": "",
+      "render": "plain",
+      "assetPath": "",
+      "assetName": "",
+      "assetMime": "",
+      "assetSize": 0,
+      "exportImageDataUrl": "",
+      "previewWidth": 260,
+      "previewHeight": 160,
+      "textWidth": null,
+      "fontSize": 18,
+      "bold": false,
+      "code": false,
+      "boxed": false,
+      "file": false,
+      "uiRole": "",
+      "buttonStyle": "",
+      "commandId": "",
+      "commandName": "",
+      "snap": false,
+      "locked": false,
+      "groupId": "",
+      "belowMarkdown": false,
+      "connector": null,
+      "noteFlow": null,
+      "mindMapNode": null,
+      "textAnchor": null,
+      "layout": {
+        "v": 1,
+        "id": "el-mtijnwf5-0-7neaezw",
+        "basis": "note-element-frame-v1",
+        "primary": "topLeft",
+        "corners": {
+          "topLeft": {
+            "x": 0.7410975864955357,
+            "y": 0.3789507515822785,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null
+          },
+          "topRight": {
+            "x": 0.8310764857700893,
+            "y": 0.3789507515822785,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null
+          },
+          "bottomRight": {
+            "x": 0.8310764857700893,
+            "y": 0.4637806566455696,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null
+          },
+          "bottomLeft": {
+            "x": 0.7410975864955357,
+            "y": 0.4637806566455696,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null
+          }
+        },
+        "sourceFrame": {
+          "surfaceWidth": 896,
+          "contentLeft": 0,
+          "contentWidth": 896,
+          "viewportHeight": 868,
+          "documentHeight": 790,
+          "aspectRatio": 1.032258064516129
+        },
+        "box": {
+          "x": 664.0234375,
+          "y": 299.37109375,
+          "width": 80.62109375,
+          "height": 67.015625
+        },
+        "metrics": {
+          "width": 3
+        },
+        "relations": [
+          {
+            "targetId": "el-mtijnwu3-1-sfoary4",
+            "kind": "intersection",
+            "sourceCorner": "bottomLeft",
+            "targetCorner": "bottomLeft",
+            "sourceU": 0.13161974901884782,
+            "sourceV": 0.791851247377011,
+            "targetU": 0.6622948781700646,
+            "targetV": 0.3671224426853089,
+            "dx": 0,
+            "dy": 0,
+            "weight": 0.32
+          }
+        ]
+      },
+      "points": [
+        {
+          "x": 0.8310764857700893,
+          "y": 0.3789507515822785,
+          "t": 2198901,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8310764857700893,
+            "y": 0.3789507515822785,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8307407924107143,
+          "y": 0.3808445411392405,
+          "t": 2198912,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8307407924107143,
+            "y": 0.3808445411392405,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8297380719866071,
+          "y": 0.38254549050632913,
+          "t": 2198927,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8297380719866071,
+            "y": 0.38254549050632913,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8285653250558036,
+          "y": 0.3840634889240506,
+          "t": 2198931,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8285653250558036,
+            "y": 0.3840634889240506,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.827056884765625,
+          "y": 0.38586333069620254,
+          "t": 2198936,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.827056884765625,
+            "y": 0.38586333069620254,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8253827776227679,
+          "y": 0.38775712025316456,
+          "t": 2198939,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8253827776227679,
+            "y": 0.38775712025316456,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.824127197265625,
+          "y": 0.3890822784810127,
+          "t": 2198942,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.824127197265625,
+            "y": 0.3890822784810127,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8227887834821429,
+          "y": 0.39059533227848103,
+          "t": 2198946,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8227887834821429,
+            "y": 0.39059533227848103,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8212803431919643,
+          "y": 0.3923951740506329,
+          "t": 2198950,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8212803431919643,
+            "y": 0.3923951740506329,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8195234026227679,
+          "y": 0.39438291139240506,
+          "t": 2198954,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8195234026227679,
+            "y": 0.39438291139240506,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8172651018415179,
+          "y": 0.39675138449367087,
+          "t": 2198957,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8172651018415179,
+            "y": 0.39675138449367087,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8150046212332589,
+          "y": 0.39907041139240507,
+          "t": 2198963,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8150046212332589,
+            "y": 0.39907041139240507,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.812744140625,
+          "y": 0.40138943829113927,
+          "t": 2198969,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.812744140625,
+            "y": 0.40138943829113927,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8103724888392857,
+          "y": 0.403724947257384,
+          "t": 2198973,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8103724888392857,
+            "y": 0.403724947257384,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8080008370535714,
+          "y": 0.40606045622362874,
+          "t": 2198977,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8080008370535714,
+            "y": 0.40606045622362874,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8056291852678571,
+          "y": 0.4083959651898734,
+          "t": 2198981,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8056291852678571,
+            "y": 0.4083959651898734,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8035365513392857,
+          "y": 0.4104306764240506,
+          "t": 2198982,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8035365513392857,
+            "y": 0.4104306764240506,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8014439174107142,
+          "y": 0.4124653876582278,
+          "t": 2198984,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8014439174107142,
+            "y": 0.4124653876582278,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7993512834821429,
+          "y": 0.4145000988924051,
+          "t": 2198985,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7993512834821429,
+            "y": 0.4145000988924051,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7972586495535714,
+          "y": 0.4165348101265823,
+          "t": 2198986,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7972586495535714,
+            "y": 0.4165348101265823,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7951038905552456,
+          "y": 0.4185942444620253,
+          "t": 2198987,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7951038905552456,
+            "y": 0.4185942444620253,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7929491315569196,
+          "y": 0.42065367879746834,
+          "t": 2198989,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7929491315569196,
+            "y": 0.42065367879746834,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7907943725585938,
+          "y": 0.4227131131329114,
+          "t": 2198990,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7907943725585938,
+            "y": 0.4227131131329114,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7886396135602679,
+          "y": 0.4247725474683544,
+          "t": 2198991,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7886396135602679,
+            "y": 0.4247725474683544,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7863507952008929,
+          "y": 0.42698114451476793,
+          "t": 2198993,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7863507952008929,
+            "y": 0.42698114451476793,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7840619768415179,
+          "y": 0.4291897415611814,
+          "t": 2198994,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7840619768415179,
+            "y": 0.4291897415611814,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7817731584821429,
+          "y": 0.4313983386075949,
+          "t": 2198996,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7817731584821429,
+            "y": 0.4313983386075949,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.779388427734375,
+          "y": 0.4337198378164557,
+          "t": 2198998,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.779388427734375,
+            "y": 0.4337198378164557,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7770036969866071,
+          "y": 0.43604133702531644,
+          "t": 2198999,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7770036969866071,
+            "y": 0.43604133702531644,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.77532958984375,
+          "y": 0.43783870648734174,
+          "t": 2199001,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.77532958984375,
+            "y": 0.43783870648734174,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7736554827008929,
+          "y": 0.4396360759493671,
+          "t": 2199003,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7736554827008929,
+            "y": 0.4396360759493671,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7721078055245536,
+          "y": 0.4413419699367089,
+          "t": 2199004,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7721078055245536,
+            "y": 0.4413419699367089,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7705601283482143,
+          "y": 0.44304786392405066,
+          "t": 2199006,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7705601283482143,
+            "y": 0.44304786392405066,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7692631312779018,
+          "y": 0.4445139438291139,
+          "t": 2199008,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7692631312779018,
+            "y": 0.4445139438291139,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7679661342075893,
+          "y": 0.4459800237341772,
+          "t": 2199011,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7679661342075893,
+            "y": 0.4459800237341772,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7667519705636161,
+          "y": 0.4473051819620253,
+          "t": 2199012,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7667519705636161,
+            "y": 0.4473051819620253,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7655378069196429,
+          "y": 0.4486303401898734,
+          "t": 2199014,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7655378069196429,
+            "y": 0.4486303401898734,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7630266462053571,
+          "y": 0.45109276107594937,
+          "t": 2199017,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7630266462053571,
+            "y": 0.45109276107594937,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7608075823102679,
+          "y": 0.4527492088607596,
+          "t": 2199027,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7608075823102679,
+            "y": 0.4527492088607596,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7585885184151786,
+          "y": 0.45440565664556964,
+          "t": 2199036,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7585885184151786,
+            "y": 0.45440565664556964,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7564544677734375,
+          "y": 0.4558272349683544,
+          "t": 2199038,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7564544677734375,
+            "y": 0.4558272349683544,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7543204171316964,
+          "y": 0.45724881329113926,
+          "t": 2199041,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7543204171316964,
+            "y": 0.45724881329113926,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7523127964564732,
+          "y": 0.4585269976265823,
+          "t": 2199043,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7523127964564732,
+            "y": 0.4585269976265823,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.75030517578125,
+          "y": 0.4598051819620253,
+          "t": 2199044,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.75030517578125,
+            "y": 0.4598051819620253,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7482953752790179,
+          "y": 0.46093997231012657,
+          "t": 2199047,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7482953752790179,
+            "y": 0.46093997231012657,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7462855747767857,
+          "y": 0.46207476265822783,
+          "t": 2199051,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7462855747767857,
+            "y": 0.46207476265822783,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.74444580078125,
+          "y": 0.4627373417721519,
+          "t": 2199056,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.74444580078125,
+            "y": 0.4627373417721519,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7427716936383929,
+          "y": 0.46339992088607596,
+          "t": 2199059,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7427716936383929,
+            "y": 0.46339992088607596,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7410975864955357,
+          "y": 0.4637806566455696,
+          "t": 2199062,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7410975864955357,
+            "y": 0.4637806566455696,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        }
+      ]
+    },
+    {
+      "elementId": "el-mtijnwu3-1-sfoary4",
+      "embedType": "file",
+      "brush": "pen",
+      "variant": "default",
+      "color": "#e53935",
+      "width": 3,
+      "opacity": 1,
+      "count": 1,
+      "text": "",
+      "render": "plain",
+      "assetPath": "",
+      "assetName": "",
+      "assetMime": "",
+      "assetSize": 0,
+      "exportImageDataUrl": "",
+      "previewWidth": 260,
+      "previewHeight": 160,
+      "textWidth": null,
+      "fontSize": 18,
+      "bold": false,
+      "code": false,
+      "boxed": false,
+      "file": false,
+      "uiRole": "",
+      "buttonStyle": "",
+      "commandId": "",
+      "commandName": "",
+      "snap": false,
+      "locked": false,
+      "groupId": "",
+      "belowMarkdown": false,
+      "connector": null,
+      "noteFlow": null,
+      "mindMapNode": null,
+      "textAnchor": null,
+      "layout": {
+        "v": 1,
+        "id": "el-mtijnwu3-1-sfoary4",
+        "basis": "note-element-frame-v1",
+        "primary": "topLeft",
+        "corners": {
+          "topLeft": {
+            "x": 0.7297145298549107,
+            "y": 0.42846617879746834,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null
+          },
+          "topRight": {
+            "x": 0.7647835867745536,
+            "y": 0.42846617879746834,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null
+          },
+          "bottomRight": {
+            "x": 0.7647835867745536,
+            "y": 0.4765625,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null
+          },
+          "bottomLeft": {
+            "x": 0.7297145298549107,
+            "y": 0.4765625,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null
+          }
+        },
+        "sourceFrame": {
+          "surfaceWidth": 896,
+          "contentLeft": 0,
+          "contentWidth": 896,
+          "viewportHeight": 868,
+          "documentHeight": 790,
+          "aspectRatio": 1.032258064516129
+        },
+        "box": {
+          "x": 653.82421875,
+          "y": 338.48828125,
+          "width": 31.421875,
+          "height": 37.99609375
+        },
+        "metrics": {
+          "width": 3
+        },
+        "relations": [
+          {
+            "targetId": "el-mtijnwf5-0-7neaezw",
+            "kind": "intersection",
+            "sourceCorner": "bottomLeft",
+            "targetCorner": "bottomLeft",
+            "sourceU": 0.6622948781700646,
+            "sourceV": 0.3671224426853089,
+            "targetU": 0.13161974901884782,
+            "targetV": 0.791851247377011,
+            "dx": 0,
+            "dy": 0,
+            "weight": 0.32
+          }
+        ]
+      },
+      "points": [
+        {
+          "x": 0.7647835867745536,
+          "y": 0.42846617879746834,
+          "t": 2199381.2,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7647835867745536,
+            "y": 0.42846617879746834,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.763946533203125,
+          "y": 0.4292227056962025,
+          "t": 2199389,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.763946533203125,
+            "y": 0.4292227056962025,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7631923130580357,
+          "y": 0.4301720727848101,
+          "t": 2199392,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7631923130580357,
+            "y": 0.4301720727848101,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7613525390625,
+          "y": 0.4322537579113924,
+          "t": 2199404,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7613525390625,
+            "y": 0.4322537579113924,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7593427385602679,
+          "y": 0.43452333860759496,
+          "t": 2199407,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7593427385602679,
+            "y": 0.43452333860759496,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7571672712053571,
+          "y": 0.437079707278481,
+          "t": 2199412,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7571672712053571,
+            "y": 0.437079707278481,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7558702741350446,
+          "y": 0.43845431170886073,
+          "t": 2199414,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7558702741350446,
+            "y": 0.43845431170886073,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7545732770647321,
+          "y": 0.4398289161392405,
+          "t": 2199417,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7545732770647321,
+            "y": 0.4398289161392405,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7531084333147321,
+          "y": 0.4412010482594937,
+          "t": 2199420,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7531084333147321,
+            "y": 0.4412010482594937,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7516435895647321,
+          "y": 0.44257318037974686,
+          "t": 2199423,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7516435895647321,
+            "y": 0.44257318037974686,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7500108991350446,
+          "y": 0.4440392602848101,
+          "t": 2199425,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7500108991350446,
+            "y": 0.4440392602848101,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7483782087053571,
+          "y": 0.4455053401898734,
+          "t": 2199426,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7483782087053571,
+            "y": 0.4455053401898734,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7466212681361607,
+          "y": 0.4469738924050633,
+          "t": 2199429,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7466212681361607,
+            "y": 0.4469738924050633,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7448643275669643,
+          "y": 0.4484424446202532,
+          "t": 2199431,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7448643275669643,
+            "y": 0.4484424446202532,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7431052071707589,
+          "y": 0.44991099683544306,
+          "t": 2199433,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7431052071707589,
+            "y": 0.44991099683544306,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7413460867745536,
+          "y": 0.45137954905063293,
+          "t": 2199434,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7413460867745536,
+            "y": 0.45137954905063293,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7397984095982143,
+          "y": 0.452704707278481,
+          "t": 2199440,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7397984095982143,
+            "y": 0.452704707278481,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.738250732421875,
+          "y": 0.4540298655063291,
+          "t": 2199446,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.738250732421875,
+            "y": 0.4540298655063291,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7369123186383929,
+          "y": 0.45521162974683543,
+          "t": 2199447,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7369123186383929,
+            "y": 0.45521162974683543,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7355739048549107,
+          "y": 0.45639339398734174,
+          "t": 2199449,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7355739048549107,
+            "y": 0.45639339398734174,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7334812709263393,
+          "y": 0.4583811313291139,
+          "t": 2199452,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7334812709263393,
+            "y": 0.4583811313291139,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.731719970703125,
+          "y": 0.4600870253164557,
+          "t": 2199457,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.731719970703125,
+            "y": 0.4600870253164557,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7309701102120536,
+          "y": 0.46131823575949366,
+          "t": 2199467,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7309701102120536,
+            "y": 0.46131823575949366,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7303815569196429,
+          "y": 0.4623615506329114,
+          "t": 2199471,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7303815569196429,
+            "y": 0.4623615506329114,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7297145298549107,
+          "y": 0.46415644778481013,
+          "t": 2199479,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7297145298549107,
+            "y": 0.46415644778481013,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7306344168526786,
+          "y": 0.4658623417721519,
+          "t": 2199494,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7306344168526786,
+            "y": 0.4658623417721519,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7319728306361607,
+          "y": 0.4664309731012658,
+          "t": 2199502,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7319728306361607,
+            "y": 0.4664309731012658,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7335641043526786,
+          "y": 0.4669056566455696,
+          "t": 2199516,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7335641043526786,
+            "y": 0.4669056566455696,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.735321044921875,
+          "y": 0.4671875,
+          "t": 2199521,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.735321044921875,
+            "y": 0.4671875,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7373308454241071,
+          "y": 0.46747428797468354,
+          "t": 2199525,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7373308454241071,
+            "y": 0.46747428797468354,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7402605329241071,
+          "y": 0.46785007911392407,
+          "t": 2199536,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7402605329241071,
+            "y": 0.46785007911392407,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7426888602120536,
+          "y": 0.4681368670886076,
+          "t": 2199539,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7426888602120536,
+            "y": 0.4681368670886076,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7452000209263393,
+          "y": 0.46841871044303796,
+          "t": 2199542,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7452000209263393,
+            "y": 0.46841871044303796,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.747039794921875,
+          "y": 0.46889339398734176,
+          "t": 2199549,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.747039794921875,
+            "y": 0.46889339398734176,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7488795689174107,
+          "y": 0.46936807753164556,
+          "t": 2199557,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7488795689174107,
+            "y": 0.46936807753164556,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7516435895647321,
+          "y": 0.4703125,
+          "t": 2199562,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7516435895647321,
+            "y": 0.4703125,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7542375837053571,
+          "y": 0.4713558148734177,
+          "t": 2199566,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7542375837053571,
+            "y": 0.4713558148734177,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7568315778459821,
+          "y": 0.4724881329113924,
+          "t": 2199570,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7568315778459821,
+            "y": 0.4724881329113924,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.758087158203125,
+          "y": 0.4732496044303797,
+          "t": 2199573,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.758087158203125,
+            "y": 0.4732496044303797,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7594255719866071,
+          "y": 0.4740061313291139,
+          "t": 2199576,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7594255719866071,
+            "y": 0.4740061313291139,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.76068115234375,
+          "y": 0.474668710443038,
+          "t": 2199581,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.76068115234375,
+            "y": 0.474668710443038,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7618538992745536,
+          "y": 0.47542523734177217,
+          "t": 2199584,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7618538992745536,
+            "y": 0.47542523734177217,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7631094796316964,
+          "y": 0.47599386867088606,
+          "t": 2199587,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7631094796316964,
+            "y": 0.47599386867088606,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.7642822265625,
+          "y": 0.4765625,
+          "t": 2199592,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.7642822265625,
+            "y": 0.4765625,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        }
+      ]
+    },
+    {
+      "elementId": "el-mtijnygi-2-sf8d4ve",
+      "embedType": "file",
+      "brush": "pen",
+      "variant": "default",
+      "color": "#e53935",
+      "width": 3,
+      "opacity": 1,
+      "count": 1,
+      "text": "",
+      "render": "plain",
+      "assetPath": "",
+      "assetName": "",
+      "assetMime": "",
+      "assetSize": 0,
+      "exportImageDataUrl": "",
+      "previewWidth": 260,
+      "previewHeight": 160,
+      "textWidth": null,
+      "fontSize": 18,
+      "bold": false,
+      "code": false,
+      "boxed": false,
+      "file": false,
+      "uiRole": "",
+      "buttonStyle": "",
+      "commandId": "",
+      "commandName": "",
+      "snap": false,
+      "locked": false,
+      "groupId": "",
+      "belowMarkdown": false,
+      "connector": null,
+      "noteFlow": null,
+      "mindMapNode": null,
+      "textAnchor": null,
+      "layout": {
+        "v": 1,
+        "id": "el-mtijnygi-2-sf8d4ve",
+        "basis": "note-element-frame-v1",
+        "primary": "topLeft",
+        "corners": {
+          "topLeft": {
+            "x": 0.838775634765625,
+            "y": 0.303965585443038,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null
+          },
+          "topRight": {
+            "x": 0.8860648018973214,
+            "y": 0.303965585443038,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null
+          },
+          "bottomRight": {
+            "x": 0.8860648018973214,
+            "y": 0.33738627373417723,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null
+          },
+          "bottomLeft": {
+            "x": 0.838775634765625,
+            "y": 0.33738627373417723,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null
+          }
+        },
+        "sourceFrame": {
+          "surfaceWidth": 896,
+          "contentLeft": 0,
+          "contentWidth": 896,
+          "viewportHeight": 868,
+          "documentHeight": 790,
+          "aspectRatio": 1.032258064516129
+        },
+        "box": {
+          "x": 751.54296875,
+          "y": 240.1328125,
+          "width": 42.37109375,
+          "height": 26.40234375
+        },
+        "metrics": {
+          "width": 3
+        },
+        "relations": []
+      },
+      "points": [
+        {
+          "x": 0.8405325753348214,
+          "y": 0.303965585443038,
+          "t": 2201438.8,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8405325753348214,
+            "y": 0.303965585443038,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8411211286272321,
+          "y": 0.3057654272151899,
+          "t": 2201453,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8411211286272321,
+            "y": 0.3057654272151899,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8414524623325893,
+          "y": 0.3071845332278481,
+          "t": 2201458,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8414524623325893,
+            "y": 0.3071845332278481,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8417881556919643,
+          "y": 0.3090783227848101,
+          "t": 2201461,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8417881556919643,
+            "y": 0.3090783227848101,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8415396554129464,
+          "y": 0.3126780063291139,
+          "t": 2201476,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8415396554129464,
+            "y": 0.3126780063291139,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8412039620535714,
+          "y": 0.3151874011075949,
+          "t": 2201482,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8412039620535714,
+            "y": 0.3151874011075949,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8408682686941964,
+          "y": 0.31769679588607597,
+          "t": 2201489,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8408682686941964,
+            "y": 0.31769679588607597,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8404911586216517,
+          "y": 0.3204410601265823,
+          "t": 2201491,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8404911586216517,
+            "y": 0.3204410601265823,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8401140485491071,
+          "y": 0.32318532436708863,
+          "t": 2201493,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8401140485491071,
+            "y": 0.32318532436708863,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8397369384765625,
+          "y": 0.3257886669303797,
+          "t": 2201496,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8397369384765625,
+            "y": 0.3257886669303797,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8393598284040179,
+          "y": 0.32839200949367087,
+          "t": 2201498,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8393598284040179,
+            "y": 0.32839200949367087,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8389413016183036,
+          "y": 0.33142306170886077,
+          "t": 2201503,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8389413016183036,
+            "y": 0.33142306170886077,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.838775634765625,
+          "y": 0.3325603243670886,
+          "t": 2201506,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.838775634765625,
+            "y": 0.3325603243670886,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8400312151227679,
+          "y": 0.33170490506329114,
+          "t": 2201524,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8400312151227679,
+            "y": 0.33170490506329114,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.841033935546875,
+          "y": 0.33057258702531644,
+          "t": 2201529,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.841033935546875,
+            "y": 0.33057258702531644,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8422895159040179,
+          "y": 0.32905458860759496,
+          "t": 2201534,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8422895159040179,
+            "y": 0.32905458860759496,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8440508161272321,
+          "y": 0.3270668512658228,
+          "t": 2201540,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8440508161272321,
+            "y": 0.3270668512658228,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8461390904017857,
+          "y": 0.32479727056962027,
+          "t": 2201543,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8461390904017857,
+            "y": 0.32479727056962027,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8484017508370536,
+          "y": 0.32224090189873417,
+          "t": 2201548,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8484017508370536,
+            "y": 0.32224090189873417,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8496573311941964,
+          "y": 0.3209132713607595,
+          "t": 2201550,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8496573311941964,
+            "y": 0.3209132713607595,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8509129115513393,
+          "y": 0.3195856408227848,
+          "t": 2201552,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8509129115513393,
+            "y": 0.3195856408227848,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8524605887276786,
+          "y": 0.31807258702531643,
+          "t": 2201559,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8524605887276786,
+            "y": 0.31807258702531643,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8540082659040179,
+          "y": 0.3165595332278481,
+          "t": 2201566,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8540082659040179,
+            "y": 0.3165595332278481,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8554731096540179,
+          "y": 0.31523437499999996,
+          "t": 2201568,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8554731096540179,
+            "y": 0.31523437499999996,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8569379534040179,
+          "y": 0.3139092167721519,
+          "t": 2201569,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8569379534040179,
+            "y": 0.3139092167721519,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8594491141183036,
+          "y": 0.31182258702531646,
+          "t": 2201574,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8594491141183036,
+            "y": 0.31182258702531646,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8616245814732143,
+          "y": 0.3103095332278481,
+          "t": 2201579,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8616245814732143,
+            "y": 0.3103095332278481,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8629673549107143,
+          "y": 0.31135284810126584,
+          "t": 2201588,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8629673549107143,
+            "y": 0.31135284810126584,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8632158551897321,
+          "y": 0.3126780063291139,
+          "t": 2201593,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8632158551897321,
+            "y": 0.3126780063291139,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8633858816964286,
+          "y": 0.3142850079113924,
+          "t": 2201597,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8633858816964286,
+            "y": 0.3142850079113924,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8632986886160714,
+          "y": 0.3161787974683544,
+          "t": 2201600,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8632986886160714,
+            "y": 0.3161787974683544,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8631330217633929,
+          "y": 0.318359375,
+          "t": 2201603,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8631330217633929,
+            "y": 0.318359375,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8627973284040179,
+          "y": 0.3207229034810127,
+          "t": 2201608,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8627973284040179,
+            "y": 0.3207229034810127,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.862548828125,
+          "y": 0.3232792721518987,
+          "t": 2201611,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.862548828125,
+            "y": 0.3232792721518987,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.862213134765625,
+          "y": 0.3259295886075949,
+          "t": 2201614,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.862213134765625,
+            "y": 0.3259295886075949,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8620038713727679,
+          "y": 0.3279197982594937,
+          "t": 2201624,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8620038713727679,
+            "y": 0.3279197982594937,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8617946079799107,
+          "y": 0.3299100079113924,
+          "t": 2201634,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8617946079799107,
+            "y": 0.3299100079113924,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8616245814732143,
+          "y": 0.33322290348101263,
+          "t": 2201639,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8616245814732143,
+            "y": 0.33322290348101263,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8617117745535714,
+          "y": 0.33577927215189873,
+          "t": 2201642,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8617117745535714,
+            "y": 0.33577927215189873,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8622959681919643,
+          "y": 0.33738627373417723,
+          "t": 2201648,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8622959681919643,
+            "y": 0.33738627373417723,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8633858816964286,
+          "y": 0.33662974683544306,
+          "t": 2201653,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8633858816964286,
+            "y": 0.33662974683544306,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8646371023995536,
+          "y": 0.33549248417721517,
+          "t": 2201656,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8646371023995536,
+            "y": 0.33549248417721517,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8662283761160714,
+          "y": 0.3339794303797468,
+          "t": 2201660,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8662283761160714,
+            "y": 0.3339794303797468,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8678196498325893,
+          "y": 0.33246637658227846,
+          "t": 2201663,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8678196498325893,
+            "y": 0.33246637658227846,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.869659423828125,
+          "y": 0.33076048259493673,
+          "t": 2201668,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.869659423828125,
+            "y": 0.33076048259493673,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8716692243303571,
+          "y": 0.32905458860759496,
+          "t": 2201671,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8716692243303571,
+            "y": 0.32905458860759496,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.87359619140625,
+          "y": 0.32744758702531646,
+          "t": 2201674,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.87359619140625,
+            "y": 0.32744758702531646,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8753117152622768,
+          "y": 0.32673556170886076,
+          "t": 2201684,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8753117152622768,
+            "y": 0.32673556170886076,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8770272391183036,
+          "y": 0.32602353639240506,
+          "t": 2201694,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8770272391183036,
+            "y": 0.32602353639240506,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8802054268973214,
+          "y": 0.32517306170886073,
+          "t": 2201698,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8802054268973214,
+            "y": 0.32517306170886073,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8831351143973214,
+          "y": 0.32489121835443036,
+          "t": 2201702,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8831351143973214,
+            "y": 0.32489121835443036,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        },
+        {
+          "x": 0.8860648018973214,
+          "y": 0.32564774525316453,
+          "t": 2201708,
+          "anchor": {
+            "v": 1,
+            "basis": "note-content-v1",
+            "x": 0.8860648018973214,
+            "y": 0.32564774525316453,
+            "path": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+            "line": null,
+            "lineConfidence": null,
+            "offsetY": 0
+          }
+        }
+      ]
+    }
+  ],
+  "markdownBlocks": [],
+  "elementGroups": [],
+  "noteFlowLayout": {
+    "version": 1,
+    "offsets": []
+  },
+  "webEdits": [],
+  "updatedAt": "2026-09-01T10:48:40.702Z"
+}
