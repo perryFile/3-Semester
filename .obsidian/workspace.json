@@ -35,12 +35,14 @@
             "id": "60ebc3ff465f900d",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf"
+                "file": "Computerarkitektur og operativsystemer/ALU/1 bit ALU.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "lektionsplan"
+              "icon": "lucide-file",
+              "title": "1 bit ALU"
             }
           },
           {
@@ -235,12 +237,13 @@
   },
   "active": "28011e8e475ebad1",
   "lastOpenFiles": [
+    "Computerarkitektur og operativsystemer/ALU/1 bit ALU.md",
     "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf",
+    "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bolsk ligning.md",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Lektion1.md",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901142635_672.png",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901142623_174.png",
-    "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901142444_114.png",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901141646_278.png",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901132628_087.png",
@@ -255,7 +258,6 @@
     "Computerarkitektur og operativsystemer/ALU/Bilag/Pasted image 20260901133759.png",
     "Computerarkitektur og operativsystemer/ALU/Decoder.md",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag",
-    "Computerarkitektur og operativsystemer/ALU/1 bit ALU.md",
     "Computerarkitektur og operativsystemer/ALU/Bilag/Pasted image 20260901132446.png",
     "Computerarkitektur og operativsystemer/ALU/Bilag/Pasted image 20260901132134.png",
     "Computerarkitektur og operativsystemer/ALU/Bilag",
