@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ce131221c29ce6b7",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Computerarkitektur og operativsystemer/Opgaver/Lektion1.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Lektion1"
-            }
-          },
-          {
             "id": "c029abe0a691d41a",
             "type": "leaf",
             "state": {
@@ -35,6 +23,18 @@
             "id": "2d753c82a0ca2394",
             "type": "leaf",
             "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Computerarkitektur og operativsystemer/Opgaver/Lektion1.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Lektion1"
+            }
+          },
+          {
+            "id": "60ebc3ff465f900d",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "Computerarkitektur og operativsystemer/Boolean algebra.md",
@@ -44,8 +44,21 @@
               "icon": "lucide-file",
               "title": "Boolean algebra"
             }
+          },
+          {
+            "id": "d46f439cd4dd24a2",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Structured Computer Organization, 6th Edition"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -222,14 +235,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ce131221c29ce6b7",
+  "active": "2d753c82a0ca2394",
   "lastOpenFiles": [
     "Computerarkitektur og operativsystemer/Boolean algebra.md",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion1.md",
+    "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
     "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf",
     "Computerarkitektur og operativsystemer/Opgaver/Bilag/Pasted Image 20260901111355_599.png",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901111225.png",
-    "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
     "Computerarkitektur og operativsystemer/Opgaver/Bilag/Pasted Image 20260901110909_529.png",
     "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1.md",
