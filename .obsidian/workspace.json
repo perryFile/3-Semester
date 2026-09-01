@@ -1,54 +1,41 @@
 {
   "main": {
-    "id": "e463662873a80661",
+    "id": "1b6a7a2b42b1240e",
     "type": "split",
     "children": [
       {
-        "id": "02b9d62fdcd9575c",
+        "id": "4a925f4f4b213fc4",
         "type": "tabs",
         "children": [
           {
-            "id": "2cc4b08ec70d2301",
+            "id": "ce131221c29ce6b7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hej.md",
+                "file": "Computerarkitektur og operativsystemer/Opgaver/Lektion 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Hej"
-            }
-          },
-          {
-            "id": "e092a6ec02202de2",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.13.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "Udgivelsesnoter 1.13.7"
+              "title": "Lektion 1"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "20f65e8cc9be05dd",
+    "id": "450b4fc70d684112",
     "type": "split",
     "children": [
       {
-        "id": "34dfaabba520f359",
+        "id": "1d744a1a7808105c",
         "type": "tabs",
         "children": [
           {
-            "id": "f6f21b40915f9bd3",
+            "id": "32a6da8d54f1060c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -59,11 +46,11 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Filer"
+              "title": "Files"
             }
           },
           {
-            "id": "31b226cb0c161132",
+            "id": "75e3959a1642fd9b",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -76,17 +63,20 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Søg"
+              "title": "Search"
             }
           },
           {
-            "id": "074fd383b4c1b00e",
+            "id": "fec375328f1ac5b9",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
-              "title": "Bogmærker"
+              "title": "Bookmarks"
             }
           }
         ]
@@ -96,20 +86,19 @@
     "width": 300
   },
   "right": {
-    "id": "6a4fe44a545325f1",
+    "id": "5b1d950ff6215eae",
     "type": "split",
     "children": [
       {
-        "id": "08e7617405497b8c",
+        "id": "f9576fee2db47119",
         "type": "tabs",
         "children": [
           {
-            "id": "b5b1b80087ee61af",
+            "id": "2796b9df56518f4f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hej.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,25 +108,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Tilbagelinks for Hej"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "642382d1b633aab9",
+            "id": "52032156f5cd37d0",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hej.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Udgående links fra Hej"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "1d58bcd38e41b536",
+            "id": "e651f6ea99ed1e91",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -152,7 +140,7 @@
             }
           },
           {
-            "id": "dc02d491899ff4b3",
+            "id": "cb8fd7b7af89430a",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -162,26 +150,25 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "Alle egenskaber"
+              "title": "All properties"
             }
           },
           {
-            "id": "e0dbd1747b9d6c0e",
+            "id": "46e8095b8baf7cbe",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hej.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Disposition af Hej"
+              "title": "Outline"
             }
           },
           {
-            "id": "998bfd8a42d2ddfb",
+            "id": "e179a25ad132955e",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -195,30 +182,49 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Åbn Hurtigskifter": false,
-      "command-palette:Åbn kommandopalet": false,
-      "graph:Åbn grafvisning": false,
-      "canvas:Opret nyt lærred": false,
-      "daily-notes:Åbn dagens note": false,
-      "templates:Indsæt skabelon": false,
-      "bases:Opret ny base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e092a6ec02202de2",
+  "active": "32a6da8d54f1060c",
   "lastOpenFiles": [
-    "Hej.md",
-    "Unavngivet.base",
+    "Computerarkitektur og operativsystemer/Opgaver/Bilag/Pasted image 20260901100033.png",
+    "Computerarkitektur og operativsystemer/Opgaver/Bilag",
     "Modellering af elektromekaniske systemer/Materiale/An_Introduction_to_Fourier_Analysis.pdf",
-    "Modellering af elektromekaniske systemer/Materiale",
-    "Modellering af elektromekaniske systemer",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1.md",
+    "Computerarkitektur og operativsystemer/Opgaver",
+    "Bøger der skal købes.md",
     "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
-    "Computerarkitektur og operativsystemer/Materiale",
-    "Computerarkitektur og operativsystemer"
+    "Bilag/Pasted image 20260830224029.png",
+    "Bilag",
+    "Computerarkitektur og operativsystemer/ALU/1 bit ALU.md",
+    "Signalbehandling/Bilag",
+    "Semesterprojekt i mobile robotsystemer/Bilag",
+    "Modellering af elektromekaniske systemer/Bilag",
+    "Datakommunikation/Bilag",
+    "Computerarkitektur og operativsystemer/ALU/Carry on bit.md",
+    "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260830133025.png",
+    "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260830150051.png",
+    "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260830150140.png",
+    "Computerarkitektur og operativsystemer/Bilag",
+    "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260830130708.png",
+    "Computerarkitektur og operativsystemer/Logic gates.md",
+    "Computerarkitektur og operativsystemer/Boolean algebra.md",
+    "Computerarkitektur og operativsystemer/Binær tallysstem.md",
+    "Hej.md",
+    "conflict-files-obsidian-git.md",
+    "Datakommunikation/Untitled.md",
+    "Prøve.md"
   ]
 }
