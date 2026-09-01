@@ -1,0 +1,1 @@
+![[Pasted image 20260901133856.png]]Bruges til at lægge 2 bits sammen. Har en [[Carry bit]] som 
