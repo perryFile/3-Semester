@@ -1,3 +1,4 @@
 
 De mest brugte talsystemer er 
-![[Pasted image 20260901122413.png]]
+[[Binær tallysstem]] 
+![[Pasted image 20260901122413.png|455]]
