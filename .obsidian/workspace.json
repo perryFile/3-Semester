@@ -11,12 +11,12 @@
             "id": "2d753c82a0ca2394",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "excalidraw",
               "state": {
-                "file": "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf"
+                "file": "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/In class.md"
               },
-              "icon": "lucide-file-text",
-              "title": "UTF-8''COS_lecture01"
+              "icon": "excalidraw-icon",
+              "title": "In class"
             }
           },
           {
@@ -39,10 +39,10 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Computerarkitektur og operativsystemer/Opgaver/Drawing 2026-09-01 13.09.40.excalidraw.md"
+                "file": "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/In class.md"
               },
               "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-01 13.09.40.excalidraw"
+              "title": "In class"
             }
           },
           {
@@ -83,8 +83,7 @@
               "title": "lektionsplan"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -146,8 +145,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "5b1d950ff6215eae",
@@ -261,12 +259,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e47b95f803d93157",
+  "active": "32a6da8d54f1060c",
   "lastOpenFiles": [
-    "Computerarkitektur og operativsystemer/Opgaver/Untitled.md",
-    "Computerarkitektur og operativsystemer/Opgaver/Drawing 2026-09-01 13.09.40.excalidraw.md",
-    "Computerarkitektur og operativsystemer/Boolean algebra.md",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1",
     "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+    "Computerarkitektur og operativsystemer/Opgaver/Untitled.md",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/In class.md",
+    "Computerarkitektur og operativsystemer/Boolean algebra.md",
     "Computerarkitektur og operativsystemer/Logic gates.md",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901130341.png",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901130253.png",
@@ -285,7 +284,7 @@
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901122700.png",
     "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260901122624.png",
     "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
-    "Computerarkitektur og operativsystemer/Opgaver/Lektion1.md",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Lektion1.md",
     "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf",
     "Computerarkitektur og operativsystemer/Opgaver/Lektion 1.md",
     "Drawing 2026-09-01 10.38.16.excalidraw.md",
