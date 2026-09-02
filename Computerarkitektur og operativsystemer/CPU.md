@@ -1,1 +1,4 @@
+
+### Simple CPU
+
 ![[Pasted image 20260902170744.png|550]]
