@@ -1,39 +1,64 @@
 {
   "main": {
-    "id": "e463662873a80661",
+    "id": "1b6a7a2b42b1240e",
     "type": "split",
     "children": [
       {
-        "id": "02b9d62fdcd9575c",
+        "id": "58b4250c9a35cc35",
         "type": "tabs",
         "children": [
           {
-            "id": "e092a6ec02202de2",
+            "id": "5bec1b62b3e3e7dd",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "pdf",
               "state": {
-                "file": "Bilag/Pasted image 20260830224029.png"
+                "file": "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Lektion 1 - Opgaver.pdf"
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260830224029"
+              "icon": "lucide-file-text",
+              "title": "Lektion 1 - Opgaver"
+            }
+          },
+          {
+            "id": "44e09f33089fc47c",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Opgave 1.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Opgave 1"
+            }
+          },
+          {
+            "id": "cc154b0889ba37c0",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Opgave 2.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Opgave 2"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "20f65e8cc9be05dd",
+    "id": "450b4fc70d684112",
     "type": "split",
     "children": [
       {
-        "id": "34dfaabba520f359",
+        "id": "1d744a1a7808105c",
         "type": "tabs",
         "children": [
           {
-            "id": "f6f21b40915f9bd3",
+            "id": "32a6da8d54f1060c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,11 +69,11 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Filer"
+              "title": "Files"
             }
           },
           {
-            "id": "31b226cb0c161132",
+            "id": "75e3959a1642fd9b",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,40 +86,43 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Søg"
+              "title": "Search"
             }
           },
           {
-            "id": "074fd383b4c1b00e",
+            "id": "fec375328f1ac5b9",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
-              "title": "Bogmærker"
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
-    "id": "6a4fe44a545325f1",
+    "id": "5b1d950ff6215eae",
     "type": "split",
     "children": [
       {
-        "id": "08e7617405497b8c",
+        "id": "f9576fee2db47119",
         "type": "tabs",
         "children": [
           {
-            "id": "b5b1b80087ee61af",
+            "id": "2796b9df56518f4f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hej.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +132,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Tilbagelinks for Hej"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "642382d1b633aab9",
+            "id": "52032156f5cd37d0",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hej.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Udgående links fra Hej"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "1d58bcd38e41b536",
+            "id": "e651f6ea99ed1e91",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,7 +164,7 @@
             }
           },
           {
-            "id": "dc02d491899ff4b3",
+            "id": "cb8fd7b7af89430a",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -147,26 +174,25 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "Alle egenskaber"
+              "title": "All properties"
             }
           },
           {
-            "id": "e0dbd1747b9d6c0e",
+            "id": "46e8095b8baf7cbe",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hej.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Disposition af Hej"
+              "title": "Outline"
             }
           },
           {
-            "id": "998bfd8a42d2ddfb",
+            "id": "e179a25ad132955e",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -180,47 +206,68 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Åbn Hurtigskifter": false,
-      "command-palette:Åbn kommandopalet": false,
-      "graph:Åbn grafvisning": false,
-      "canvas:Opret nyt lærred": false,
-      "daily-notes:Åbn dagens note": false,
-      "templates:Indsæt skabelon": false,
-      "bases:Opret ny base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e092a6ec02202de2",
+  "active": "cc154b0889ba37c0",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "Datakommunikation/Materiale/Computer Networking.pdf",
-    "Datakommunikation/Materiale",
-    "Datakommunikation",
-    "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
-    "Computerarkitektur og operativsystemer/Slides",
-    "Computerarkitektur og operativsystemer/Opgaver/Bilag/Pasted image 20260901100033.png",
-    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1.md",
-    "Computerarkitektur og operativsystemer/Opgaver/Bilag",
-    "Computerarkitektur og operativsystemer/Opgaver",
-    "Computerarkitektur og operativsystemer/Logic gates.md",
-    "Computerarkitektur og operativsystemer/Boolean algebra.md",
-    "Computerarkitektur og operativsystemer/Binær tallysstem.md",
-    "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260830150140.png",
-    "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260830150051.png",
-    "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260830133025.png",
-    "Computerarkitektur og operativsystemer/Bilag/Pasted image 20260830130708.png",
-    "Computerarkitektur og operativsystemer/Bilag",
-    "Computerarkitektur og operativsystemer/ALU/Carry on bit.md",
+    "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Lektion 1 - Opgaver.pdf",
+    "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Opgave 2.md",
+    "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901174207_072.png",
+    "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Opgave 1.md",
+    "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901172831_858.png",
+    "Modellering af elektromekaniske systemer/Opgaver/Lektion 1/Bilag",
+    "Modellering af elektromekaniske systemer/Opgaver/Lektion 1",
+    "Modellering af elektromekaniske systemer/Opgaver",
+    "Computerarkitektur og operativsystemer/Materiale/Structured Computer Organization, 6th Edition.pdf",
     "Computerarkitektur og operativsystemer/ALU/1 bit ALU.md",
-    "Computerarkitektur og operativsystemer/ALU",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bolsk ligning.md",
+    "Computerarkitektur og operativsystemer/Materiale/lektionsplan.pdf",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Lektion1.md",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901142635_672.png",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901142623_174.png",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901142444_114.png",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901141646_278.png",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag/Pasted Image 20260901132628_087.png",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Drawing 2026-09-01 13.26.27.excalidraw.md",
+    "Computerarkitektur og operativsystemer/Slides/UTF-8''COS_lecture01.pdf",
+    "Computerarkitektur og operativsystemer/ALU/Logisk enhed (LU).md",
+    "Computerarkitektur og operativsystemer/ALU/Full adder.md",
+    "Computerarkitektur og operativsystemer/ALU/8 bit ALU.md",
+    "Computerarkitektur og operativsystemer/Logic gates.md",
+    "Computerarkitektur og operativsystemer/ALU/Bilag/Pasted image 20260901134038.png",
+    "Computerarkitektur og operativsystemer/ALU/Bilag/Pasted image 20260901133856.png",
+    "Computerarkitektur og operativsystemer/ALU/Bilag/Pasted image 20260901133759.png",
+    "Computerarkitektur og operativsystemer/ALU/Decoder.md",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1/Bilag",
+    "Computerarkitektur og operativsystemer/ALU/Bilag",
+    "Computerarkitektur og operativsystemer/ALU/ALU.md",
+    "Computerarkitektur og operativsystemer/Boolean algebra.md",
+    "Computerarkitektur og operativsystemer/Opgaver/Untitled.md",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1",
+    "Computerarkitektur og operativsystemer/Talsystem/Binær tallysstem.md",
+    "Computerarkitektur og operativsystemer/Talsystem/Computer talsystem.md",
+    "Computerarkitektur og operativsystemer/Talsystem/Hexadecimal talsystem.md",
+    "Computerarkitektur og operativsystemer/Talsystem/Oktal talsystem.md",
+    "Computerarkitektur og operativsystemer/Opgaver/Lektion 1.md",
+    "Drawing 2026-09-01 10.38.16.excalidraw.md",
+    "Semesterprojekt i mobile robotsystemer/Hej.md",
+    "Signalbehandling/hej.md",
     "Bøger der skal købes.md",
-    "Bilag/Pasted image 20260830224029.png",
-    "Bilag",
+    "Computerarkitektur og operativsystemer/ALU/Carry bit.md",
     "Hej.md"
   ]
 }

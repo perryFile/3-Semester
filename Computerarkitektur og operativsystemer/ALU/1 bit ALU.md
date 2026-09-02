@@ -1,4 +1,4 @@
-![[Pasted image 20260830150051.png]]
+![[Pasted image 20260901132134.png]]
 [[Decoder]] bruges til at specificere hvilken operation der skal bruges. 
 
 ![[Pasted image 20260830150140.png]]

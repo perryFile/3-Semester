@@ -1,0 +1,10 @@
+{
+  "notedraw:toggle-draw-mode": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "I"
+    }
+  ]
+}
