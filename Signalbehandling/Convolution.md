@@ -16,3 +16,5 @@ Convolution fortæller hvad en impuls respons gør på et input. Feks et filter.
 
 ## Property of convolution
 ![[Pasted image 20260903092658.png]]
+
+![[Pasted image 20260903101202.png]]
