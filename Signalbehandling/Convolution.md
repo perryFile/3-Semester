@@ -7,3 +7,8 @@ Convoltuion i time domain er det samme som at gange i frequency domain.
 
 
 Convolution fortæller hvad en impuls respons gør på et input. Feks et filter. 
+
+
+## Matlab
+
+![[Pasted image 20260903092401.png]]
