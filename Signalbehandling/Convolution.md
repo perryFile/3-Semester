@@ -12,3 +12,7 @@ Convolution fortæller hvad en impuls respons gør på et input. Feks et filter.
 ## Matlab
 
 ![[Pasted image 20260903092401.png]]
+ 
+
+## Property of convolution
+![[Pasted image 20260903092658.png]]
