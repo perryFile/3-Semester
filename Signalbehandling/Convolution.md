@@ -4,3 +4,6 @@ Convoltuion i time domain er det samme som at gange i frequency domain.
 
 
 ## Husk vi flipper impuls respons i convolution!
+
+
+Convolution fortæller hvad en impuls respons gør på et input. Feks et filter. 
