@@ -2,6 +2,6 @@
 MCP agent
 Ollama opensource modeller
 harness
-Harmachy
+omarchy
 https://chatjimmy.ai/
 
