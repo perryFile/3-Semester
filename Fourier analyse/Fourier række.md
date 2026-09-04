@@ -11,3 +11,6 @@
 
 Vi kan skifte domæne til polært domæne.
 ![[Pasted image 20260904084440.png]]
+
+
+![[Pasted image 20260904095600.png]]
