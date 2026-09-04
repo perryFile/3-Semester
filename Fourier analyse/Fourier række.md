@@ -7,3 +7,5 @@
 
 ![[Pasted image 20260904083400.png]]
 
+## Amplitude og fase
+![[Pasted image 20260904084440.png]]
