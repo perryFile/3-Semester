@@ -8,4 +8,6 @@
 ![[Pasted image 20260904083400.png]]
 
 ## Amplitude og fase
+
+Vi kan skifte domæne til polært domæne.
 ![[Pasted image 20260904084440.png]]
