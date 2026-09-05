@@ -64,6 +64,100 @@ Path: ${file.path}
 
 ${content}`;
         }
+      },
+      {
+        name: "edit_note",
+        description: "Make a targeted edit to a note by replacing one exact block of text with new text. Safer than rewriting the whole note: only the matched region changes. 'old_text' must appear EXACTLY once in the note (match whitespace/indentation precisely). Use 'path' to target a specific note, or omit it to edit the currently open note. Set 'create_if_missing' to true to create the note with 'new_text' if it doesn't exist yet.",
+        parameters: {
+          type: "object",
+          properties: {
+            path: {
+              type: "string",
+              description: "Vault-relative note path (e.g. 'Signalbehandling/ADC.md'). Omit to use the active note."
+            },
+            old_text: {
+              type: "string",
+              description: "The exact existing text to replace. Must occur exactly once."
+            },
+            new_text: {
+              type: "string",
+              description: "The replacement text."
+            },
+            create_if_missing: {
+              type: "boolean",
+              description: "If the note doesn't exist, create it containing new_text. Default false."
+            }
+          },
+          required: ["old_text", "new_text"]
+        },
+        run: async (args) => {
+          var _a, _b, _c;
+          const oldText = String((_a = args.old_text) != null ? _a : "");
+          const newText = String((_b = args.new_text) != null ? _b : "");
+          const createIfMissing = args.create_if_missing === true;
+          const file = this.resolveNoteFile(args.path);
+          if (!file) {
+            if (createIfMissing) {
+              return this.createNote(String((_c = args.path) != null ? _c : ""), newText);
+            }
+            return "Error: no target note found. Provide a valid 'path' or open a note.";
+          }
+          const content = await this.app.vault.read(file);
+          const count = content.split(oldText).length - 1;
+          if (count === 0) {
+            return `Error: 'old_text' was not found in ${file.path}. Read the note first and copy the exact text.`;
+          }
+          if (count > 1) {
+            return `Error: 'old_text' matched ${count} times in ${file.path}. Provide a longer, more unique snippet.`;
+          }
+          const updated = content.replace(oldText, newText);
+          await this.app.vault.modify(file, updated);
+          return `Edited ${file.path} (replaced 1 occurrence).`;
+        }
+      },
+      {
+        name: "write_note",
+        description: "Create a new note, or fully overwrite an existing one, with the given markdown content. Use for creating new notes or replacing an entire note. For small changes prefer edit_note. Provide a vault-relative 'path' (e.g. 'Signalbehandling/New.md').",
+        parameters: {
+          type: "object",
+          properties: {
+            path: {
+              type: "string",
+              description: "Vault-relative note path, e.g. 'Signalbehandling/New.md'."
+            },
+            content: {
+              type: "string",
+              description: "The full markdown content to write."
+            },
+            overwrite: {
+              type: "boolean",
+              description: "If true, replace an existing note. If false (default), refuse to overwrite."
+            }
+          },
+          required: ["path", "content"]
+        },
+        run: async (args) => {
+          var _a, _b;
+          const path = String((_a = args.path) != null ? _a : "").trim();
+          const content = String((_b = args.content) != null ? _b : "");
+          const overwrite = args.overwrite === true;
+          if (!path)
+            return "Error: 'path' is required.";
+          if (!content)
+            return "Error: 'content' is required.";
+          const existing = this.app.vault.getAbstractFileByPath(path);
+          if (existing) {
+            if (!overwrite) {
+              return `Note ${path} already exists. Set overwrite=true to replace it, or use edit_note for a targeted change.`;
+            }
+            if (!(existing instanceof import_obsidian.TFile)) {
+              return `Error: ${path} is not a note (it's a folder).`;
+            }
+            await this.app.vault.modify(existing, content);
+            return `Overwrote ${path}.`;
+          }
+          return this.createNote(path, content);
+        }
       }
     ];
   }
@@ -86,6 +180,51 @@ ${content}`;
   }
   async saveSettings() {
     await this.saveData(this.settings);
+  }
+  /**
+   * Resolve a note to edit. If `path` is given, look it up (must be an existing
+   * note); otherwise fall back to the currently active file.
+   */
+  resolveNoteFile(path) {
+    if (typeof path === "string" && path.trim()) {
+      const f = this.app.vault.getAbstractFileByPath(path.trim());
+      return f instanceof import_obsidian.TFile ? f : null;
+    }
+    const active = this.app.workspace.getActiveFile();
+    return active instanceof import_obsidian.TFile ? active : null;
+  }
+  /**
+   * Create a new note at a vault-relative path, creating parent folders as
+   * needed. Guards against path traversal outside the vault.
+   */
+  async createNote(path, content) {
+    const normalized = path.replace(/^\/+/, "");
+    if (normalized.includes("..")) {
+      return "Error: path must stay inside the vault (no '..').";
+    }
+    const parts = normalized.split("/").filter(Boolean);
+    const fileName = parts.pop();
+    if (!fileName)
+      return "Error: invalid note path.";
+    let folder = this.app.vault.getRoot();
+    for (const dir of parts) {
+      const next = this.app.vault.getAbstractFileByPath(
+        `${folder.path === "/" ? "" : folder.path + "/"}${dir}`
+      );
+      if (next) {
+        if (!next.children) {
+          return `Error: '${dir}' is not a folder.`;
+        }
+        folder = next;
+      } else {
+        folder = await this.app.vault.createFolder(
+          `${folder.path === "/" ? "" : folder.path + "/"}${dir}`
+        );
+      }
+    }
+    const targetPath = `${folder.path === "/" ? "" : folder.path + "/"}${fileName}`;
+    const file = await this.app.vault.create(targetPath, content);
+    return `Created ${file.path}.`;
   }
   /** Drop all conversation memory. */
   clearHistory() {
