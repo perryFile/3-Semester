@@ -1,0 +1,9 @@
+{
+	"id": "ai-harness",
+	"name": "AI Harness",
+	"version": "0.1.0",
+	"minAppVersion": "1.0.0",
+	"description": "Ask qwen3.8 (via Ollama over an SSH tunnel) from a prompt bar in Obsidian.",
+	"author": "laurits",
+	"isDesktopOnly": true
+}

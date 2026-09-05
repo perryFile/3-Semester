@@ -1,0 +1,32 @@
+.ai-harness-modal {
+	padding: 8px;
+}
+
+.ai-harness-input {
+	width: 100%;
+	min-height: 90px;
+	resize: vertical;
+	margin-bottom: 12px;
+}
+
+.ai-harness-actions {
+	display: flex;
+	gap: 8px;
+	justify-content: flex-end;
+	margin-bottom: 12px;
+}
+
+.ai-harness-output {
+	white-space: pre-wrap;
+	word-break: break-word;
+	max-height: 45vh;
+	overflow-y: auto;
+}
+
+.ai-harness-answer {
+	margin: 0;
+}
+
+.ai-harness-error {
+	color: var(--text-error);
+}
