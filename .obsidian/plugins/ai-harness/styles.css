@@ -16,8 +16,14 @@
 	margin-bottom: 12px;
 }
 
+.ai-harness-status {
+	margin-bottom: 8px;
+	font-size: 0.9em;
+	color: var(--text-muted);
+	min-height: 1em;
+}
+
 .ai-harness-output {
-	white-space: pre-wrap;
 	word-break: break-word;
 	max-height: 45vh;
 	overflow-y: auto;
@@ -27,6 +33,16 @@
 	margin: 0;
 }
 
+/* Rendered Markdown inside the answer area. */
+.ai-harness-answer pre {
+	overflow-x: auto;
+}
+
+.ai-harness-answer p:last-child {
+	margin-bottom: 0;
+}
+
 .ai-harness-error {
 	color: var(--text-error);
+	white-space: pre-wrap;
 }
