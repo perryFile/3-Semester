@@ -12,3 +12,8 @@ Vi kan anvende:
 - Wire(copper)
 - Radio(air)
 - Light(fiber cable) 
+
+Serial
+- Vi starter med at holde protokollen høj, når vi sender informationer laver vi en start bit, hvor vi trækker signalet lavt.
+Parallel 
+
