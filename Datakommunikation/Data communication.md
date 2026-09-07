@@ -14,6 +14,7 @@ Vi kan anvende:
 - Light(fiber cable) 
 
 Serial
+- En ledning
 - Vi starter med at holde protokollen høj, når vi sender informationer laver vi en start bit, hvor vi trækker signalet lavt.
 Parallel 
-
+- Flere ledninger
