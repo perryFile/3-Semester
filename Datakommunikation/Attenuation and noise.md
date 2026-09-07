@@ -8,3 +8,5 @@ Noise:
 
 Distortion:
 - A change in signal shape.
+
+![[Pasted image 20260907094549.png]]
