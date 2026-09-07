@@ -1,9 +1,9 @@
 {
 	"id": "ai-harness",
 	"name": "AI Harness",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"minAppVersion": "1.0.0",
-	"description": "Ask qwen3.8 (via Ollama over an SSH tunnel) from a prompt bar in Obsidian.",
+	"description": "A persistent AI chat panel in Obsidian that talks to qwen3.8 via Ollama over an SSH tunnel.",
 	"author": "laurits",
 	"isDesktopOnly": true
 }

@@ -28,20 +28,197 @@ __export(main_exports, {
   default: () => AIHarnessPlugin
 });
 module.exports = __toCommonJS(main_exports);
+var import_obsidian2 = require("obsidian");
+
+// chat-view.ts
 var import_obsidian = require("obsidian");
+var VIEW_TYPE_CHAT = "ai-harness-chat";
+var ChatView = class extends import_obsidian.ItemView {
+  constructor(leaf, plugin) {
+    super(leaf);
+    this.controller = null;
+    this.busy = false;
+    this.plugin = plugin;
+  }
+  getViewType() {
+    return VIEW_TYPE_CHAT;
+  }
+  getDisplayText() {
+    return "AI Chat";
+  }
+  getIcon() {
+    return "message-square";
+  }
+  async onOpen() {
+    const { containerEl } = this;
+    containerEl.empty();
+    containerEl.addClass("ai-harness-chat");
+    const header = containerEl.createDiv({ cls: "ai-harness-chat-header" });
+    header.createSpan({ text: "AI Chat", cls: "ai-harness-chat-title" });
+    const newBtn = header.createEl("button", {
+      text: "New",
+      cls: "ai-harness-new-btn"
+    });
+    newBtn.addEventListener("click", () => this.newConversation());
+    this.messagesEl = containerEl.createDiv({ cls: "ai-harness-messages" });
+    const statusRow = containerEl.createDiv({ cls: "ai-harness-status-row" });
+    this.statusDot = statusRow.createSpan({ cls: "ai-harness-dot" });
+    this.statusEl = statusRow.createSpan({ cls: "ai-harness-status-text" });
+    const inputRow = containerEl.createDiv({ cls: "ai-harness-input-row" });
+    this.input = inputRow.createEl("textarea", {
+      cls: "ai-harness-input",
+      placeholder: "Ask\u2026  (Enter to send, Shift+Enter for newline)"
+    });
+    this.sendBtn = inputRow.createEl("button", {
+      text: "Send",
+      cls: "ai-harness-send-btn"
+    });
+    this.sendBtn.addEventListener("click", () => this.send());
+    this.input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        this.send();
+      }
+    });
+    this.renderHistory();
+    this.checkConnection();
+  }
+  async onClose() {
+    var _a;
+    (_a = this.controller) == null ? void 0 : _a.abort();
+    this.controller = null;
+  }
+  /** Render the persisted conversation history into the messages area. */
+  renderHistory() {
+    this.messagesEl.empty();
+    const history = this.plugin.history;
+    if (history.length === 0) {
+      this.messagesEl.createDiv({
+        cls: "ai-harness-empty",
+        text: "No messages yet. Ask something below."
+      });
+      return;
+    }
+    for (const msg of history) {
+      if (msg.role === "user" || msg.role === "assistant") {
+        this.appendMessage(msg.role, msg.content);
+      }
+    }
+    this.scrollToBottom();
+  }
+  /** Append a completed message (rendered as Markdown) to the list. */
+  appendMessage(role, content) {
+    var _a, _b;
+    const el = this.messagesEl.createDiv({
+      cls: `ai-harness-msg ai-harness-msg-${role}`
+    });
+    el.createDiv({ cls: "ai-harness-msg-role", text: role === "user" ? "You" : "AI" });
+    const body = el.createDiv({ cls: "ai-harness-msg-body" });
+    import_obsidian.MarkdownRenderer.render(
+      this.app,
+      content,
+      body,
+      (_b = (_a = this.app.workspace.getActiveFile()) == null ? void 0 : _a.path) != null ? _b : "/",
+      this
+    ).catch(() => body.setText(content));
+    this.scrollToBottom();
+  }
+  scrollToBottom() {
+    this.messagesEl.scrollTop = this.messagesEl.scrollHeight;
+  }
+  setBusy(busy) {
+    this.busy = busy;
+    this.sendBtn.disabled = busy;
+    this.input.disabled = false;
+  }
+  setStatus(ok, text) {
+    this.statusDot.className = `ai-harness-dot ${ok ? "ai-harness-dot-ok" : "ai-harness-dot-err"}`;
+    this.statusEl.setText(text);
+  }
+  async checkConnection() {
+    this.setStatus(false, "Checking connection\u2026");
+    const result = await this.plugin.checkConnection();
+    this.setStatus(result.ok, result.message);
+  }
+  async newConversation() {
+    if (this.busy)
+      return;
+    await this.plugin.clearHistory();
+    this.messagesEl.empty();
+    this.messagesEl.createDiv({
+      cls: "ai-harness-empty",
+      text: "New conversation started."
+    });
+  }
+  async send() {
+    var _a, _b;
+    const prompt = this.input.value.trim();
+    if (!prompt || this.busy)
+      return;
+    this.input.value = "";
+    this.setBusy(true);
+    this.appendMessage("user", prompt);
+    const liveEl = this.messagesEl.createDiv({
+      cls: "ai-harness-msg ai-harness-msg-assistant"
+    });
+    liveEl.createDiv({ cls: "ai-harness-msg-role", text: "AI" });
+    const liveBody = liveEl.createDiv({ cls: "ai-harness-msg-body" });
+    let acc = "";
+    this.controller = new AbortController();
+    this.setStatus(true, "Thinking\u2026");
+    try {
+      const answer = await this.plugin.askAI(prompt, this.controller.signal, {
+        onToken: (delta) => {
+          acc += delta;
+          liveBody.setText(acc);
+          this.scrollToBottom();
+        },
+        onToolCall: (name) => {
+          this.setStatus(true, `Using tool: ${name}\u2026`);
+        }
+      });
+      liveBody.empty();
+      await import_obsidian.MarkdownRenderer.render(
+        this.app,
+        answer,
+        liveBody,
+        (_b = (_a = this.app.workspace.getActiveFile()) == null ? void 0 : _a.path) != null ? _b : "/",
+        this
+      );
+      this.setStatus(true, "Ready");
+    } catch (err) {
+      const message = err.message;
+      liveBody.empty();
+      if (err.name === "AbortError") {
+        liveBody.setText("Cancelled.");
+        this.setStatus(true, "Cancelled");
+      } else {
+        liveBody.createEl("p", { cls: "ai-harness-error", text: `Error: ${message}` });
+        this.setStatus(false, "Disconnected");
+        this.checkConnection();
+      }
+    } finally {
+      this.setBusy(false);
+      this.controller = null;
+    }
+  }
+};
+
+// main.ts
 var DEFAULT_SETTINGS = {
   ollamaHost: "http://localhost:11434",
   model: "qwen3.8:27b",
-  systemPrompt: "You are a helpful assistant."
+  systemPrompt: "You are a helpful assistant.",
+  timeoutMs: 6e4
 };
-var _AIHarnessPlugin = class _AIHarnessPlugin extends import_obsidian.Plugin {
+var _AIHarnessPlugin = class _AIHarnessPlugin extends import_obsidian2.Plugin {
   constructor() {
     super(...arguments);
     this.settings = DEFAULT_SETTINGS;
     /**
      * Conversation memory: the running list of user/assistant messages for the
      * current session. Tool-call messages are transient (per request) and are not
-     * stored here. Cleared when the user hits "Clear" in the modal.
+     * stored here. Cleared when the user starts a "New conversation".
      */
     this.history = [];
     /**
@@ -110,7 +287,7 @@ ${content}`;
           if (count > 1) {
             return `Error: 'old_text' matched ${count} times in ${file.path}. Provide a longer, more unique snippet.`;
           }
-          const updated = content.replace(oldText, newText);
+          const updated = content.replace(oldText, () => newText);
           await this.app.vault.modify(file, updated);
           return `Edited ${file.path} (replaced 1 occurrence).`;
         }
@@ -150,7 +327,7 @@ ${content}`;
             if (!overwrite) {
               return `Note ${path} already exists. Set overwrite=true to replace it, or use edit_note for a targeted change.`;
             }
-            if (!(existing instanceof import_obsidian.TFile)) {
+            if (!(existing instanceof import_obsidian2.TFile)) {
               return `Error: ${path} is not a note (it's a folder).`;
             }
             await this.app.vault.modify(existing, content);
@@ -162,24 +339,54 @@ ${content}`;
     ];
   }
   async onload() {
-    await this.loadSettings();
-    this.addRibbonIcon("message-square", "Ask AI", () => {
-      new PromptModal(this.app, this).open();
+    await this.loadAll();
+    this.registerView(VIEW_TYPE_CHAT, (leaf) => new ChatView(leaf, this));
+    this.addRibbonIcon("message-square", "Open AI Chat", () => {
+      this.openChatView();
     });
     this.addCommand({
-      id: "ask-ai",
-      name: "Ask AI",
-      callback: () => new PromptModal(this.app, this).open()
+      id: "open-ai-chat",
+      name: "Open AI Chat",
+      callback: () => this.openChatView()
     });
     this.addSettingTab(new AIHarnessSettingTab(this.app, this));
   }
   onunload() {
   }
-  async loadSettings() {
-    this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
+  /** Open (or focus) the chat panel in the right sidebar. */
+  async openChatView() {
+    const { workspace } = this.app;
+    const existing = workspace.getLeavesOfType(VIEW_TYPE_CHAT)[0];
+    if (existing) {
+      workspace.revealLeaf(existing);
+      return;
+    }
+    const leaf = workspace.getLeaf(false);
+    await leaf.setViewState({ type: VIEW_TYPE_CHAT, active: true });
   }
+  /**
+   * Load persisted data, migrating the legacy settings-only format into the
+   * new `{ settings, history }` shape.
+   */
+  async loadAll() {
+    const raw = await this.loadData();
+    if (raw && typeof raw === "object" && "settings" in raw) {
+      const data = raw;
+      this.settings = Object.assign({}, DEFAULT_SETTINGS, data.settings);
+      this.history = Array.isArray(data.history) ? data.history : [];
+    } else {
+      this.settings = Object.assign({}, DEFAULT_SETTINGS, raw != null ? raw : {});
+      this.history = [];
+    }
+  }
+  /** Persist both settings and conversation history. */
+  async saveAll() {
+    const data = { settings: this.settings, history: this.history };
+    await this.saveData(data);
+  }
+  /** Persist only the settings (used by the settings tab). */
   async saveSettings() {
-    await this.saveData(this.settings);
+    await this.saveAll();
   }
   /**
    * Resolve a note to edit. If `path` is given, look it up (must be an existing
@@ -188,10 +395,10 @@ ${content}`;
   resolveNoteFile(path) {
     if (typeof path === "string" && path.trim()) {
       const f = this.app.vault.getAbstractFileByPath(path.trim());
-      return f instanceof import_obsidian.TFile ? f : null;
+      return f instanceof import_obsidian2.TFile ? f : null;
     }
     const active = this.app.workspace.getActiveFile();
-    return active instanceof import_obsidian.TFile ? active : null;
+    return active instanceof import_obsidian2.TFile ? active : null;
   }
   /**
    * Create a new note at a vault-relative path, creating parent folders as
@@ -226,9 +433,34 @@ ${content}`;
     const file = await this.app.vault.create(targetPath, content);
     return `Created ${file.path}.`;
   }
-  /** Drop all conversation memory. */
-  clearHistory() {
+  /** Drop all conversation memory and persist the reset. */
+  async clearHistory() {
     this.history = [];
+    await this.saveAll();
+  }
+  /**
+   * Check whether Ollama is reachable (e.g. the SSH tunnel is up). Pings the
+   * lightweight `/api/version` endpoint with a short timeout.
+   */
+  async checkConnection() {
+    const base = this.settings.ollamaHost.replace(/\/+$/, "");
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 3e3);
+    try {
+      const res = await fetch(`${base}/api/version`, { signal: controller.signal });
+      if (res.ok) {
+        const data = await res.json().catch(() => ({}));
+        return { ok: true, message: data.version ? `Ollama ${data.version}` : "Connected" };
+      }
+      return { ok: false, message: `Ollama responded with ${res.status}` };
+    } catch (err) {
+      if (err.name === "AbortError") {
+        return { ok: false, message: "Connection timed out (3s)" };
+      }
+      return { ok: false, message: "Could not reach Ollama \u2014 is the SSH tunnel running?" };
+    } finally {
+      clearTimeout(timer);
+    }
   }
   /**
    * Send a prompt to Ollama (qwen3.8) over the local SSH-tunneled endpoint.
@@ -260,208 +492,149 @@ ${content}`;
     }));
     const MAX_TOOL_ROUNDS = 5;
     let finalAnswer = "";
-    for (let round = 0; round <= MAX_TOOL_ROUNDS; round++) {
-      if (signal.aborted)
-        throw new DOMException("Aborted", "AbortError");
-      const body = {
-        model: this.settings.model,
-        stream: true,
-        tools: ollamaTools,
-        messages
-      };
-      let res;
-      try {
-        res = await fetch(url, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(body),
-          signal
-        });
-      } catch (err) {
-        if (err.name === "AbortError")
-          throw err;
-        throw new Error(
-          `Could not reach Ollama at ${url}. Is the SSH tunnel running? (run ./start-tunnel.sh)`
-        );
-      }
-      if (!res.ok) {
-        const text = await res.text().catch(() => "");
-        throw new Error(`Ollama responded with ${res.status}: ${text}`);
-      }
-      const reader = (_a = res.body) == null ? void 0 : _a.getReader();
-      if (!reader)
-        throw new Error("No response body to stream from.");
-      const decoder = new TextDecoder();
-      let buffer = "";
-      let content = "";
-      let toolCalls = void 0;
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done)
-          break;
-        buffer += decoder.decode(value, { stream: true });
-        let idx;
-        while ((idx = buffer.indexOf("\n")) !== -1) {
-          const line = buffer.slice(0, idx).trim();
-          buffer = buffer.slice(idx + 1);
-          if (!line)
-            continue;
-          let chunk;
-          try {
-            chunk = JSON.parse(line);
-          } catch (e) {
-            continue;
+    const timeoutMs = this.settings.timeoutMs;
+    let timedOut = false;
+    let timer;
+    const timeoutController = new AbortController();
+    const armTimeout = () => {
+      if (timer)
+        clearTimeout(timer);
+      timer = setTimeout(() => {
+        timedOut = true;
+        timeoutController.abort();
+      }, timeoutMs);
+    };
+    const onAbort = () => timeoutController.abort();
+    signal.addEventListener("abort", onAbort, { once: true });
+    armTimeout();
+    try {
+      for (let round = 0; round <= MAX_TOOL_ROUNDS; round++) {
+        if (signal.aborted)
+          throw new DOMException("Aborted", "AbortError");
+        const body = {
+          model: this.settings.model,
+          stream: true,
+          tools: ollamaTools,
+          messages
+        };
+        let res;
+        try {
+          res = await fetch(url, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(body),
+            signal: timeoutController.signal
+          });
+        } catch (err) {
+          if (err.name === "AbortError") {
+            if (timedOut) {
+              throw new Error(
+                `Request timed out (no response for ${timeoutMs}ms). Is the model still loading? You can raise the timeout in settings.`
+              );
+            }
+            throw err;
           }
-          const msg = chunk == null ? void 0 : chunk.message;
-          if (msg == null ? void 0 : msg.content) {
-            content += msg.content;
-            (_b = callbacks.onToken) == null ? void 0 : _b.call(callbacks, msg.content);
-          }
-          if (Array.isArray(msg == null ? void 0 : msg.tool_calls) && msg.tool_calls.length > 0) {
-            toolCalls = (toolCalls != null ? toolCalls : []).concat(msg.tool_calls);
-          }
-          if (chunk == null ? void 0 : chunk.done) {
-          }
+          throw new Error(
+            `Could not reach Ollama at ${url}. Is the SSH tunnel running? (run ./start-tunnel.sh)`
+          );
         }
-      }
-      if (toolCalls && toolCalls.length > 0) {
-        messages.push({ role: "assistant", content, tool_calls: toolCalls });
-        for (const call of toolCalls) {
-          const fnName = (_c = call == null ? void 0 : call.function) == null ? void 0 : _c.name;
-          const args = (_e = (_d = call == null ? void 0 : call.function) == null ? void 0 : _d.arguments) != null ? _e : {};
-          (_f = callbacks.onToolCall) == null ? void 0 : _f.call(callbacks, fnName);
-          const tool = this.tools.find((t) => t.name === fnName);
-          let result;
-          if (!tool) {
-            result = `Error: unknown tool "${fnName}".`;
-          } else {
+        if (!res.ok) {
+          const text = await res.text().catch(() => "");
+          throw new Error(`Ollama responded with ${res.status}: ${text}`);
+        }
+        const reader = (_a = res.body) == null ? void 0 : _a.getReader();
+        if (!reader)
+          throw new Error("No response body to stream from.");
+        const decoder = new TextDecoder();
+        let buffer = "";
+        let content = "";
+        let toolCalls = void 0;
+        while (true) {
+          let readResult;
+          try {
+            readResult = await reader.read();
+          } catch (err) {
+            if (timedOut) {
+              throw new Error(
+                `Request timed out (no data for ${timeoutMs}ms). You can raise the timeout in settings.`
+              );
+            }
+            throw err;
+          }
+          const { done, value } = readResult;
+          if (done)
+            break;
+          armTimeout();
+          buffer += decoder.decode(value, { stream: true });
+          let idx;
+          while ((idx = buffer.indexOf("\n")) !== -1) {
+            const line = buffer.slice(0, idx).trim();
+            buffer = buffer.slice(idx + 1);
+            if (!line)
+              continue;
+            let chunk;
             try {
-              result = await tool.run(args);
-            } catch (err) {
-              result = `Error running tool "${fnName}": ${err.message}`;
+              chunk = JSON.parse(line);
+            } catch (e) {
+              continue;
+            }
+            const msg = chunk == null ? void 0 : chunk.message;
+            if (msg == null ? void 0 : msg.content) {
+              content += msg.content;
+              (_b = callbacks.onToken) == null ? void 0 : _b.call(callbacks, msg.content);
+            }
+            if (Array.isArray(msg == null ? void 0 : msg.tool_calls) && msg.tool_calls.length > 0) {
+              toolCalls = (toolCalls != null ? toolCalls : []).concat(msg.tool_calls);
+            }
+            if (chunk == null ? void 0 : chunk.done) {
             }
           }
-          messages.push({ role: "tool", name: fnName, content: result });
         }
-        continue;
+        if (toolCalls && toolCalls.length > 0) {
+          messages.push({ role: "assistant", content, tool_calls: toolCalls });
+          for (const call of toolCalls) {
+            const fnName = (_c = call == null ? void 0 : call.function) == null ? void 0 : _c.name;
+            const args = (_e = (_d = call == null ? void 0 : call.function) == null ? void 0 : _d.arguments) != null ? _e : {};
+            (_f = callbacks.onToolCall) == null ? void 0 : _f.call(callbacks, fnName);
+            const tool = this.tools.find((t) => t.name === fnName);
+            let result;
+            if (!tool) {
+              result = `Error: unknown tool "${fnName}".`;
+            } else {
+              try {
+                result = await tool.run(args);
+              } catch (err) {
+                result = `Error running tool "${fnName}": ${err.message}`;
+              }
+            }
+            messages.push({ role: "tool", name: fnName, content: result });
+          }
+          continue;
+        }
+        finalAnswer = content;
+        break;
       }
-      finalAnswer = content;
-      break;
+      if (!finalAnswer) {
+        throw new Error("Stopped: too many tool-call rounds without a final answer.");
+      }
+      this.history.push({ role: "user", content: prompt });
+      this.history.push({ role: "assistant", content: finalAnswer });
+      const maxMessages = _AIHarnessPlugin.MAX_HISTORY_TURNS * 2;
+      if (this.history.length > maxMessages) {
+        this.history = this.history.slice(this.history.length - maxMessages);
+      }
+      return finalAnswer;
+    } finally {
+      if (timer)
+        clearTimeout(timer);
+      signal.removeEventListener("abort", onAbort);
     }
-    if (!finalAnswer) {
-      throw new Error("Stopped: too many tool-call rounds without a final answer.");
-    }
-    this.history.push({ role: "user", content: prompt });
-    this.history.push({ role: "assistant", content: finalAnswer });
-    const maxMessages = _AIHarnessPlugin.MAX_HISTORY_TURNS * 2;
-    if (this.history.length > maxMessages) {
-      this.history = this.history.slice(this.history.length - maxMessages);
-    }
-    return finalAnswer;
   }
 };
 /** Maximum number of user/assistant turns kept in memory. */
 _AIHarnessPlugin.MAX_HISTORY_TURNS = 40;
 var AIHarnessPlugin = _AIHarnessPlugin;
-var PromptModal = class extends import_obsidian.Modal {
-  constructor(app, plugin) {
-    super(app);
-    this.controller = null;
-    this.plugin = plugin;
-  }
-  onOpen() {
-    const { contentEl } = this;
-    contentEl.empty();
-    contentEl.addClass("ai-harness-modal");
-    contentEl.createEl("h3", { text: "Ask AI" });
-    this.input = contentEl.createEl("textarea", {
-      cls: "ai-harness-input",
-      placeholder: "Type your prompt\u2026  (Ctrl/\u2318 + Enter to send)"
-    });
-    const actions = contentEl.createDiv({ cls: "ai-harness-actions" });
-    this.sendBtn = new import_obsidian.ButtonComponent(actions).setButtonText("Send").setCta().onClick(() => this.send());
-    this.cancelBtn = new import_obsidian.ButtonComponent(actions).setButtonText("Cancel").setDisabled(true).onClick(() => {
-      var _a;
-      return (_a = this.controller) == null ? void 0 : _a.abort();
-    });
-    this.clearBtn = new import_obsidian.ButtonComponent(actions).setButtonText("Clear").onClick(() => this.clear());
-    this.closeBtn = new import_obsidian.ButtonComponent(actions).setButtonText("Close").onClick(() => this.close());
-    this.statusEl = contentEl.createDiv({ cls: "ai-harness-status" });
-    this.output = contentEl.createDiv({ cls: "ai-harness-output" });
-    this.input.addEventListener("keydown", (e) => {
-      if ((e.ctrlKey || e.metaKey) && e.key === "Enter") {
-        e.preventDefault();
-        this.send();
-      }
-    });
-    this.input.focus();
-  }
-  setBusy(busy) {
-    this.sendBtn.setDisabled(busy);
-    this.cancelBtn.setDisabled(!busy);
-    this.clearBtn.setDisabled(busy);
-    this.closeBtn.setDisabled(busy);
-  }
-  clear() {
-    this.plugin.clearHistory();
-    this.output.empty();
-    this.statusEl.empty();
-  }
-  async send() {
-    var _a, _b;
-    const prompt = this.input.value.trim();
-    if (!prompt)
-      return;
-    this.controller = new AbortController();
-    this.setBusy(true);
-    this.output.empty();
-    this.statusEl.setText("Thinking\u2026");
-    const liveEl = this.output.createDiv({ cls: "ai-harness-answer" });
-    let acc = "";
-    try {
-      const answer = await this.plugin.askAI(prompt, this.controller.signal, {
-        onToken: (delta) => {
-          acc += delta;
-          liveEl.setText(acc);
-          this.output.scrollTop = this.output.scrollHeight;
-        },
-        onToolCall: (name) => {
-          this.statusEl.setText(`Using tool: ${name}\u2026`);
-        }
-      });
-      this.output.empty();
-      const rendered = this.output.createDiv({ cls: "ai-harness-answer" });
-      await import_obsidian.MarkdownRenderer.render(
-        this.app,
-        answer,
-        rendered,
-        (_b = (_a = this.app.workspace.getActiveFile()) == null ? void 0 : _a.path) != null ? _b : "/",
-        this
-      );
-      this.statusEl.empty();
-    } catch (err) {
-      const message = err.message;
-      this.output.empty();
-      if (err.name === "AbortError") {
-        this.statusEl.setText("Cancelled.");
-      } else {
-        this.output.createEl("p", {
-          cls: "ai-harness-error",
-          text: `Error: ${message}`
-        });
-      }
-    } finally {
-      this.setBusy(false);
-      this.controller = null;
-    }
-  }
-  onClose() {
-    var _a;
-    (_a = this.controller) == null ? void 0 : _a.abort();
-    this.contentEl.empty();
-  }
-};
-var AIHarnessSettingTab = class extends import_obsidian.PluginSettingTab {
+var AIHarnessSettingTab = class extends import_obsidian2.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
     this.plugin = plugin;
@@ -469,21 +642,29 @@ var AIHarnessSettingTab = class extends import_obsidian.PluginSettingTab {
   display() {
     const { containerEl } = this;
     containerEl.empty();
-    new import_obsidian.Setting(containerEl).setName("Ollama host").setDesc("Base URL of Ollama (behind your SSH tunnel).").addText(
+    new import_obsidian2.Setting(containerEl).setName("Ollama host").setDesc("Base URL of Ollama (behind your SSH tunnel).").addText(
       (text) => text.setPlaceholder("http://localhost:11434").setValue(this.plugin.settings.ollamaHost).onChange(async (value) => {
         this.plugin.settings.ollamaHost = value;
         await this.plugin.saveSettings();
       })
     );
-    new import_obsidian.Setting(containerEl).setName("Model").setDesc("Ollama model name to use.").addText(
+    new import_obsidian2.Setting(containerEl).setName("Model").setDesc("Ollama model name to use.").addText(
       (text) => text.setPlaceholder("qwen3.8:27b").setValue(this.plugin.settings.model).onChange(async (value) => {
         this.plugin.settings.model = value;
         await this.plugin.saveSettings();
       })
     );
-    new import_obsidian.Setting(containerEl).setName("System prompt").setDesc("Optional system prompt prepended to every request.").addTextArea(
+    new import_obsidian2.Setting(containerEl).setName("System prompt").setDesc("Optional system prompt prepended to every request.").addTextArea(
       (ta) => ta.setPlaceholder("You are a helpful assistant.").setValue(this.plugin.settings.systemPrompt).onChange(async (value) => {
         this.plugin.settings.systemPrompt = value;
+        await this.plugin.saveSettings();
+      })
+    );
+    new import_obsidian2.Setting(containerEl).setName("Request timeout").setDesc(
+      "Abort a request if no data arrives for this long (seconds). Raise it if large models take a while to start responding."
+    ).addSlider(
+      (slider) => slider.setLimits(5, 300, 5).setValue(Math.round(this.plugin.settings.timeoutMs / 1e3)).setDynamicTooltip().onChange(async (value) => {
+        this.plugin.settings.timeoutMs = value * 1e3;
         await this.plugin.saveSettings();
       })
     );
