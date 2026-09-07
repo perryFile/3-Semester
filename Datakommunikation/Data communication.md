@@ -4,4 +4,5 @@ Service:
 - Delivery
 - Accuracy
 - Timeliness
-- (Jitter)
+- ([[Jitter]])
+
