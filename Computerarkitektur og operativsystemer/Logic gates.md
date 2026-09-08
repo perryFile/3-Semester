@@ -3,6 +3,8 @@
 
 ![[Pasted image 20260901130341.png]]
 
+Husk XOR gates har dens egen symbol ved calculus: $\oplus$
+
 
 ## Fysiske kredse 
 
@@ -10,4 +12,5 @@
 
 
 Hver gang man ser en cirkel er kredsløbet inveteret. 
+
 
