@@ -1,0 +1,1 @@
+Rom er read only memory. Typisk hvor program data ligger. Er præprogrammeret.

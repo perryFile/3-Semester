@@ -1,3 +1,4 @@
 {
-  "attachmentFolderPath": "./Bilag"
+  "attachmentFolderPath": "./Bilag",
+  "alwaysUpdateLinks": true
 }
