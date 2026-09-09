@@ -1,0 +1,9 @@
+{
+  "settings": {
+    "ollamaHost": "http://localhost:11434",
+    "model": "qwen3.8:27b",
+    "systemPrompt": "You are a helpful assistant.",
+    "timeoutMs": 60000
+  },
+  "history": []
+}
