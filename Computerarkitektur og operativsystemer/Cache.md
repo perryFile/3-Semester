@@ -1,1 +1,1 @@
-Cache er en lille smule data som sidder ved [[CPU]]'en. Først vil cpu'en tjekke om det 
+Cache er en lille smule data som sidder ved [[CPU]]'en. Først vil cpu'en tjekke om det information der skal bruges er på cacheen, hvis ikke vil den kigge i memory [[RAM]], for så at hente det ind på cachen. 
