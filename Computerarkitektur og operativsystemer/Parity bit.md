@@ -1,0 +1,1 @@
+Vi kan bruge parity bits 
