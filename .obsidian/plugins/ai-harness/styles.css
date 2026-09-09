@@ -63,8 +63,28 @@
 	border-bottom: 1px solid var(--background-modifier-border);
 }
 
+.ai-harness-chat-actions {
+	display: flex;
+	gap: 6px;
+	align-items: center;
+}
+
+.ai-harness-close-btn:hover {
+	color: var(--text-normal);
+	border-color: var(--text-error, var(--interactive-accent));
+}
+
 .ai-harness-chat-title {
 	font-weight: 600;
+	display: inline-flex;
+	align-items: baseline;
+	gap: 6px;
+}
+
+.ai-harness-chat-version {
+	font-weight: 400;
+	font-size: 0.75em;
+	color: var(--text-muted);
 }
 
 .ai-harness-new-btn {

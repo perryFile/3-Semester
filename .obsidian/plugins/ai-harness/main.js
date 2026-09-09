@@ -30,9 +30,11 @@ __export(main_exports, {
 module.exports = __toCommonJS(main_exports);
 var import_obsidian2 = require("obsidian");
 
+// types.ts
+var VIEW_TYPE_CHAT = "ai-harness-chat";
+
 // chat-view.ts
 var import_obsidian = require("obsidian");
-var VIEW_TYPE_CHAT = "ai-harness-chat";
 var ChatView = class extends import_obsidian.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
@@ -54,12 +56,20 @@ var ChatView = class extends import_obsidian.ItemView {
     containerEl.empty();
     containerEl.addClass("ai-harness-chat");
     const header = containerEl.createDiv({ cls: "ai-harness-chat-header" });
-    header.createSpan({ text: "AI Chat", cls: "ai-harness-chat-title" });
-    const newBtn = header.createEl("button", {
+    const title = header.createSpan({ cls: "ai-harness-chat-title" });
+    title.createSpan({ text: "AI Chat" });
+    title.createSpan({ text: `v${this.plugin.version}`, cls: "ai-harness-chat-version" });
+    const actions = header.createSpan({ cls: "ai-harness-chat-actions" });
+    const newBtn = actions.createEl("button", {
       text: "New",
       cls: "ai-harness-new-btn"
     });
     newBtn.addEventListener("click", () => this.newConversation());
+    const closeBtn = actions.createEl("button", {
+      text: "Close",
+      cls: "ai-harness-new-btn ai-harness-close-btn"
+    });
+    closeBtn.addEventListener("click", () => this.plugin.closeChatView());
     this.messagesEl = containerEl.createDiv({ cls: "ai-harness-messages" });
     const statusRow = containerEl.createDiv({ cls: "ai-harness-status-row" });
     this.statusDot = statusRow.createSpan({ cls: "ai-harness-dot" });
@@ -204,6 +214,62 @@ var ChatView = class extends import_obsidian.ItemView {
   }
 };
 
+// ndjson.ts
+var NdjsonAccumulator = class {
+  constructor() {
+    this.buffer = "";
+  }
+  /**
+   * Append a decoded chunk of text and return every complete JSON value that
+   * can now be parsed. Incomplete trailing data stays buffered.
+   */
+  feed(text) {
+    this.buffer += text;
+    const out = [];
+    let idx;
+    while ((idx = this.buffer.indexOf("\n")) !== -1) {
+      const line = this.buffer.slice(0, idx).trim();
+      this.buffer = this.buffer.slice(idx + 1);
+      if (!line)
+        continue;
+      try {
+        out.push(JSON.parse(line));
+      } catch (e) {
+      }
+    }
+    return out;
+  }
+  /**
+   * Best-effort parse of any remaining buffered line that never received a
+   * trailing newline. Clears the buffer. Returns `[]` if nothing parseable.
+   */
+  flush() {
+    const rest = this.buffer.trim();
+    this.buffer = "";
+    if (!rest)
+      return [];
+    try {
+      return [JSON.parse(rest)];
+    } catch (e) {
+      return [];
+    }
+  }
+};
+
+// manifest.json
+var manifest_default = {
+  id: "ai-harness",
+  name: "AI Harness",
+  version: "0.3.0",
+  minAppVersion: "1.0.0",
+  description: "A persistent AI chat panel in Obsidian that talks to qwen3.8 via Ollama over an SSH tunnel.",
+  author: "laurits",
+  isDesktopOnly: true
+};
+
+// version.ts
+var HARNESS_VERSION = manifest_default.version;
+
 // main.ts
 var DEFAULT_SETTINGS = {
   ollamaHost: "http://localhost:11434",
@@ -215,6 +281,8 @@ var _AIHarnessPlugin = class _AIHarnessPlugin extends import_obsidian2.Plugin {
   constructor() {
     super(...arguments);
     this.settings = DEFAULT_SETTINGS;
+    /** Plugin version (kept in sync with `manifest.json`). */
+    this.version = HARNESS_VERSION;
     /**
      * Conversation memory: the running list of user/assistant messages for the
      * current session. Tool-call messages are transient (per request) and are not
@@ -341,17 +409,31 @@ ${content}`;
   async onload() {
     await this.loadAll();
     this.registerView(VIEW_TYPE_CHAT, (leaf) => new ChatView(leaf, this));
-    this.addRibbonIcon("message-square", "Open AI Chat", () => {
-      this.openChatView();
+    this.addRibbonIcon("message-square", "AI Chat (toggle)", () => {
+      this.toggleChatView();
+    });
+    this.addCommand({
+      id: "toggle-ai-chat",
+      name: "Toggle AI Chat",
+      callback: () => this.toggleChatView()
     });
     this.addCommand({
       id: "open-ai-chat",
       name: "Open AI Chat",
       callback: () => this.openChatView()
     });
+    this.addCommand({
+      id: "close-ai-chat",
+      name: "Close AI Chat",
+      callback: () => this.closeChatView()
+    });
     this.addSettingTab(new AIHarnessSettingTab(this.app, this));
   }
   onunload() {
+  }
+  /** True if any visible chat panel is currently open. */
+  hasOpenChat() {
+    return this.app.workspace.getLeavesOfType(VIEW_TYPE_CHAT).length > 0;
   }
   /** Open (or focus) the chat panel in the right sidebar. */
   async openChatView() {
@@ -361,8 +443,23 @@ ${content}`;
       workspace.revealLeaf(existing);
       return;
     }
-    const leaf = workspace.getLeaf(false);
+    let leaf = workspace.getRightLeaf(true);
+    if (!leaf) {
+      leaf = workspace.getLeaf("split", "vertical");
+    }
     await leaf.setViewState({ type: VIEW_TYPE_CHAT, active: true });
+  }
+  /** Close (detach) any open chat panel. */
+  closeChatView() {
+    this.app.workspace.detachLeavesOfType(VIEW_TYPE_CHAT);
+  }
+  /** Open the chat if it isn't open, otherwise close it. */
+  async toggleChatView() {
+    if (this.hasOpenChat()) {
+      this.closeChatView();
+    } else {
+      await this.openChatView();
+    }
   }
   /**
    * Load persisted data, migrating the legacy settings-only format into the
@@ -474,7 +571,7 @@ ${content}`;
    * Returns the full assembled answer text.
    */
   async askAI(prompt, signal, callbacks = {}) {
-    var _a, _b, _c, _d, _e, _f;
+    var _a, _b, _c, _d, _e;
     const base = this.settings.ollamaHost.replace(/\/+$/, "");
     const url = `${base}/api/chat`;
     const messages = [
@@ -546,9 +643,22 @@ ${content}`;
         if (!reader)
           throw new Error("No response body to stream from.");
         const decoder = new TextDecoder();
-        let buffer = "";
-        let content = "";
-        let toolCalls = void 0;
+        const accumulator = new NdjsonAccumulator();
+        const stream = { content: "", toolCalls: void 0 };
+        const handleChunk = (chunk) => {
+          var _a2, _b2;
+          const c = chunk;
+          const msg = c == null ? void 0 : c.message;
+          if (!msg)
+            return;
+          if (msg.content) {
+            stream.content += msg.content;
+            (_a2 = callbacks.onToken) == null ? void 0 : _a2.call(callbacks, msg.content);
+          }
+          if (Array.isArray(msg.tool_calls) && msg.tool_calls.length > 0) {
+            stream.toolCalls = ((_b2 = stream.toolCalls) != null ? _b2 : []).concat(msg.tool_calls);
+          }
+        };
         while (true) {
           let readResult;
           try {
@@ -562,40 +672,24 @@ ${content}`;
             throw err;
           }
           const { done, value } = readResult;
-          if (done)
+          if (done) {
+            for (const chunk of accumulator.flush())
+              handleChunk(chunk);
             break;
+          }
           armTimeout();
-          buffer += decoder.decode(value, { stream: true });
-          let idx;
-          while ((idx = buffer.indexOf("\n")) !== -1) {
-            const line = buffer.slice(0, idx).trim();
-            buffer = buffer.slice(idx + 1);
-            if (!line)
-              continue;
-            let chunk;
-            try {
-              chunk = JSON.parse(line);
-            } catch (e) {
-              continue;
-            }
-            const msg = chunk == null ? void 0 : chunk.message;
-            if (msg == null ? void 0 : msg.content) {
-              content += msg.content;
-              (_b = callbacks.onToken) == null ? void 0 : _b.call(callbacks, msg.content);
-            }
-            if (Array.isArray(msg == null ? void 0 : msg.tool_calls) && msg.tool_calls.length > 0) {
-              toolCalls = (toolCalls != null ? toolCalls : []).concat(msg.tool_calls);
-            }
-            if (chunk == null ? void 0 : chunk.done) {
-            }
+          for (const chunk of accumulator.feed(decoder.decode(value, { stream: true }))) {
+            handleChunk(chunk);
           }
         }
+        const content = stream.content;
+        const toolCalls = stream.toolCalls;
         if (toolCalls && toolCalls.length > 0) {
           messages.push({ role: "assistant", content, tool_calls: toolCalls });
           for (const call of toolCalls) {
-            const fnName = (_c = call == null ? void 0 : call.function) == null ? void 0 : _c.name;
-            const args = (_e = (_d = call == null ? void 0 : call.function) == null ? void 0 : _d.arguments) != null ? _e : {};
-            (_f = callbacks.onToolCall) == null ? void 0 : _f.call(callbacks, fnName);
+            const fnName = (_b = call == null ? void 0 : call.function) == null ? void 0 : _b.name;
+            const args = (_d = (_c = call == null ? void 0 : call.function) == null ? void 0 : _c.arguments) != null ? _d : {};
+            (_e = callbacks.onToolCall) == null ? void 0 : _e.call(callbacks, fnName);
             const tool = this.tools.find((t) => t.name === fnName);
             let result;
             if (!tool) {
@@ -642,6 +736,7 @@ var AIHarnessSettingTab = class extends import_obsidian2.PluginSettingTab {
   display() {
     const { containerEl } = this;
     containerEl.empty();
+    containerEl.createEl("h2", { text: `AI Harness (v${this.plugin.version})` });
     new import_obsidian2.Setting(containerEl).setName("Ollama host").setDesc("Base URL of Ollama (behind your SSH tunnel).").addText(
       (text) => text.setPlaceholder("http://localhost:11434").setValue(this.plugin.settings.ollamaHost).onChange(async (value) => {
         this.plugin.settings.ollamaHost = value;
