@@ -1,0 +1,1 @@
+Cache er en lille smule data som sidder ved [[CPU]]'en. Først vil cpu'en tjekke om det 
