@@ -4,6 +4,7 @@ If you want to view the source, see main.ts in this folder.
 */
 
 "use strict";
+var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
@@ -11,6 +12,9 @@ var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __reflectGet = Reflect.get;
 var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __commonJS = (cb, mod) => function __require() {
+  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+};
 var __export = (target, all) => {
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: true });
@@ -23,6 +27,14 @@ var __copyProps = (to, from, except, desc) => {
   }
   return to;
 };
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+  // If the importer is in node compatibility mode or this is not an ESM
+  // file that has been converted to a CommonJS file using a Babel-
+  // compatible transform (i.e. "__esModule" has not been set), then set
+  // "default" to the CommonJS "module.exports" for node compatibility.
+  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+  mod
+));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 var __publicField = (obj, key, value) => {
   __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
@@ -59,6 +71,473 @@ var __privateMethod = (obj, member, method) => {
   return method;
 };
 var __superGet = (cls, obj, key) => __reflectGet(__getProtoOf(cls), key, obj);
+
+// node_modules/lz-string/libs/lz-string.js
+var require_lz_string = __commonJS({
+  "node_modules/lz-string/libs/lz-string.js"(exports, module2) {
+    var LZString = function() {
+      var f = String.fromCharCode;
+      var keyStrBase64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+      var keyStrUriSafe = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-$";
+      var baseReverseDic = {};
+      function getBaseValue(alphabet, character) {
+        if (!baseReverseDic[alphabet]) {
+          baseReverseDic[alphabet] = {};
+          for (var i = 0; i < alphabet.length; i++) {
+            baseReverseDic[alphabet][alphabet.charAt(i)] = i;
+          }
+        }
+        return baseReverseDic[alphabet][character];
+      }
+      var LZString2 = {
+        compressToBase64: function(input) {
+          if (input == null)
+            return "";
+          var res = LZString2._compress(input, 6, function(a) {
+            return keyStrBase64.charAt(a);
+          });
+          switch (res.length % 4) {
+            default:
+            case 0:
+              return res;
+            case 1:
+              return res + "===";
+            case 2:
+              return res + "==";
+            case 3:
+              return res + "=";
+          }
+        },
+        decompressFromBase64: function(input) {
+          if (input == null)
+            return "";
+          if (input == "")
+            return null;
+          return LZString2._decompress(input.length, 32, function(index) {
+            return getBaseValue(keyStrBase64, input.charAt(index));
+          });
+        },
+        compressToUTF16: function(input) {
+          if (input == null)
+            return "";
+          return LZString2._compress(input, 15, function(a) {
+            return f(a + 32);
+          }) + " ";
+        },
+        decompressFromUTF16: function(compressed) {
+          if (compressed == null)
+            return "";
+          if (compressed == "")
+            return null;
+          return LZString2._decompress(compressed.length, 16384, function(index) {
+            return compressed.charCodeAt(index) - 32;
+          });
+        },
+        //compress into uint8array (UCS-2 big endian format)
+        compressToUint8Array: function(uncompressed) {
+          var compressed = LZString2.compress(uncompressed);
+          var buf = new Uint8Array(compressed.length * 2);
+          for (var i = 0, TotalLen = compressed.length; i < TotalLen; i++) {
+            var current_value = compressed.charCodeAt(i);
+            buf[i * 2] = current_value >>> 8;
+            buf[i * 2 + 1] = current_value % 256;
+          }
+          return buf;
+        },
+        //decompress from uint8array (UCS-2 big endian format)
+        decompressFromUint8Array: function(compressed) {
+          if (compressed === null || compressed === void 0) {
+            return LZString2.decompress(compressed);
+          } else {
+            var buf = new Array(compressed.length / 2);
+            for (var i = 0, TotalLen = buf.length; i < TotalLen; i++) {
+              buf[i] = compressed[i * 2] * 256 + compressed[i * 2 + 1];
+            }
+            var result = [];
+            buf.forEach(function(c) {
+              result.push(f(c));
+            });
+            return LZString2.decompress(result.join(""));
+          }
+        },
+        //compress into a string that is already URI encoded
+        compressToEncodedURIComponent: function(input) {
+          if (input == null)
+            return "";
+          return LZString2._compress(input, 6, function(a) {
+            return keyStrUriSafe.charAt(a);
+          });
+        },
+        //decompress from an output of compressToEncodedURIComponent
+        decompressFromEncodedURIComponent: function(input) {
+          if (input == null)
+            return "";
+          if (input == "")
+            return null;
+          input = input.replace(/ /g, "+");
+          return LZString2._decompress(input.length, 32, function(index) {
+            return getBaseValue(keyStrUriSafe, input.charAt(index));
+          });
+        },
+        compress: function(uncompressed) {
+          return LZString2._compress(uncompressed, 16, function(a) {
+            return f(a);
+          });
+        },
+        _compress: function(uncompressed, bitsPerChar, getCharFromInt) {
+          if (uncompressed == null)
+            return "";
+          var i, value, context_dictionary = {}, context_dictionaryToCreate = {}, context_c = "", context_wc = "", context_w = "", context_enlargeIn = 2, context_dictSize = 3, context_numBits = 2, context_data = [], context_data_val = 0, context_data_position = 0, ii;
+          for (ii = 0; ii < uncompressed.length; ii += 1) {
+            context_c = uncompressed.charAt(ii);
+            if (!Object.prototype.hasOwnProperty.call(context_dictionary, context_c)) {
+              context_dictionary[context_c] = context_dictSize++;
+              context_dictionaryToCreate[context_c] = true;
+            }
+            context_wc = context_w + context_c;
+            if (Object.prototype.hasOwnProperty.call(context_dictionary, context_wc)) {
+              context_w = context_wc;
+            } else {
+              if (Object.prototype.hasOwnProperty.call(context_dictionaryToCreate, context_w)) {
+                if (context_w.charCodeAt(0) < 256) {
+                  for (i = 0; i < context_numBits; i++) {
+                    context_data_val = context_data_val << 1;
+                    if (context_data_position == bitsPerChar - 1) {
+                      context_data_position = 0;
+                      context_data.push(getCharFromInt(context_data_val));
+                      context_data_val = 0;
+                    } else {
+                      context_data_position++;
+                    }
+                  }
+                  value = context_w.charCodeAt(0);
+                  for (i = 0; i < 8; i++) {
+                    context_data_val = context_data_val << 1 | value & 1;
+                    if (context_data_position == bitsPerChar - 1) {
+                      context_data_position = 0;
+                      context_data.push(getCharFromInt(context_data_val));
+                      context_data_val = 0;
+                    } else {
+                      context_data_position++;
+                    }
+                    value = value >> 1;
+                  }
+                } else {
+                  value = 1;
+                  for (i = 0; i < context_numBits; i++) {
+                    context_data_val = context_data_val << 1 | value;
+                    if (context_data_position == bitsPerChar - 1) {
+                      context_data_position = 0;
+                      context_data.push(getCharFromInt(context_data_val));
+                      context_data_val = 0;
+                    } else {
+                      context_data_position++;
+                    }
+                    value = 0;
+                  }
+                  value = context_w.charCodeAt(0);
+                  for (i = 0; i < 16; i++) {
+                    context_data_val = context_data_val << 1 | value & 1;
+                    if (context_data_position == bitsPerChar - 1) {
+                      context_data_position = 0;
+                      context_data.push(getCharFromInt(context_data_val));
+                      context_data_val = 0;
+                    } else {
+                      context_data_position++;
+                    }
+                    value = value >> 1;
+                  }
+                }
+                context_enlargeIn--;
+                if (context_enlargeIn == 0) {
+                  context_enlargeIn = Math.pow(2, context_numBits);
+                  context_numBits++;
+                }
+                delete context_dictionaryToCreate[context_w];
+              } else {
+                value = context_dictionary[context_w];
+                for (i = 0; i < context_numBits; i++) {
+                  context_data_val = context_data_val << 1 | value & 1;
+                  if (context_data_position == bitsPerChar - 1) {
+                    context_data_position = 0;
+                    context_data.push(getCharFromInt(context_data_val));
+                    context_data_val = 0;
+                  } else {
+                    context_data_position++;
+                  }
+                  value = value >> 1;
+                }
+              }
+              context_enlargeIn--;
+              if (context_enlargeIn == 0) {
+                context_enlargeIn = Math.pow(2, context_numBits);
+                context_numBits++;
+              }
+              context_dictionary[context_wc] = context_dictSize++;
+              context_w = String(context_c);
+            }
+          }
+          if (context_w !== "") {
+            if (Object.prototype.hasOwnProperty.call(context_dictionaryToCreate, context_w)) {
+              if (context_w.charCodeAt(0) < 256) {
+                for (i = 0; i < context_numBits; i++) {
+                  context_data_val = context_data_val << 1;
+                  if (context_data_position == bitsPerChar - 1) {
+                    context_data_position = 0;
+                    context_data.push(getCharFromInt(context_data_val));
+                    context_data_val = 0;
+                  } else {
+                    context_data_position++;
+                  }
+                }
+                value = context_w.charCodeAt(0);
+                for (i = 0; i < 8; i++) {
+                  context_data_val = context_data_val << 1 | value & 1;
+                  if (context_data_position == bitsPerChar - 1) {
+                    context_data_position = 0;
+                    context_data.push(getCharFromInt(context_data_val));
+                    context_data_val = 0;
+                  } else {
+                    context_data_position++;
+                  }
+                  value = value >> 1;
+                }
+              } else {
+                value = 1;
+                for (i = 0; i < context_numBits; i++) {
+                  context_data_val = context_data_val << 1 | value;
+                  if (context_data_position == bitsPerChar - 1) {
+                    context_data_position = 0;
+                    context_data.push(getCharFromInt(context_data_val));
+                    context_data_val = 0;
+                  } else {
+                    context_data_position++;
+                  }
+                  value = 0;
+                }
+                value = context_w.charCodeAt(0);
+                for (i = 0; i < 16; i++) {
+                  context_data_val = context_data_val << 1 | value & 1;
+                  if (context_data_position == bitsPerChar - 1) {
+                    context_data_position = 0;
+                    context_data.push(getCharFromInt(context_data_val));
+                    context_data_val = 0;
+                  } else {
+                    context_data_position++;
+                  }
+                  value = value >> 1;
+                }
+              }
+              context_enlargeIn--;
+              if (context_enlargeIn == 0) {
+                context_enlargeIn = Math.pow(2, context_numBits);
+                context_numBits++;
+              }
+              delete context_dictionaryToCreate[context_w];
+            } else {
+              value = context_dictionary[context_w];
+              for (i = 0; i < context_numBits; i++) {
+                context_data_val = context_data_val << 1 | value & 1;
+                if (context_data_position == bitsPerChar - 1) {
+                  context_data_position = 0;
+                  context_data.push(getCharFromInt(context_data_val));
+                  context_data_val = 0;
+                } else {
+                  context_data_position++;
+                }
+                value = value >> 1;
+              }
+            }
+            context_enlargeIn--;
+            if (context_enlargeIn == 0) {
+              context_enlargeIn = Math.pow(2, context_numBits);
+              context_numBits++;
+            }
+          }
+          value = 2;
+          for (i = 0; i < context_numBits; i++) {
+            context_data_val = context_data_val << 1 | value & 1;
+            if (context_data_position == bitsPerChar - 1) {
+              context_data_position = 0;
+              context_data.push(getCharFromInt(context_data_val));
+              context_data_val = 0;
+            } else {
+              context_data_position++;
+            }
+            value = value >> 1;
+          }
+          while (true) {
+            context_data_val = context_data_val << 1;
+            if (context_data_position == bitsPerChar - 1) {
+              context_data.push(getCharFromInt(context_data_val));
+              break;
+            } else
+              context_data_position++;
+          }
+          return context_data.join("");
+        },
+        decompress: function(compressed) {
+          if (compressed == null)
+            return "";
+          if (compressed == "")
+            return null;
+          return LZString2._decompress(compressed.length, 32768, function(index) {
+            return compressed.charCodeAt(index);
+          });
+        },
+        _decompress: function(length, resetValue, getNextValue) {
+          var dictionary = [], next, enlargeIn = 4, dictSize = 4, numBits = 3, entry = "", result = [], i, w, bits, resb, maxpower, power, c, data = { val: getNextValue(0), position: resetValue, index: 1 };
+          for (i = 0; i < 3; i += 1) {
+            dictionary[i] = i;
+          }
+          bits = 0;
+          maxpower = Math.pow(2, 2);
+          power = 1;
+          while (power != maxpower) {
+            resb = data.val & data.position;
+            data.position >>= 1;
+            if (data.position == 0) {
+              data.position = resetValue;
+              data.val = getNextValue(data.index++);
+            }
+            bits |= (resb > 0 ? 1 : 0) * power;
+            power <<= 1;
+          }
+          switch (next = bits) {
+            case 0:
+              bits = 0;
+              maxpower = Math.pow(2, 8);
+              power = 1;
+              while (power != maxpower) {
+                resb = data.val & data.position;
+                data.position >>= 1;
+                if (data.position == 0) {
+                  data.position = resetValue;
+                  data.val = getNextValue(data.index++);
+                }
+                bits |= (resb > 0 ? 1 : 0) * power;
+                power <<= 1;
+              }
+              c = f(bits);
+              break;
+            case 1:
+              bits = 0;
+              maxpower = Math.pow(2, 16);
+              power = 1;
+              while (power != maxpower) {
+                resb = data.val & data.position;
+                data.position >>= 1;
+                if (data.position == 0) {
+                  data.position = resetValue;
+                  data.val = getNextValue(data.index++);
+                }
+                bits |= (resb > 0 ? 1 : 0) * power;
+                power <<= 1;
+              }
+              c = f(bits);
+              break;
+            case 2:
+              return "";
+          }
+          dictionary[3] = c;
+          w = c;
+          result.push(c);
+          while (true) {
+            if (data.index > length) {
+              return "";
+            }
+            bits = 0;
+            maxpower = Math.pow(2, numBits);
+            power = 1;
+            while (power != maxpower) {
+              resb = data.val & data.position;
+              data.position >>= 1;
+              if (data.position == 0) {
+                data.position = resetValue;
+                data.val = getNextValue(data.index++);
+              }
+              bits |= (resb > 0 ? 1 : 0) * power;
+              power <<= 1;
+            }
+            switch (c = bits) {
+              case 0:
+                bits = 0;
+                maxpower = Math.pow(2, 8);
+                power = 1;
+                while (power != maxpower) {
+                  resb = data.val & data.position;
+                  data.position >>= 1;
+                  if (data.position == 0) {
+                    data.position = resetValue;
+                    data.val = getNextValue(data.index++);
+                  }
+                  bits |= (resb > 0 ? 1 : 0) * power;
+                  power <<= 1;
+                }
+                dictionary[dictSize++] = f(bits);
+                c = dictSize - 1;
+                enlargeIn--;
+                break;
+              case 1:
+                bits = 0;
+                maxpower = Math.pow(2, 16);
+                power = 1;
+                while (power != maxpower) {
+                  resb = data.val & data.position;
+                  data.position >>= 1;
+                  if (data.position == 0) {
+                    data.position = resetValue;
+                    data.val = getNextValue(data.index++);
+                  }
+                  bits |= (resb > 0 ? 1 : 0) * power;
+                  power <<= 1;
+                }
+                dictionary[dictSize++] = f(bits);
+                c = dictSize - 1;
+                enlargeIn--;
+                break;
+              case 2:
+                return result.join("");
+            }
+            if (enlargeIn == 0) {
+              enlargeIn = Math.pow(2, numBits);
+              numBits++;
+            }
+            if (dictionary[c]) {
+              entry = dictionary[c];
+            } else {
+              if (c === dictSize) {
+                entry = w + w.charAt(0);
+              } else {
+                return null;
+              }
+            }
+            result.push(entry);
+            dictionary[dictSize++] = w + entry.charAt(0);
+            enlargeIn--;
+            w = entry;
+            if (enlargeIn == 0) {
+              enlargeIn = Math.pow(2, numBits);
+              numBits++;
+            }
+          }
+        }
+      };
+      return LZString2;
+    }();
+    if (typeof define === "function" && define.amd) {
+      define(function() {
+        return LZString;
+      });
+    } else if (typeof module2 !== "undefined" && module2 != null) {
+      module2.exports = LZString;
+    } else if (typeof angular !== "undefined" && angular != null) {
+      angular.module("LZString", []).factory("LZString", function() {
+        return LZString;
+      });
+    }
+  }
+});
 
 // main.ts
 var main_exports = {};
@@ -298,7 +777,7 @@ var NdjsonAccumulator = class {
 var manifest_default = {
   id: "ai-harness",
   name: "AI Harness",
-  version: "0.4.0",
+  version: "0.5.0",
   minAppVersion: "1.0.0",
   description: "A persistent AI chat panel in Obsidian that talks to qwen3.8 via Ollama over an SSH tunnel.",
   author: "laurits",
@@ -102965,6 +103444,340 @@ async function extractPdfText(bytes, maxPages = 200) {
   }
 }
 
+// excalidraw.ts
+var import_lz_string = __toESM(require_lz_string());
+var LZ = import_lz_string.default;
+function decompressExcalidraw(block) {
+  const cleaned = block.replace(/\r/g, "").replace(/\n/g, "");
+  if (cleaned.length === 0)
+    return null;
+  const out = LZ.decompressFromBase64(cleaned);
+  return out && out.trim() !== "" ? out : null;
+}
+function extractSceneJson(markdown) {
+  const fenceRe = /```(?:json|compressed-json|excalidraw)[^\n]*\n([\s\S]*?)```/i;
+  const fence = markdown.match(fenceRe);
+  if (fence && fence[1].trim()) {
+    const candidate = fence[1].trim();
+    if (candidate.startsWith("{") && candidate.endsWith("}")) {
+      return candidate;
+    }
+    const recovered = decompressExcalidraw(candidate);
+    if (recovered && recovered.trim().startsWith("{"))
+      return recovered;
+  }
+  if (/"elements"\s*:\s*\[/.test(markdown)) {
+    const start = markdown.indexOf("{");
+    const end = markdown.lastIndexOf("}");
+    if (start !== -1 && end > start)
+      return markdown.slice(start, end + 1);
+  }
+  return null;
+}
+function extractTextElements(markdown) {
+  const lines = markdown.split(/\r?\n/);
+  let inSection = false;
+  const labels = [];
+  let current = [];
+  const flush = () => {
+    const text = current.map((l) => l.trimEnd()).join("\n").trim();
+    if (text)
+      labels.push(text);
+    current = [];
+  };
+  for (const line of lines) {
+    const isHeading = /^\s*#{1,6}\s+.*\s*$/.test(line);
+    if (isHeading) {
+      const name = line.replace(/^\s*#{1,6}\s+/, "").trim();
+      if (!inSection && /^text elements$/i.test(name)) {
+        inSection = true;
+        continue;
+      }
+      if (inSection) {
+        flush();
+        inSection = false;
+      }
+    }
+    if (!inSection)
+      continue;
+    const t = line.trim();
+    if (t === "") {
+      flush();
+      continue;
+    }
+    if (/^%%\s*$/.test(t))
+      continue;
+    if (/^\^\S+$/.test(t))
+      continue;
+    if (/^%%\*\*\*>>>/.test(t))
+      continue;
+    current.push(line);
+  }
+  if (inSection)
+    flush();
+  return labels;
+}
+function countByType(elements) {
+  var _a3, _b;
+  const byType = {};
+  for (const el of elements) {
+    const t = String((_a3 = el == null ? void 0 : el.type) != null ? _a3 : "unknown");
+    byType[t] = ((_b = byType[t]) != null ? _b : 0) + 1;
+  }
+  return byType;
+}
+function describeExcalidraw(markdown) {
+  var _a3;
+  const labels = extractTextElements(markdown);
+  let scene = null;
+  const jsonText = extractSceneJson(markdown);
+  if (jsonText) {
+    try {
+      const parsed = JSON.parse(jsonText);
+      if (parsed && typeof parsed === "object" && "elements" in parsed) {
+        scene = parsed;
+      }
+    } catch (e) {
+      scene = null;
+    }
+  }
+  const elements = scene && Array.isArray(scene.elements) ? scene.elements : [];
+  const sceneTexts = [];
+  for (const el of elements) {
+    if ((el == null ? void 0 : el.type) === "text" && typeof el.text === "string" && el.text.trim()) {
+      const cleaned = el.text.replace(/\r?\n/g, " ").trim();
+      if (cleaned)
+        sceneTexts.push(cleaned);
+    }
+  }
+  const textLabels = labels.length > 0 ? labels : sceneTexts;
+  const byType = countByType(elements);
+  const arrowCount = elements.filter((e) => (e == null ? void 0 : e.type) === "arrow").length;
+  const embeddedCount = scene && scene.files && typeof scene.files === "object" ? Object.keys(scene.files).length : 0;
+  const theme = scene && ((_a3 = scene.appState) == null ? void 0 : _a3.theme) ? String(scene.appState.theme) : null;
+  const totalElements = elements.length || 0;
+  if (textLabels.length === 0 && totalElements === 0) {
+    return {
+      ok: false,
+      error: "No drawing content found. This doesn't look like an Excalidraw note (`.excalidraw.md` with a `## Drawing` / `## Text Elements` section). Open the drawing in Excalidraw once, then ask again."
+    };
+  }
+  const lines = [];
+  lines.push(
+    `Excalidraw drawing${totalElements ? ` \u2014 ${totalElements} shape(s)` : ""}.`
+  );
+  lines.push("");
+  if (textLabels.length > 0) {
+    lines.push(`Text on the canvas (${textLabels.length}):`);
+    for (const t of textLabels) {
+      for (const para of t.split("\n").map((s) => s.trim()).filter(Boolean)) {
+        lines.push(`  \u2022 ${para}`);
+      }
+    }
+    lines.push("");
+  }
+  const types2 = Object.entries(byType).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${v}\xD7 ${k}`).join(", ");
+  if (types2)
+    lines.push(`Shapes: ${types2}.`);
+  if (arrowCount)
+    lines.push(`Arrows/connections: ${arrowCount}.`);
+  if (embeddedCount)
+    lines.push(`Embedded images/files: ${embeddedCount}.`);
+  if (theme)
+    lines.push(`Theme: ${theme}.`);
+  return {
+    ok: true,
+    description: lines.join("\n").trim(),
+    elementCount: totalElements
+  };
+}
+
+// web.ts
+var UA = "Mozilla/5.0 (X11; Linux x86_64; rv:126.0) Gecko/20100101 Firefox/126.0";
+function decodeDdgUrl(href) {
+  try {
+    const u = new URL(href, "https://duckduckgo.com");
+    const uddg = u.searchParams.get("uddg");
+    if (uddg)
+      return decodeURIComponent(uddg);
+    return u.toString();
+  } catch (e) {
+    return href;
+  }
+}
+function decodeTitle(s) {
+  return decodeEntities(s.replace(/<[^>]+>/g, "")).trim();
+}
+function decodeEntities(s) {
+  return s.replace(
+    /&#x([0-9a-f]+);/gi,
+    (_, h) => String.fromCharCode(parseInt(h, 16))
+  ).replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n))).replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#x27;|&apos;/g, "'").replace(/&nbsp;/g, " ");
+}
+var REMOVE_TAGS = [
+  "script",
+  "style",
+  "noscript",
+  "template",
+  "svg",
+  "iframe",
+  "canvas",
+  "nav",
+  "footer",
+  "header",
+  "aside",
+  "form",
+  "button"
+];
+var BLOCK_TAGS = /* @__PURE__ */ new Set([
+  "p",
+  "div",
+  "br",
+  "li",
+  "ul",
+  "ol",
+  "h1",
+  "h2",
+  "h3",
+  "h4",
+  "h5",
+  "h6",
+  "tr",
+  "table",
+  "section",
+  "article",
+  "blockquote",
+  "pre",
+  "figure",
+  "summary",
+  "dd",
+  "dt",
+  "dl"
+]);
+function htmlToText(html) {
+  let out = html;
+  for (const t of REMOVE_TAGS) {
+    out = out.replace(new RegExp(`<${t}\\b[^>]*>[\\s\\S]*?<\\/${t}>`, "gi"), " ");
+    out = out.replace(new RegExp(`<${t}\\b[^>]*\\s*/?>`, "gi"), " ");
+  }
+  out = out.replace(/<!--[\s\S]*?-->/g, " ");
+  const main = out.match(/<main\b[\s\S]*?<\/main>/i) || out.match(/<article\b[\s\S]*?<\/article>/i);
+  if (main && main[0].length > 50 && main[0].length > out.length * 0.02) {
+    out = main[0];
+  }
+  out = out.replace(
+    /<\s*\/?\s*([a-z0-9]+)[^>]*>/gi,
+    (_m, tag) => BLOCK_TAGS.has(tag.toLowerCase()) ? "\n" : ""
+  );
+  out = decodeEntities(out);
+  out = out.split("\n").map((l) => l.replace(/\s+/g, " ").replace(/^\s+|\s+$/g, "")).filter((l, i, arr) => l !== "" || i > 0 && i < arr.length - 1).join("\n");
+  return out.trim();
+}
+async function ddgSearch(query, num) {
+  const url = `https://html.duckduckgo.com/html/?q=${encodeURIComponent(query)}`;
+  const res = await fetch(url, { headers: { "User-Agent": UA, Accept: "text/html" } });
+  if (!res.ok)
+    throw new Error(`DuckDuckGo responded ${res.status}`);
+  const html = await res.text();
+  const hits = [];
+  const re = /<a[^>]*class="result__a"[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
+  let m;
+  while ((m = re.exec(html)) !== null && hits.length < num) {
+    const href = decodeDdgUrl(m[1]);
+    const title = decodeTitle(m[2]);
+    if (href && href.startsWith("http") && title)
+      hits.push({ title, url: href });
+  }
+  return hits;
+}
+async function bingSearch(query, num) {
+  const url = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
+  const res = await fetch(url, { headers: { "User-Agent": UA, Accept: "text/html" } });
+  if (!res.ok)
+    throw new Error(`Bing responded ${res.status}`);
+  const html = await res.text();
+  const hits = [];
+  const re = /<h2><a[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
+  let m;
+  while ((m = re.exec(html)) !== null && hits.length < num) {
+    const href = m[1];
+    const title = decodeTitle(m[2]);
+    if (href && href.startsWith("http") && title)
+      hits.push({ title, url: href });
+  }
+  return hits;
+}
+async function webSearch(query, num = 5) {
+  const q = query.trim();
+  if (!q)
+    return { ok: false, query, error: "Please provide a search query." };
+  const limit = Math.max(1, Math.min(num, 15));
+  try {
+    const hits = await ddgSearch(q, limit);
+    if (hits.length)
+      return { ok: true, query: q, hits, engine: "duckduckgo" };
+  } catch (e) {
+  }
+  try {
+    const hits = await bingSearch(q, limit);
+    if (hits.length)
+      return { ok: true, query: q, hits, engine: "bing" };
+  } catch (err) {
+    return {
+      ok: false,
+      query: q,
+      error: `Search failed (no engine reachable): ${err.message}`
+    };
+  }
+  return { ok: false, query: q, error: "No results found for that query." };
+}
+async function webFetch(url, maxChars = 4e4) {
+  var _a3;
+  let finalUrl = url.trim();
+  if (!/^https?:\/\//i.test(finalUrl)) {
+    finalUrl = "https://" + finalUrl;
+  }
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 2e4);
+  let res;
+  try {
+    res = await fetch(finalUrl, {
+      headers: { "User-Agent": UA, Accept: "text/html,*/*" },
+      signal: controller.signal,
+      redirect: "follow"
+    });
+  } catch (err) {
+    const msg = err.name === "AbortError" ? "timed out after 20s" : err.message;
+    return { ok: false, url: finalUrl, error: `Could not fetch ${url}: ${msg}` };
+  } finally {
+    clearTimeout(timer);
+  }
+  if (!res.ok) {
+    return { ok: false, url: finalUrl, error: `Server responded ${res.status}` };
+  }
+  const ctype = ((_a3 = res.headers.get("content-type")) != null ? _a3 : "").toLowerCase();
+  let text;
+  if (ctype.includes("json") || finalUrl.endsWith(".json") || ctype.includes("xml")) {
+    text = await res.text();
+    text = text.replace(/[\t ]+\n/g, "\n").split("\n").map((l) => l.trimEnd()).join("\n").trim();
+  } else {
+    const html = await res.text();
+    const titleMatch = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
+    const title = titleMatch ? decodeTitle(titleMatch[1]) : void 0;
+    text = htmlToText(html);
+    if (!text)
+      return { ok: false, url: finalUrl, error: "Page had no readable text (likely an app/JS-only site)." };
+    return finishFetch(finalUrl, text, title, maxChars);
+  }
+  return finishFetch(finalUrl, text, void 0, maxChars);
+}
+function finishFetch(url, text, title, maxChars) {
+  const truncated = text.length > maxChars;
+  if (truncated)
+    text = text.slice(0, maxChars) + "\n\n[...truncated...]";
+  return { ok: true, url, text, title, truncated };
+}
+
 // main.ts
 var DEFAULT_SETTINGS = {
   ollamaHost: "http://localhost:11434",
@@ -103141,6 +103954,108 @@ ${content}`;
 
 `;
           return header + ((_c = result.text) != null ? _c : "");
+        }
+      },
+      {
+        name: "read_excalidraw",
+        description: "Read an Excalidraw drawing stored as a .excalidraw.md note and return its contents (all text labels plus a summary of the shapes/arrows/images). Use this when the user refers to a diagram, flowchart, sketch, or whiteboard, or asks what is on a drawing. Provide a vault-relative 'path' (e.g. 'Notes/system-diagram.excalidraw.md'), or omit it to use the note currently open.",
+        parameters: {
+          type: "object",
+          properties: {
+            path: {
+              type: "string",
+              description: "Vault-relative path to the Excalidraw note. Omit to read the currently open note."
+            }
+          },
+          required: []
+        },
+        run: async (args) => {
+          var _a3, _b;
+          const path = typeof args.path === "string" && args.path.trim() ? args.path.trim().replace(/^\/+/, "") : null;
+          let file = null;
+          if (path) {
+            if (path.includes("..")) {
+              return "Error: path must stay inside the vault (no '..').";
+            }
+            const f = this.app.vault.getAbstractFileByPath(path);
+            if (!(f instanceof import_obsidian2.TFile)) {
+              return `Error: no note found at '${path}'.`;
+            }
+            file = f;
+          } else {
+            const active = this.app.workspace.getActiveFile();
+            if (!(active instanceof import_obsidian2.TFile)) {
+              return "No note is open. Provide a 'path' to the Excalidraw note.";
+            }
+            file = active;
+          }
+          let markdown;
+          try {
+            markdown = await this.app.vault.read(file);
+          } catch (err) {
+            return `Error reading '${file.path}': ${err.message}`;
+          }
+          const result = describeExcalidraw(markdown);
+          if (!result.ok) {
+            return (_a3 = result.error) != null ? _a3 : "Could not read this note as an Excalidraw drawing.";
+          }
+          return `Excalidraw drawing: ${file.path}
+
+${(_b = result.description) != null ? _b : ""}`;
+        }
+      },
+      {
+        name: "web_search",
+        description: "Search the web for up-to-date information. Returns a short list of results (title, URL, snippet). Use this when the user asks about current events, documentation, version numbers, or anything not in your notes. Provide a concise 'query'.",
+        parameters: {
+          type: "object",
+          properties: {
+            query: { type: "string", description: "The search query." },
+            count: {
+              type: "number",
+              description: "How many results to return (default 5, max 10)."
+            }
+          },
+          required: ["query"]
+        },
+        run: async (args) => {
+          var _a3, _b, _c;
+          const query = String((_a3 = args.query) != null ? _a3 : "").trim();
+          const count = Math.min(Math.max(Number(args.count) || 5, 1), 10);
+          const result = await webSearch(query, count);
+          if (!result.ok) {
+            return `Web search failed: ${(_b = result.error) != null ? _b : "unknown error"}`;
+          }
+          const lines = (_c = result.hits) == null ? void 0 : _c.map((h, i) => `${i + 1}. ${h.title}
+   ${h.url}${h.snippet ? `
+   ${h.snippet}` : ""}`).join("\n\n");
+          return `Web search: "${result.query}" (${result.engine})
+
+${lines}`;
+        }
+      },
+      {
+        name: "web_fetch",
+        description: "Fetch a web page and return its readable text content (HTML stripped). Use this after `web_search` to read the full text of a promising result, or when the user gives you a URL to read. Provide a 'url'.",
+        parameters: {
+          type: "object",
+          properties: {
+            url: { type: "string", description: "The URL to fetch (e.g. https://example.com/doc)." }
+          },
+          required: ["url"]
+        },
+        run: async (args) => {
+          var _a3, _b, _c;
+          const url = String((_a3 = args.url) != null ? _a3 : "").trim();
+          const result = await webFetch(url);
+          if (!result.ok) {
+            return `Could not fetch that page: ${(_b = result.error) != null ? _b : "unknown error"}`;
+          }
+          const head = `URL: ${result.url}${result.title ? `
+Title: ${result.title}` : ""}${result.truncated ? "\n(truncated)" : ""}
+
+`;
+          return head + ((_c = result.text) != null ? _c : "");
         }
       }
     ];
