@@ -69371,13 +69371,18 @@ var ChatView = class extends import_obsidian.ItemView {
         }
       });
       liveBody.empty();
-      await import_obsidian.MarkdownRenderer.render(
-        this.app,
-        answer,
-        liveBody,
-        (_b = (_a3 = this.app.workspace.getActiveFile()) == null ? void 0 : _a3.path) != null ? _b : "/",
-        this
-      );
+      try {
+        await import_obsidian.MarkdownRenderer.render(
+          this.app,
+          answer,
+          liveBody,
+          (_b = (_a3 = this.app.workspace.getActiveFile()) == null ? void 0 : _a3.path) != null ? _b : "/",
+          this
+        );
+      } catch (e) {
+        liveBody.empty();
+        liveBody.setText(answer);
+      }
       this.setStatus(true, "Ready");
     } catch (err) {
       const message = err.message;
@@ -69443,7 +69448,7 @@ var NdjsonAccumulator = class {
 var manifest_default = {
   id: "ai-harness",
   name: "AI Harness",
-  version: "0.6.0",
+  version: "0.7.0",
   minAppVersion: "1.0.0",
   description: "A persistent AI chat panel in Obsidian that talks to qwen3.8 via Ollama over an SSH tunnel.",
   author: "laurits",
@@ -103574,11 +103579,223 @@ function decodeDdgUrl(href) {
 function decodeTitle(s) {
   return decodeEntities(s.replace(/<[^>]+>/g, "")).trim();
 }
+var NAMED_ENTITIES = {
+  // Core
+  amp: "&",
+  lt: "<",
+  gt: ">",
+  quot: '"',
+  apos: "'",
+  nbsp: " ",
+  // Dashes, quotes & punctuation
+  ndash: "\u2013",
+  // –
+  mdash: "\u2014",
+  // —
+  lsquo: "\u2018",
+  // '
+  rsquo: "\u2019",
+  // '
+  ldquo: "\u201C",
+  // "
+  rdquo: "\u201D",
+  // "
+  bdquo: "\u201E",
+  // „
+  sbquo: "\u201A",
+  // ‚
+  ldquor: "\u201F",
+  // ‟
+  laquo: "\xAB",
+  // «
+  raquo: "\xBB",
+  // »
+  lsaquo: "\u2039",
+  // ‹
+  rsaquo: "\u203A",
+  // ›
+  bull: "\u2022",
+  // •
+  middot: "\xB7",
+  // ·
+  prime: "\u2032",
+  // ′
+  Prime: "\u2033",
+  // ″
+  dagger: "\u2020",
+  // †
+  Dagger: "\u2021",
+  // ‡
+  hellip: "\u2026",
+  // …
+  permil: "\u2030",
+  // ‰
+  oline: "\u203E",
+  // ‾
+  breve: "\u02D8",
+  // ˘
+  caret: "\u02C6",
+  // ˆ
+  circ: "\u02C6",
+  // ˆ
+  tild: "\u02DC",
+  // ˜
+  // Currency & symbols
+  copy: "\xA9",
+  // ©
+  reg: "\xAE",
+  // ®
+  trade: "\u2122",
+  // ™
+  cent: "\xA2",
+  // ¢
+  pound: "\xA3",
+  // £
+  yen: "\xA5",
+  // ¥
+  euro: "\u20AC",
+  // €
+  curren: "\xA4",
+  // ¤
+  loz: "\u25CA",
+  // ◊
+  ensp: "\u2002",
+  // en space
+  emsp: "\u2003",
+  // em space
+  emsp13: "\u2004",
+  // ~3/4 em
+  emsp14: "\u2005",
+  // ~1/2 em
+  thinsp: "\u2009",
+  // thin space
+  zwnj: "\u200C",
+  zwj: "\u200D",
+  para: "\xB6",
+  // ¶
+  sect: "\xA7",
+  // §
+  deg: "\xB0",
+  // °
+  micro: "\xB5",
+  // µ
+  weierp: "\u2118",
+  // ℘
+  // Math
+  plusmn: "\xB1",
+  // ±
+  times: "\xD7",
+  // ×
+  divide: "\xF7",
+  // ÷
+  frac14: "\xBC",
+  // ¼
+  frac12: "\xBD",
+  // ½
+  frac34: "\xBE",
+  // ¾
+  shy: "\xAD",
+  // soft hyphen
+  infin: "\u221E",
+  // ∞
+  sqrt: "\u221A",
+  // √
+  ne: "\u2260",
+  // ≠
+  neq: "\u2260",
+  // ≠
+  simeq: "\u2243",
+  // ≅
+  cong: "\u2245",
+  // ≅
+  asymp: "\u2248",
+  // ≈
+  sup1: "\xB9",
+  sup2: "\xB2",
+  sup3: "\xB3",
+  supn: "\u207B",
+  // ⁻
+  // Arrows
+  rarr: "\u2192",
+  // →
+  larr: "\u2190",
+  // ←
+  harr: "\u2194",
+  // ↔
+  lrarr: "\u2194",
+  // ↔
+  uarr: "\u2191",
+  // ↑
+  darr: "\u2193",
+  // ↓
+  // Greek
+  alpha: "\u03B1",
+  // α
+  beta: "\u03B2",
+  // β
+  gamma: "\u03B3",
+  // γ
+  delta: "\u03B4",
+  // δ
+  epsilon: "\u03B5",
+  // ε
+  zeta: "\u03B6",
+  // ζ
+  eta: "\u03B7",
+  // η
+  theta: "\u03B8",
+  // θ
+  iota: "\u03B9",
+  // ι
+  kappa: "\u03BA",
+  // κ
+  lambda: "\u03BB",
+  // λ
+  mu: "\u03BC",
+  // μ
+  nu: "\u03BD",
+  // ν
+  xi: "\u03BE",
+  // ξ
+  pi: "\u03C0",
+  // π
+  rho: "\u03C1",
+  // ρ
+  sigma: "\u03C3",
+  // σ
+  tau: "\u03C4",
+  // τ
+  phi: "\u03C6",
+  // φ
+  chi: "\u03C7",
+  // χ
+  psi: "\u03C8",
+  // ψ
+  omega: "\u03C9"
+  // ω
+};
 function decodeEntities(s) {
-  return s.replace(
-    /&#x([0-9a-f]+);/gi,
-    (_, h) => String.fromCharCode(parseInt(h, 16))
-  ).replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n))).replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#x27;|&apos;/g, "'").replace(/&nbsp;/g, " ");
+  const codePoint = (raw, radix, fallback) => {
+    const n = parseInt(raw, radix);
+    if (Number.isNaN(n) || n < 0 || n > 1114111)
+      return fallback;
+    return String.fromCodePoint(n);
+  };
+  const re = /&#x([0-9a-fA-F]+);|&#(\d+);|&([a-zA-Z][a-zA-Z0-9]*);/gi;
+  return s.replace(re, (_m, hex, dec, name, _off, _src2) => {
+    if (hex !== void 0) {
+      return codePoint(hex, 16, _m);
+    }
+    if (dec !== void 0) {
+      return codePoint(dec, 10, _m);
+    }
+    if (name !== void 0) {
+      const hit = NAMED_ENTITIES[name] !== void 0 ? NAMED_ENTITIES[name] : NAMED_ENTITIES[name.toLowerCase()];
+      if (hit !== void 0)
+        return hit;
+    }
+    return _m;
+  });
 }
 var REMOVE_TAGS = [
   "script",
@@ -103749,7 +103966,8 @@ var DEFAULT_SETTINGS = {
   ollamaHost: "http://localhost:11434",
   model: "qwen3.8:27b",
   systemPrompt: "You are a helpful assistant.",
-  timeoutMs: 6e4
+  timeoutMs: 6e4,
+  useLatex: true
 };
 var _AIHarnessPlugin = class _AIHarnessPlugin extends import_obsidian2.Plugin {
   constructor() {
@@ -104183,6 +104401,20 @@ Title: ${result.title}` : ""}${result.truncated ? "\n(truncated)" : ""}
     }
   }
   /**
+   * The effective system prompt: the user's prompt plus a LaTeX instruction
+   * when "Use LaTeX" is enabled, so math is emitted as `$…$` / `$$…$$` that
+   * Obsidian renders as pretty formulas.
+   */
+  getSystemPrompt() {
+    const base = this.settings.systemPrompt.trim();
+    if (!this.settings.useLatex)
+      return base;
+    const latexInstruction = "When writing mathematics, write it as LaTeX in Markdown: inline math in single dollars ($x^2$) and display equations in double dollars ($$\\int_0^1 x\\,dx$$). Only use $ for math.";
+    return base ? `${base}
+
+${latexInstruction}` : latexInstruction;
+  }
+  /**
    * Send a prompt to Ollama (qwen3.8) over the local SSH-tunneled endpoint.
    *
    * - Streams the assistant's text back via `callbacks.onToken`.
@@ -104198,7 +104430,7 @@ Title: ${result.title}` : ""}${result.truncated ? "\n(truncated)" : ""}
     const base = this.settings.ollamaHost.replace(/\/+$/, "");
     const url = `${base}/api/chat`;
     const messages = [
-      { role: "system", content: this.settings.systemPrompt },
+      { role: "system", content: this.getSystemPrompt() },
       ...this.history,
       { role: "user", content: prompt }
     ];
@@ -104383,6 +104615,14 @@ var AIHarnessSettingTab = class extends import_obsidian2.PluginSettingTab {
     ).addSlider(
       (slider) => slider.setLimits(5, 300, 5).setValue(Math.round(this.plugin.settings.timeoutMs / 1e3)).setDynamicTooltip().onChange(async (value) => {
         this.plugin.settings.timeoutMs = value * 1e3;
+        await this.plugin.saveSettings();
+      })
+    );
+    new import_obsidian2.Setting(containerEl).setName("Use LaTeX for math").setDesc(
+      "Have the model write math as LaTeX ($\u2026$, $$\u2026$$) so Obsidian renders it as pretty formulas."
+    ).addToggle(
+      (toggle) => toggle.setValue(this.plugin.settings.useLatex).onChange(async (value) => {
+        this.plugin.settings.useLatex = value;
         await this.plugin.saveSettings();
       })
     );
