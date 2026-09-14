@@ -14,4 +14,7 @@ Så: 0.407372115 sek.
 
 ![[Pasted image 20260914112857.png]]
 
+The address of gaia.cs.umass.edu is: 128.119.245.12
+The address of my computer is: 10.126.45.80
 
+![[Pasted image 20260914113216.png]]
