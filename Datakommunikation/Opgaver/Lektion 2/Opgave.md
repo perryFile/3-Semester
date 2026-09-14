@@ -27,5 +27,7 @@ User agent er her Firefox
 
 ![[Pasted image 20260914114017.png]]
 
-Desti
-![[Pasted image 20260914115249.png]]
+Destination porten er 80 som er standart for http (Https har standart porten 443)
+![[Pasted image 20260914115323.png]]
+
+![[Pasted image 20260914115413.png]]
