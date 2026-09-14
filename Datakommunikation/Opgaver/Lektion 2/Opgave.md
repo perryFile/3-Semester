@@ -27,3 +27,5 @@ User agent er her Firefox
 
 ![[Pasted image 20260914114017.png]]
 
+Desti
+![[Pasted image 20260914115249.png]]
