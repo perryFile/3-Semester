@@ -20,3 +20,10 @@ The address of my computer is: 10.126.45.80
 ![[Pasted image 20260914113216.png]]
 
 ![[Pasted image 20260914113856.png]]
+
+User agent er her Firefox
+![[Pasted image 20260914113948.png]]
+
+
+![[Pasted image 20260914114017.png]]
+
