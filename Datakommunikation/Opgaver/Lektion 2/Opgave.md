@@ -9,3 +9,9 @@ Eksempel på protocoler:
 
 ![[Pasted image 20260914112340.png]]
 ![[Pasted image 20260914112652.png]]
+Dermed sendt 140.474703582 og modtaget 140.882075697 
+Så: 0.407372115 sek.
+
+![[Pasted image 20260914112857.png]]
+
+
