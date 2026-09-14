@@ -8,3 +8,4 @@ Eksempel på protocoler:
 
 
 ![[Pasted image 20260914112340.png]]
+![[Pasted image 20260914112652.png]]
