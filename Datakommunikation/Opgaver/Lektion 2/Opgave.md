@@ -31,3 +31,4 @@ Destination porten er 80 som er standart for http (Https har standart porten 443
 ![[Pasted image 20260914115323.png]]
 
 ![[Pasted image 20260914115413.png]]
+![[Pasted image 20260914115713.png]]
