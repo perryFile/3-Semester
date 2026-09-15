@@ -3,4 +3,9 @@ Bruges til at gemme et input, når en clock frekvens feks er på rising.
 Den "tager et snapshot på clock-flanken".
 Man sammensætter Flip Flop og laver [[Registre]]
 
-Et alternativ til Flip Flop er [[D latch]]
+Et alternativ til Flip Flop er [[D latch]]. Forskellen er hvornår de gemmer
+
+![[Pasted image 20260915122438.png]]
+
+Man kan lave et 8 bit register ved følgende: 
+![[Pasted image 20260915122751.png]]
