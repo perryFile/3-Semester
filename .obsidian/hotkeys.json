@@ -14,5 +14,13 @@
       ],
       "key": "I"
     }
+  ],
+  "pdf-drawing-excalidraw:annotate-pdf-excalidraw": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "P"
+    }
   ]
 }
