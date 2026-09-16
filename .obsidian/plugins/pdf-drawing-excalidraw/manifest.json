@@ -1,0 +1,9 @@
+{
+	"id": "pdf-drawing-excalidraw",
+	"name": "Draw on PDFs (Excalidraw)",
+	"version": "0.1.0",
+	"minAppVersion": "1.0.0",
+	"description": "Annotate PDFs on a real Excalidraw canvas — draw with any tool over/around the page, then save your notes beside the PDF.",
+	"author": "laurits",
+	"isDesktopOnly": true
+}
