@@ -1,9 +1,9 @@
 {
 	"id": "pdf-drawing-excalidraw",
 	"name": "Draw on PDFs (Excalidraw)",
-	"version": "0.2.0",
-	"minAppVersion": "1.8.0",
-	"description": "Draw on a whole PDF with Excalidraw, scroll between pages, and save drawings directly into the original PDF.",
+	"version": "0.3.0",
+	"minAppVersion": "1.8.7",
+	"description": "Create and reopen an editable Excalidraw project for a whole PDF, keeping drawings on and beside its pages. Requires Excalidraw.",
 	"author": "laurits",
 	"isDesktopOnly": true
 }
