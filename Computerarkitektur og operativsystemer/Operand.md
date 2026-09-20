@@ -1,0 +1,1 @@
+En **operand-byte** er en ekstra byte efter opcod'en, som indeholder **data eller et argument til instruktionen**.
