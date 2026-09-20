@@ -13,6 +13,8 @@ Poler er generelt opstillet:
 Fourier har ikke nogen reel del, kun imaginær.
 
 
-## 
+## Overføringsfunktion for 2 ordens system.
+
+
 ![[Pasted image 20260920200911.png]]
 
