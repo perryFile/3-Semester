@@ -43,3 +43,7 @@ Yes!
 ![[Pasted image 20260921110104.png]]
 Den indeholder "IF-MODIFIED-SINCE". Hvis den er blevet modificeret siden, vil den lave en fuld request igen.
 ![[Pasted image 20260921110214.png]]
+![[Pasted image 20260921110526.png]]
+Nej der bliver ikke sendt en explicit return af filens indhold. Det ligger i cachen og bliver hentet derfra 
+![[Pasted image 20260921110540.png]]
+
