@@ -23,4 +23,6 @@ Last modified: 28 oktober 2025 05:59:01 GMT
 
 ![[Pasted image 20260921105102.png]]
 
-128 bytes bliver returner
+128 bytes bliver returnered 
+![[Pasted image 20260921105132.png]]
+
