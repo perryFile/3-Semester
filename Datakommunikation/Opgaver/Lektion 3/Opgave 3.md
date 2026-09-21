@@ -17,3 +17,10 @@ Status code er OK: **200**
 ![[Pasted image 20260921104327.png]]
 
 ![[Pasted image 20260921104355.png]]
+Last modified: 28 oktober 2025 05:59:01 GMT
+
+![[Pasted image 20260921105017.png]]
+
+![[Pasted image 20260921105102.png]]
+
+128 bytes bliver returner
