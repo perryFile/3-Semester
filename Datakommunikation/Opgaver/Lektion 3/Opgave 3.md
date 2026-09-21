@@ -31,6 +31,11 @@ Last modified: 28 oktober 2025 05:59:01 GMT
 ![[Pasted image 20260921105555.png]]
 
 ![[Pasted image 20260921105606.png]]
-Yes we do!
-![[Pasted image 20260921105636.png]]
+No we do not!
+![[Pasted image 20260921105831.png]]
 
+
+![[Pasted image 20260921105851.png]]
+
+Yes!
+![[Pasted image 20260921110035.png]]
