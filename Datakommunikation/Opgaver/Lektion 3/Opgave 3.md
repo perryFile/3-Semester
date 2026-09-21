@@ -67,3 +67,7 @@ Vi sender kun en GET request:
 ![[Pasted image 20260921113059.png]]
 Jeg får to TCP pakker. Den sidste HTTP pakke er egentlig en TCP pakke som wireshark lægger sammen og kalder HTPP.
 ![[Pasted image 20260921113713.png|700]]
+![[Pasted image 20260921113756.png]]
+
+![[Pasted image 20260921113807.png]]
+![[Pasted image 20260921113819.png]]
