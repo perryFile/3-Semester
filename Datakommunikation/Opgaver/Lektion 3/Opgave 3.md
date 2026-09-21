@@ -71,3 +71,17 @@ Jeg får to TCP pakker. Den sidste HTTP pakke er egentlig en TCP pakke som wires
 
 ![[Pasted image 20260921113807.png]]
 ![[Pasted image 20260921113819.png]]
+My browser send 4 **GET** messages. 
+To 3 different IP adresses
+91.189.91.60
+128.119.245.12
+2.56.99.24
+![[Pasted image 20260921114111.png]]
+
+![[Pasted image 20260921114233.png]]
+Vi henter dem ind på to forskellige porte:
+![[Pasted image 20260921114315.png|358]]
+![[Pasted image 20260921114325.png|578]]
+
+![[Pasted image 20260921114342.png]]
+![[Pasted image 20260921114356.png]]
