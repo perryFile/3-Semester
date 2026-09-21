@@ -39,3 +39,7 @@ No we do not!
 
 Yes!
 ![[Pasted image 20260921110035.png]]
+
+![[Pasted image 20260921110104.png]]
+Den indeholder "IF-MODIFIED-SINCE". Hvis den er blevet modificeret siden, vil den lave en fuld request igen.
+![[Pasted image 20260921110214.png]]
