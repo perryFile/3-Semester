@@ -54,4 +54,14 @@ Vi sender kun en GET request:
 
 ![[Pasted image 20260921112741.png]]
 
+
 ![[Pasted image 20260921112803.png]]
+43 i mit tilfælde: 
+![[Pasted image 20260921112741.png]]
+
+![[Pasted image 20260921113011.png|409]]
+**200** og "OK"
+![[Pasted image 20260921112948.png]]
+
+
+![[Pasted image 20260921113059.png]]
