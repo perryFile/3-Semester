@@ -26,3 +26,11 @@ Last modified: 28 oktober 2025 05:59:01 GMT
 128 bytes bliver returnered 
 ![[Pasted image 20260921105132.png]]
 
+
+
+![[Pasted image 20260921105555.png]]
+
+![[Pasted image 20260921105606.png]]
+Yes we do!
+![[Pasted image 20260921105636.png]]
+
