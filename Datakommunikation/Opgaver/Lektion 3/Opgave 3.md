@@ -44,6 +44,8 @@ Yes!
 Den indeholder "IF-MODIFIED-SINCE". Hvis den er blevet modificeret siden, vil den lave en fuld request igen.
 ![[Pasted image 20260921110214.png]]
 ![[Pasted image 20260921110526.png]]
-Nej der bliver ikke sendt en explicit return af filens indhold. Det ligger i cachen og bliver hentet derfra 
+Nej der bliver ikke sendt en explicit return af filens indhold. Det ligger i cachen og bliver hentet derfra. Browseren bruger en kopi som ligger i dens cache. Respons phrase er "not modified"
 ![[Pasted image 20260921110540.png]]
 
+![[Pasted image 20260921110751.png]]
+![[Pasted image 20260921110809.png]]
