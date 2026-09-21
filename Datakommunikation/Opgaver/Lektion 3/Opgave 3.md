@@ -50,3 +50,8 @@ Nej der bliver ikke sendt en explicit return af filens indhold. Det ligger i cac
 ![[Pasted image 20260921110751.png]]
 ![[Pasted image 20260921110809.png]]
 
+Vi sender kun en GET request: 
+
+![[Pasted image 20260921112741.png]]
+
+![[Pasted image 20260921112803.png]]
