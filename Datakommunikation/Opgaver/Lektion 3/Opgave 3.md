@@ -79,7 +79,7 @@ To 3 different IP adresses
 ![[Pasted image 20260921114111.png]]
 
 ![[Pasted image 20260921114233.png]]
-Vi henter dem ind på to forskellige porte:
+Vi henter dem ind på to forskellige porte, og bliver dermed hentet parallelt:
 ![[Pasted image 20260921114315.png|358]]
 ![[Pasted image 20260921114325.png|578]]
 
