@@ -86,7 +86,12 @@ Vi henter dem ind på to forskellige porte, og bliver dermed hentet parallelt:
 ![[Pasted image 20260921114342.png]]
 ![[Pasted image 20260921114356.png]]
 
-Status code: 401
-Response phrase: Unauthorized
+**Status code: 401**
+**Response phrase: Unauthorized**
 
 ![[Pasted image 20260921115008.png]]
+
+![[Pasted image 20260921115050.png]]
+
+Den sender en authorization cookie. 
+![[Pasted image 20260921115158.png]]
