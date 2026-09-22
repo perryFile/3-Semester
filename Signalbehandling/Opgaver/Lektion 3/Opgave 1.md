@@ -6,6 +6,6 @@ sin(2$\pi$ * 30 * t). Vi ved man skal sample med $f_{s}$ ≥ 2*$f_{max}$ for at 
 2.  
 ![[Pasted image 20260922112359.png]]
 
-
+3. 
 
 
