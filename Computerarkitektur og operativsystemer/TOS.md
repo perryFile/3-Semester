@@ -1,0 +1,1 @@
+Top of Stack. Det er et registre der indeholder den øverste værdi i en stack. Altså værdien SP peger på. Vi skal selve loade Top Of Stack ind i TOS hver gang den bliver ændret!!
