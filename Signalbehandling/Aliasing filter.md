@@ -1,1 +1,3 @@
 Vi anvender et aliasing filter fra vores udtrukne signal (mellem 1/2 sampling frekvens), for at få vores amplitude på vores signal tilbage til det originale. 
+
+![[Pasted image 20260924094546.png]]
