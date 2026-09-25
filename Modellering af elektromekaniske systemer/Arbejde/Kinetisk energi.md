@@ -7,3 +7,4 @@ v = hastighed m/s²
 
 Enhed er Joul m/s²
 
+**Hvis vi har en hastighedsvektor tager vi størrelsen af hastighedsvektoren og anvender**
