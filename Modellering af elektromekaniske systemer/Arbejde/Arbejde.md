@@ -10,9 +10,9 @@ $\triangle x$= strækning aflagt
 
 
 ## Arbejde
-$$W = F \cdot d$$
+$$W = F \cdot \triangle x$$
 F = kraft
-d = Forskydning
+$\triangle x$ = Forskydning
 
 Begge er vektore og bliver prikket.
 
@@ -27,6 +27,13 @@ Begge er vektore og bliver prikket.
 **HUSK DET ER KUN PÅ PARTIKEL LIGE NU!!**
 ![[Pasted image 20260925085046.png]]
 
+
+
 ## Effekt afsat af arbejde
 
 ![[Pasted image 20260925084246.png]]
+
+## Arbejde af varierende kraft
+
+![[Pasted image 20260925085407.png|549]]
+
