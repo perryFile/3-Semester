@@ -7,3 +7,13 @@ F = kraft
 $\triangle x$= strækning aflagt
 
 ![[Pasted image 20260925083109.png]]
+
+
+## Arbejde
+$$W = F \cdot d$$
+F = kraft
+d = Forskydning
+
+Begge er vektore og bliver prikket.
+
+![[Pasted image 20260925083815.png|432]]
