@@ -23,3 +23,7 @@ Begge er vektore og bliver prikket.
 
 ![[Pasted image 20260925084143.png]]
 
+
+## Effekt afsat af arbejde
+
+![[Pasted image 20260925084246.png]]
