@@ -19,7 +19,7 @@
       "recoveries": {},
       "project": {
         "id": "4c25b4ba-35b1-4bae-a607-29312688b31b",
-        "drawing": "Modellering af elektromekaniske systemer/Slides/Lektion 3 - Bevaegelse_og_kraefter.excalidraw.md"
+        "drawing": "Modellering af elektromekaniske systemer/Slides/Noter Lektion 3 - Bevaegelse_og_kraefter.excalidraw.md"
       }
     },
     "Datakommunikation/Slides/03 - TheApplicationLayer_I.pdf": {
@@ -41,6 +41,13 @@
       "project": {
         "id": "69a6c74f-f411-4b52-bd51-af7b0389877b",
         "drawing": "Signalbehandling/Slides/(noter) 3 Lecture - Sampling and reconstruction.excalidraw.md"
+      }
+    },
+    "Modellering af elektromekaniske systemer/Slides/Lektion 4 - Arbejde og energi.pdf": {
+      "recoveries": {},
+      "project": {
+        "id": "c03720f2-56e4-46a2-86dd-2645814b043b",
+        "drawing": "Modellering af elektromekaniske systemer/Slides/Noter Lektion 4 - Arbejde og energi.excalidraw.md"
       }
     }
   }
