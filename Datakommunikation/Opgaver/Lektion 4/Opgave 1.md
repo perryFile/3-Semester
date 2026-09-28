@@ -7,3 +7,10 @@ Ip address: 103.21.124.133
 
 
 2.
+Serveren vi spørger er: 127.0.0.53
+På porten 53, som er den standarte DNS port.
+![[Pasted image 20260928095606.png]]
+
+
+3.
+Det kom fra en non-authoritative server.
