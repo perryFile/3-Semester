@@ -51,6 +51,7 @@ Source: 10.220.2.24
 	![[Pasted image 20260928104033.png]]
 
 Linux maskinen gør at det ligner vi  tilgår en anden ip end den vi faktisk tilgår. Den vi faktisk tilgår er:  10.220.2.24 
+![[Pasted image 20260928112436.png]]
 
 
 13.
