@@ -38,4 +38,14 @@ Den har 1 spørgsmål og 0 svar.
 Den har et spørgsmål og et svar.
 
 11.
+![[Pasted image 20260928103534.png]]
 ![[Pasted image 20260928103515.png]]
+
+![[Pasted image 20260928103622.png]]
+Destination: 10.220.2.24
+Source: 10.220.2.24
+
+
+12.
+![[Pasted image 20260928103700.png]]
+
