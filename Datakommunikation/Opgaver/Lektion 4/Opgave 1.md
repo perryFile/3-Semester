@@ -13,4 +13,5 @@ På porten 53, som er den standarte DNS port.
 
 
 3.
-Det kom fra en non-authoritative server.
+Det kom fra en non-authoritative server. Den kommer muligvis fra en cache 
+
