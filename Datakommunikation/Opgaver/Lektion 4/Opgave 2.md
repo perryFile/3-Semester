@@ -48,4 +48,6 @@ Source: 10.220.2.24
 
 12.
 ![[Pasted image 20260928103700.png]]
+	![[Pasted image 20260928104033.png]]
 
+Da det er en non authoritative, må det være vores lokale D
