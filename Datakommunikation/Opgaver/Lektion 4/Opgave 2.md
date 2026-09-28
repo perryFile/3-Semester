@@ -29,4 +29,13 @@ Til ip: 10.220.2.24
 
 ![[Pasted image 20260928103205.png]]
 
-Den har et spør
+Den har 1 spørgsmål og 0 svar.
+
+10.
+![[Pasted image 20260928103243.png]]
+![[Pasted image 20260928103316.png]]
+
+Den har et spørgsmål og et svar.
+
+11.
+![[Pasted image 20260928103515.png]]
