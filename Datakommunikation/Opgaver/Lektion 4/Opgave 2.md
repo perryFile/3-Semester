@@ -50,7 +50,8 @@ Source: 10.220.2.24
 ![[Pasted image 20260928103700.png]]
 	![[Pasted image 20260928104033.png]]
 
-Linux maskinen gør at det ligner vi  Faktisk Da det er en non authoritative, må det være vores lokale DNS server.
+Linux maskinen gør at det ligner vi  tilgår en anden ip end den vi faktisk tilgår. Den vi faktisk tilgår er:  10.220.2.24 
+
 
 13.
 ![[Pasted image 20260928104200.png]]
