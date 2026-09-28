@@ -15,3 +15,11 @@ På porten 53, som er den standarte DNS port.
 3.
 Det kom fra en non-authoritative server. Den kommer muligvis fra en cache 
 
+4.
+![[Pasted image 20260928100148.png]]
+
+Sådan ville jeg finde DNS serverens IP addresse 
+![[Pasted image 20260928100308.png]]
+
+IP: 103.21.125.129
+
