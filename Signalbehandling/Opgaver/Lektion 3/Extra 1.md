@@ -12,7 +12,7 @@ sin(2$\pi$ * 30 * t). Vi ved man skal sample med $f_{s}$ ≥ 2*$f_{max}$ for at 
 Opgave 3
   
 
-Fs_diskret = 60; %Sampling frekvens ved diskret. Skal være 2*f_max.
+Fs_diskret = 100; %Sampling frekvens ved diskret. Skal være mere end 2*f_max.
 
 Ts_diskret = 1/Fs_diskret;
 
@@ -83,6 +83,7 @@ stem(ff_cont,amplitude_continuous/N_cont)
 xlim([-35 35])
 
 ```
-![[Pasted image 20260922200725.png]]
+
+![[Pasted image 20260930133333.png|527]]
 
 Vi kan se at signalerne minder meget om hinanden, dog har vores diskrete signal en sinc funktions tendenser.
