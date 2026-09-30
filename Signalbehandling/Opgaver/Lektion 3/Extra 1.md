@@ -85,4 +85,4 @@ xlim([-35 35])
 ```
 ![[Pasted image 20260922200725.png]]
 
-Vi kan se at signalerne minder meget om hinanden, dog har vores diskrete signal
+Vi kan se at signalerne minder meget om hinanden, dog har vores diskrete signal en sinc funktions tendenser.
