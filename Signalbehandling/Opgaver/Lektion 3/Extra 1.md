@@ -10,11 +10,6 @@ sin(2$\pi$ * 30 * t). Vi ved man skal sample med $f_{s}$ ≥ 2*$f_{max}$ for at 
 
 ```matlab
 Opgave 3
-
-  
-
-Jeg skal anvende FFT på både det continuous og diskrete signal
-
   
 
 Fs_diskret = 60; %Sampling frekvens ved diskret. Skal være 2*f_max.
@@ -41,9 +36,7 @@ X_diskret = sin(2*pi*30*T_diskret)+cos(2*pi*20*T_diskret)+sin(2*pi*10*T_diskret)
 
 X_cont = sin(2*pi*30*T_cont)+cos(2*pi*20*T_cont)+sin(2*pi*10*T_cont)+2;
 
-  
-
-  
+    
 
 y_diskret = fft(X_diskret);
 
@@ -57,7 +50,7 @@ f_cont = Fs_cont/N_cont*(0:N_cont-1);
 
   
 
-Laver FFT shift
+%Laver FFT shift
 
   
 
@@ -91,3 +84,5 @@ xlim([-35 35])
 
 ```
 ![[Pasted image 20260922200725.png]]
+
+Vi kan se at signalerne minder meg
