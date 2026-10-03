@@ -19,9 +19,13 @@ $$\frac{dL_{C,z}}{dt}=\tau_{C,z}$$
 Enhed: $[Nm]$
 
 ## Inertimoment
+Her kigger vi kun på en masse(partikel) 
 ![[Pasted image 20261003155316.png|232]]
 
 Impulsmomentet for massen $m_{i}$ omkring punktet $O$ givet ved:
 
-$$L_{i} = r_{i} \times p_{i}= m_{i}r_{i}\times$$
+$$L_{i} = r_{i} \times p_{i}= m_{i}r_{i}\times(\omega \times r_{i})$$
+
+
+![[Pasted image 20261003155837.png|444]]
 
