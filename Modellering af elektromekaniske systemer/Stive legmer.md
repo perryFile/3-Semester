@@ -9,3 +9,12 @@ Hvor
 $M$ er legmets masse 
 $V_{C}$ er hastighed af massemidtpunktet
 $F_{ext}$ er en ekstern kræft
+
+## Roterende bevægelse
+
+For en masse der roterer om sig selv er det givet:
+
+$$\frac{dL_{C,z}}{dt}=\tau_{C,z}$$
+
+Enhed: $[Nm]
+
