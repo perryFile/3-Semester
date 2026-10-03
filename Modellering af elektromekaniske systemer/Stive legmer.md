@@ -16,5 +16,7 @@ For en masse der roterer om sig selv er det givet:
 
 $$\frac{dL_{C,z}}{dt}=\tau_{C,z}$$
 
-Enhed: $[Nm]
+Enhed: $[Nm]$
+
+
 
