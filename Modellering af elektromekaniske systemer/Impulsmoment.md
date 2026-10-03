@@ -10,3 +10,6 @@ Vi kan udskifte vores impuls med formlen for impuls
 $$L_{O} = r \times p = m(r \times v)$$
 $m$ er masse
 $v$ er hastighed
+
+![[Pasted image 20261002142158.png]]
+
