@@ -31,5 +31,8 @@ $$L_{i} = r_{i} \times p_{i}= m_{i}r_{i}\times(\omega \times r_{i})$$
 ![[Pasted image 20261003155837.png|444]]
 
 
-Her kigger vi for 
+**Her kigger vi for hele legmet:**
+![[Pasted image 20261003171407.png|367]]
+
 ![[Pasted image 20261003171338.png]]
+
