@@ -19,4 +19,8 @@ $v$ er hastighed
 $$L_{O}= \sum _{i} L_{O,i} = \sum _{i} r_{i}\times p_{i}$$
 Vi summerer for hver partikel impulsmomentet.
 
-Ved diff f
+Ved diff fåes:
+
+$$\frac{dL_{O}}{dt}=\sum_{i}r_{i}\times F_{i}=\tau_{O, ext}$$
+Som er [[Impulsmomentsætning]] for partikelssystem
+
