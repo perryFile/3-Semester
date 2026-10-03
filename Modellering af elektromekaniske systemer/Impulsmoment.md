@@ -22,5 +22,6 @@ Vi summerer for hver partikel impulsmomentet.
 Ved diff fåes:
 
 $$\frac{dL_{O}}{dt}=\sum_{i}r_{i}\times F_{i}=\tau_{O, ext}$$
+
 Som er [[Impulsmomentsætning]] for partikelssystem
 
