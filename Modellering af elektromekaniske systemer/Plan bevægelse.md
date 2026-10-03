@@ -4,4 +4,5 @@ Plan bevægelse kan også være feks en bue, lige bevægelse, eller kombination 
 
 Impulsmomentet er givet ved:
 
+$$L_{O}= mr\times v=mr\times(v_{r}+v_{\theta})$$
 
