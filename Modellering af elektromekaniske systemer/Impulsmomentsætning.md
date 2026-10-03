@@ -6,4 +6,6 @@ $$\frac{dL_{O}}{dt}=r\times F=\tau_{O}$$
 
 ## Partikelsystem
 
-$$\frac{dL_{O}}{dt}=\sum_{i}r_{i}\times F_{i}=\tau_{O, ext}$$
+$$\frac{dL_{O}}{dt}=\tau_{O, ext}$$
+
+$\tau_{O,ext}$ er de ydre kræfters påvirkning
