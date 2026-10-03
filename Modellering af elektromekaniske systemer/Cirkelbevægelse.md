@@ -1,2 +1,2 @@
 
-Sted vektoren $r$ og hastighed vektoren $v$ er orthogonale 
+Sted vektoren $r$ og hastighed vektoren $v$ er orthogonale under cirkelbevægelsen.
