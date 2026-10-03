@@ -21,5 +21,7 @@ Enhed: $[Nm]$
 ## Inertimoment
 ![[Pasted image 20261003155316.png|232]]
 
-For massen $m$
+Impulsmomentet for massen $m_{i}$ omkring punktet $O$ givet ved:
+
+$$L_{i} = r_{i} \times p_{i}= m_{i}r_{i}\times$$
 
