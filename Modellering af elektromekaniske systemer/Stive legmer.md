@@ -18,5 +18,8 @@ $$\frac{dL_{C,z}}{dt}=\tau_{C,z}$$
 
 Enhed: $[Nm]$
 
+## Inertimoment
+![[Pasted image 20261003155316.png|232]]
 
+For massen $m$
 
