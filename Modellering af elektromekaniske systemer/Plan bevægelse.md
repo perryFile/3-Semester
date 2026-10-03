@@ -20,9 +20,9 @@ Dermed
 
 $$L_{O}=mr v_{\theta}$$
 
-Som beskrevet i [[Cirkelbevægelse]] så er $v_{t}$
-
-
-![[Pasted image 20261003131150.png]]
-
+Som beskrevet i [[Cirkelbevægelse]] så er $v_{\theta}=r\omega$
+Så:
+$$L_{O}=mr² \omega $$
+Husk 
+$\omega$ er vinkelfrekvens
 
