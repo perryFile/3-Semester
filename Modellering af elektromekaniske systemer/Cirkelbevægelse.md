@@ -7,4 +7,10 @@ Farten for en cirkelbevægelse er:
 
 $$v = r\cdot \omega $$
 Hvor:
-$\omega$ er vinkelhastigheden 
+$\omega$ er vinkelhastigheden, målt i $\frac{rad}{s}$
+
+[[Impulsmoment]] under cirkelbevægelsen er givet ved:
+
+$$L_{O} = m\cdot r²\cdot \omega $$
+$m$ er massen
+
