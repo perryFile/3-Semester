@@ -16,3 +16,7 @@ $v$ er hastighed
 
 ## Partikelsystem
 
+$$L_{O}= \sum _{i} L_{O,i} = \sum _{i} r_{i}\times p_{i}$$
+Vi summerer for hver partikel impulsmomentet.
+
+Ved diff f
