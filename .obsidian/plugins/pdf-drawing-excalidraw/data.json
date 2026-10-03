@@ -85,12 +85,13 @@
         "drawing": "Modellering af elektromekaniske systemer/Slides/Noter Lektion 5 - Impulsmoment of stød.excalidraw.md"
       }
     },
-    "Signalbehandling/Slides/Lecture - Filter.pdf": {
+    "Signalbehandling/Slides/6 Lecture - Filter.pdf": {
       "recoveries": {},
       "project": {
         "id": "72457baf-f0b6-4100-afbc-841cd07cc097",
-        "drawing": "Signalbehandling/Slides/Lecture - Filter.excalidraw.md"
-      }
+        "drawing": "Signalbehandling/Slides/(noter) 6 Lecture - Filter.excalidraw.md"
+      },
+      "legacyDraftPath": ".obsidian/plugins/pdf-drawing-excalidraw/drafts/5252d1e036e5567374c74d9377870eb7a52ac7b3b5f5124c61430695d208d1cc.json"
     }
   }
 }
