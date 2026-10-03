@@ -13,3 +13,6 @@ $v$ er hastighed
 
 ![[Pasted image 20261002142158.png]]
 
+
+## Partikelsystem
+

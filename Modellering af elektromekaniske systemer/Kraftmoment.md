@@ -10,4 +10,6 @@ $r_{\perp}$ er den vinkelrette afstand til kraften $F$
 Kraftmomentet fortæller altså hvor meget kræften $F$ prøver at dreje legmet omkring punktet $O$
 
 Vigtig pointe:
-Hvis kraften $F$ peger i retningen $r$ vil vinklen $\theta$ være 0 og dermed 
+Hvis kraften $F$ peger i retningen $r$ vil vinklen $\theta$ være 0 og dermed $\tau_{O}=0$, men hvis kraften $F$ er vinkelret på $r$ så vil $\tau_{O}=rF$. Vi kan bare gange da $\sin(90)=1$ 
+
+
