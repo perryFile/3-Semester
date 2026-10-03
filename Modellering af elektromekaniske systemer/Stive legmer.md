@@ -1,3 +1,4 @@
+
 Partikel systemer, hvor den inbyrders afstand til hinanden ikke ændre sig. 
 Altså de objekter vi arbejder med
 
@@ -29,3 +30,6 @@ $$L_{i} = r_{i} \times p_{i}= m_{i}r_{i}\times(\omega \times r_{i})$$
 
 ![[Pasted image 20261003155837.png|444]]
 
+
+Her kigger vi for 
+![[Pasted image 20261003171338.png]]
