@@ -36,4 +36,8 @@ Vi kan max sende en hel UDP pakke med 65353 bytes. Så payload er 65535-8 = 6552
 
 ![[Pasted image 20261005112724.png]]
 
-Det største tal vi kan lave med 2 bytes er 16² = 
+Det største tal vi kan lave med 2 bytes er $2^{16}$ = 65536
+Det fordi source port er 2 bytes altså 16 bit langt
+
+![[Pasted image 20261005112939.png]]
+
