@@ -41,3 +41,5 @@ Det fordi source port er 2 bytes altså 16 bit langt
 
 ![[Pasted image 20261005112939.png]]
 
+
+![[Pasted image 20261005113530.png]]
