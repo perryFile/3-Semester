@@ -30,3 +30,10 @@ Værdien af "Lenght" er hele UDP pakkens længde. Her er værdien 50 bytes, hvil
 ![[Pasted image 20261005112417.png|530]]
 
 ![[Pasted image 20261005112436.png]]
+
+Vi kan max sende en hel UDP pakke med 65353 bytes. Så payload er 65535-8 = 65527. Vi trækker altså de 8 bytes fra headeren fra
+![[Pasted image 20261005112549.png|374]]
+
+![[Pasted image 20261005112724.png]]
+
+Det største tal vi kan lave med 2 bytes er 16² = 
