@@ -1,37 +1,26 @@
----
+![[Pasted image 20261006143045.png|513]]
 
-excalidraw-plugin: parsed
-tags: [excalidraw]
+## IADD
+![[Pasted image 20261006140807.png]]
 
----
-==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
+MDR = MEM || Betyder at vi bruger en cycle på at læse data ind i MDR
 
+|     | IADD1              | IADD2     | IADD3                                 |
+| --- | ------------------ | --------- | ------------------------------------- |
+| Cy  | **MAR=SP=SP-1;rd** | **H=TOS** | **MDR = TOS = MDR+H; wr; goto(MBR1)** |
+| 1   | B = SP             |           |                                       |
+| 2   | C = B-1            | A = TOS   |                                       |
+| 3   | MAR = sp = C; rd   | C = A     |                                       |
+| 4   | MDR = MEM          | H = C     |                                       |
+| 5   |                    |           | A = H                                 |
+| 6   |                    |           | B = MDR                               |
+| 7   |                    |           | C = MDR+H                             |
+| 8   |                    |           | MDR = TOS = C; wr                     |
+| 9   |                    |           | MEM = MDR; goto(MBR1)                 |
 
-# Excalidraw Data
+Vær opmærksom på at vi skal vente (I "IADD3") på at H er klar og derfor kan vi først starte i næste linje. I cycle 9 skal vi vente på at MEM = MDR, at vi skriver til memory.
 
-## Text Elements
-## Embedded Files
-6b62fe1c63dcedb5977759f3b3c8efec53f88520: [[Pasted Image 20261006140416_827.png]]
+Fordi vi har 3 latches vil vi kunne clocke 3 gange så hurtigt så vi vil kunne gøre det på 3 "fulde" cycles dermed samme hastighed som Mic2
+## ISTORE
+![[Pasted image 20261006143652.png]]
 
-%%
-## Drawing
-```compressed-json
-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
-```
-%%
