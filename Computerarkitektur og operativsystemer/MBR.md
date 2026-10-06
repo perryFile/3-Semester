@@ -1,0 +1,1 @@
+MBR kan enden indeholde den næste instruktion, ikke adressen, men indeholdet. MBR kan også indeholde den variabel som feks bliver givet i IJVM koden: BIPUSH. Her kan den feks kaldes BIPUSH 5
