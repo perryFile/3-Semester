@@ -24,3 +24,11 @@ Fordi vi har 3 latches vil vi kunne clocke 3 gange så hurtigt så vi vil kunne 
 ## ISTORE
 ![[Pasted image 20261006143652.png]]
 
+
+|     | istore1        | istore2       | istore3             | istore4 | istore5             |
+| --- | -------------- | ------------- | ------------------- | ------- | ------------------- |
+| Cy  | MAR = LV+MBR1U | MDR = TOS; wr | MAR = SP = SP-1; rd |         | TOS=MDR; goto(MBR1) |
+| 1   |                |               |                     |         |                     |
+| 2   |                |               |                     |         |                     |
+| 3   |                |               |                     |         |                     |
+|     |                |               |                     |         |                     |
