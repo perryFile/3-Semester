@@ -12,23 +12,22 @@ MDR = MEM || Betyder at vi bruger en cycle på at læse data ind i MDR
 | 2   | C = B-1            | A = TOS   |                                       |
 | 3   | MAR = sp = C; rd   | C = A     |                                       |
 | 4   | MDR = MEM          | H = C     |                                       |
-| 5   |                    |           | A = H                                 |
-| 6   |                    |           | B = MDR                               |
-| 7   |                    |           | C = MDR+H                             |
-| 8   |                    |           | MDR = TOS = C; wr                     |
-| 9   |                    |           | MEM = MDR; goto(MBR1)                 |
+| 5   |                    |           | A = H; B = MDR                        |
+| 6   |                    |           | C = A+B                               |
+| 7   |                    |           | MDR = TOS = C; wr                     |
+| 8   |                    |           | MEM = MDR; goto(MBR1)                 |
 
-Vær opmærksom på at vi skal vente (I "IADD3") på at H er klar og derfor kan vi først starte i næste linje. I cycle 9 skal vi vente på at MEM = MDR, at vi skriver til memory.
+Vær opmærksom på at vi skal vente (I "IADD3") på at H er klar og derfor kan vi først starte i næste linje. I cycle 8 skal vi vente på at MEM = MDR, at vi skriver til memory.
 
-Fordi vi har 3 latches vil vi kunne clocke 3 gange så hurtigt så vi vil kunne gøre det på 3 "fulde" cycles dermed samme hastighed som Mic2
+Fordi vi har 3 latches vil vi kunne clocke 3 gange så hurtigt så vi vil kunne gøre det på 8 cyclus vs MIC2's 9 cyclus. Så MIC3 er hurtigere
 ## ISTORE
 ![[Pasted image 20261006143652.png]]
 
 
-|     | istore1        | istore2       | istore3             | istore4 | istore5             |
-| --- | -------------- | ------------- | ------------------- | ------- | ------------------- |
-| Cy  | MAR = LV+MBR1U | MDR = TOS; wr | MAR = SP = SP-1; rd |         | TOS=MDR; goto(MBR1) |
-| 1   |                |               |                     |         |                     |
-| 2   |                |               |                     |         |                     |
-| 3   |                |               |                     |         |                     |
-|     |                |               |                     |         |                     |
+|     | istore1            | istore2           | istore3                 | istore4 | istore5                 |
+| --- | ------------------ | ----------------- | ----------------------- | ------- | ----------------------- |
+| Cy  | **MAR = LV+MBR1U** | **MDR = TOS; wr** | **MAR = SP = SP-1; rd** |         | **TOS=MDR; goto(MBR1)** |
+| 1   | A = LV; B = MBR1U  |                   |                         |         |                         |
+| 2   | C = A+B            | A = TOS           |                         |         |                         |
+| 3   | MAR = C            | C = A             |                         |         |                         |
+|     |                    | MDR = C; wr       |                         |         |                         |
