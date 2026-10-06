@@ -24,17 +24,19 @@ Fordi vi har 3 latches vil vi kunne clocke 3 gange så hurtigt så vi vil kunne 
 ![[Pasted image 20261006143652.png]]
 
 
-|     | istore1            | istore2           | istore3                 | istore4   | istore5                 |
-| --- | ------------------ | ----------------- | ----------------------- | --------- | ----------------------- |
-| Cy  | **MAR = LV+MBR1U** | **MDR = TOS; wr** | **MAR = SP = SP-1; rd** |           | **TOS=MDR; goto(MBR1)** |
-| 1   | A = LV; B = MBR1U  |                   |                         |           |                         |
-| 2   | C = A+B            | A = TOS           | B = SP;                 |           |                         |
-| 3   | MAR = C            | C = A             | C = SP - 1              |           |                         |
-| 4   |                    | MDR = C; wr       | MAR = SP = C; rd        |           |                         |
-| 5   |                    |                   |                         | MDR = MEM |                         |
-| 6   |                    |                   |                         |           | A = MDR                 |
-| 7   |                    |                   |                         |           | C = MDR                 |
-| 8   |                    |                   |                         |           | TOS = C; goto(MBR1)     |
+|     | istore1            | istore2           | istore3                 | istore4 | istore5                 |
+| --- | ------------------ | ----------------- | ----------------------- | ------- | ----------------------- |
+| Cy  | **MAR = LV+MBR1U** | **MDR = TOS; wr** | **MAR = SP = SP-1; rd** |         | **TOS=MDR; goto(MBR1)** |
+| 1   | A = LV; B = MBR1U  |                   |                         |         |                         |
+| 2   | C = A+B            | A = TOS           |                         |         |                         |
+| 3   | MAR = C            | C = A             | B = SP;                 |         |                         |
+| 4   |                    | MDR = C; wr       | C = SP - 1              |         |                         |
+| 5   |                    | Mem = MDR         | MAR = SP = C; rd        |         |                         |
+| 6   |                    |                   | MDR = Mem               |         |                         |
+| 7   |                    |                   |                         |         | A = MDR                 |
+| 8   |                    |                   |                         |         | C = MDR                 |
+| 9   |                    |                   |                         |         | TOS = C                 |
+|     |                    |                   |                         |         | goto(MBR1)              |
 
 MIC 2 = $5\cdot 3 = 15$ cycles 
 vs 
@@ -53,6 +55,7 @@ MIC 3 = 8 cycles
 | 4   | MDR = MEM          | MAR = SP = C      |                            |
 | 5   |                    |                   | A = MDR; wr                |
 | 6   |                    |                   | C = A                      |
-| 7   |                    |                   | TOS = C; goto(MBR1)        |
+| 7   |                    |                   | TOS = C;                   |
+| 8   |                    |                   | goto(MBR1)                 |
 
-Her vil MIC 3 kunne gøre det på 7 cycles vs MIC 2 der vil bruge 9 cycles
+Her vil MIC 3 kunne gøre det på 8 cycles vs MIC 2 der vil bruge 9 cycles
