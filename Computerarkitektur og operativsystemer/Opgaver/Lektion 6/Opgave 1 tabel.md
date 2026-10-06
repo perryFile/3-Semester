@@ -1,4 +1,6 @@
+![[Pasted image 20261006143045.png|513]]
 
+## IADD
 ![[Pasted image 20261006140807.png]]
 
 MDR = MEM || Betyder at vi bruger en cycle på at læse data ind i MDR
@@ -13,5 +15,6 @@ MDR = MEM || Betyder at vi bruger en cycle på at læse data ind i MDR
 | 5   |                    |           | A = H                                 |
 | 6   |                    |           | B = MDR                               |
 | 7   |                    |           | C = MDR+H                             |
-| 8   |                    |           | MDR = TOS = C; wr                     |
-| 9   |                    |           | goto(MBR1)                            |
+| 8   |                    |           | MDR = TOS = C; wr goto(MBR1)          |
+| 9   |                    |           | MEM = MDR                             |
+Vær opmærksom på at vi skal vente (I "IADD3") på at H er klar og derfor kan vi først starte i næste linje. I cycle 9 ska
