@@ -55,4 +55,4 @@ MIC 3 = 8 cycles
 | 6   |                    |                   | C = A                      |
 | 7   |                    |                   | TOS = C; goto(MBR1)        |
 
-Her vil MIC 3 kunne gøre det på 7 cycles vs MIC2's 9 cycles
+Her vil MIC 3 kunne gøre det på 7 cycles vs MIC 2 der vil bruge 9 cycles
