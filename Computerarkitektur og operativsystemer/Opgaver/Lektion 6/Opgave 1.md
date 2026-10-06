@@ -47,6 +47,12 @@ MIC 3 = 8 cycles
 |     | iload1             | iload2            | iload3                     |
 | --- | ------------------ | ----------------- | -------------------------- |
 | cy  | MAR = LV+MBR1U; rd | MAR = SP = SP + 1 | TOS = MDR; wr; goto (MBR1) |
-| 1   |                    |                   |                            |
-| 2   |                    |                   |                            |
-| 3   |                    |                   |                            |
+| 1   | A = LV; B = MBR1U  |                   |                            |
+| 2   | C = A+B            | A = SP            |                            |
+| 3   | MAR = C; rd        | C = A+1           |                            |
+| 4   | MDR = MEM          | MAR = SP = C      |                            |
+| 5   |                    |                   | A = MDR; wr                |
+| 6   |                    |                   | C = A                      |
+| 7   |                    |                   | TOS = C; goto(MBR1)        |
+
+Her vil MIC 3 kunne gøre det på 7 cycles vs MIC2's 9 cycles
