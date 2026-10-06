@@ -35,3 +35,7 @@ Fordi vi har 3 latches vil vi kunne clocke 3 gange så hurtigt så vi vil kunne 
 | 6   |                    |                   |                         |           | A = MDR                 |
 | 7   |                    |                   |                         |           | C = MDR                 |
 | 8   |                    |                   |                         |           | TOS = C; goto(MBR1)     |
+
+MIC 2 = $5\cdot = 15 cycles 
+vs 
+MIC 3 = 
