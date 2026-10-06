@@ -24,10 +24,14 @@ Fordi vi har 3 latches vil vi kunne clocke 3 gange så hurtigt så vi vil kunne 
 ![[Pasted image 20261006143652.png]]
 
 
-|     | istore1            | istore2           | istore3                 | istore4 | istore5                 |
-| --- | ------------------ | ----------------- | ----------------------- | ------- | ----------------------- |
-| Cy  | **MAR = LV+MBR1U** | **MDR = TOS; wr** | **MAR = SP = SP-1; rd** |         | **TOS=MDR; goto(MBR1)** |
-| 1   | A = LV; B = MBR1U  |                   |                         |         |                         |
-| 2   | C = A+B            | A = TOS           |                         |         |                         |
-| 3   | MAR = C            | C = A             |                         |         |                         |
-|     |                    | MDR = C; wr       |                         |         |                         |
+|     | istore1            | istore2           | istore3                 | istore4   | istore5                 |
+| --- | ------------------ | ----------------- | ----------------------- | --------- | ----------------------- |
+| Cy  | **MAR = LV+MBR1U** | **MDR = TOS; wr** | **MAR = SP = SP-1; rd** |           | **TOS=MDR; goto(MBR1)** |
+| 1   | A = LV; B = MBR1U  |                   |                         |           |                         |
+| 2   | C = A+B            | A = TOS           | B = SP;                 |           |                         |
+| 3   | MAR = C            | C = A             | C = SP - 1              |           |                         |
+| 4   |                    | MDR = C; wr       | MAR = SP = C; rd        |           |                         |
+| 5   |                    |                   |                         | MDR = MEM |                         |
+| 6   |                    |                   |                         |           | A = MDR                 |
+| 7   |                    |                   |                         |           | C = MDR                 |
+| 8   |                    |                   |                         |           | TOS = C; goto(MBR1)     |
