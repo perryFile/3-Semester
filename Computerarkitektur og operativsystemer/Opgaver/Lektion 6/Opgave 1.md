@@ -36,11 +36,11 @@ Fordi vi har 3 latches vil vi kunne clocke 3 gange så hurtigt så vi vil kunne 
 | 7   |                    |                   |                         |         | A = MDR                 |
 | 8   |                    |                   |                         |         | C = MDR                 |
 | 9   |                    |                   |                         |         | TOS = C                 |
-|     |                    |                   |                         |         | goto(MBR1)              |
+| 10  |                    |                   |                         |         | goto(MBR1)              |
 
 MIC 2 = $5\cdot 3 = 15$ cycles 
 vs 
-MIC 3 = 8 cycles
+MIC 3 = 10 cycles
 
 ## ILOAD
 ![[Pasted image 20261006145137.png]]
