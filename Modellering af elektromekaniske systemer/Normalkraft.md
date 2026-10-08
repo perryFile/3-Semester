@@ -3,4 +3,4 @@ Hvis en kasse står på et vandret bord vil den have en kraft ned mod bordet på
 
 Eller hvis vi har en skrå plade:
 
-$$N = m\cdot g $$
+$$N = m\cdot g \cdot \cos(\theta) $$
