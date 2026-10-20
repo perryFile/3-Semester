@@ -16,3 +16,7 @@ PARENT: 1
 PARENT: 2
 PARENT: 3
 PARENT: 4
+
+
+Pointe med opgave: 
+Der kommer 
