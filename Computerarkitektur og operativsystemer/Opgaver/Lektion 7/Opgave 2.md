@@ -11,6 +11,7 @@ Husk
 ```cpp
 pid = fork()
 ```
+
 Det giver pid for childen. Derudover er 
 
 ```cpp
