@@ -2,5 +2,3 @@
 
 ![[Pasted image 20261020140104.png]]
 
-
-There are 5 processes created including the parent.
