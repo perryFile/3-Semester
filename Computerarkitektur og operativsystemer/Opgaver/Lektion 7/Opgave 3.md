@@ -19,4 +19,4 @@ PARENT: 4
 
 
 Pointe med opgave: 
-Der kommer 
+Der bliver en ny stack og ny heap til childen når der bliver forket. Den deler altså ikke samme variabler. Dermed er num listen ikke den samme i child og parent.
