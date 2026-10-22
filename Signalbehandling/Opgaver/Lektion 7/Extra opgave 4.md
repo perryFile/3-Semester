@@ -17,3 +17,4 @@ legend('Analog Butterworth', ...
 
 ```
 
+![[Pasted image 20261022135154.png]]
