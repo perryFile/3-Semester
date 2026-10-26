@@ -27,6 +27,7 @@ Vi har payload på 2476 bytes. Nej ikke alt dataen blev "fittet" i en segment. V
 
 ![[Pasted image 20261026111018.png]]
 
+![[Pasted image 20261026112623.png]]
 a.
 Tiden er 5.2546...![[Pasted image 20261026111048.png]]
 
@@ -44,4 +45,8 @@ d.
 e.
 ![[Pasted image 20261026111933.png]]
 Så estimatedRTT = (1-0.125)* 0.1622+0.125*0.20434 = **0.1674675**
+
+
+
+![[Pasted image 20261026112712.png]]
 
