@@ -26,4 +26,5 @@ Den sender en sequence number på 0 og en ack på 1
 Vi har payload på 2476 bytes. Nej ikke alt dataen blev "fittet" i en segment. Vi sender flere pakker.
 
 ![[Pasted image 20261026111018.png]]
-![[Pasted image 20261026111048.png]]
+
+1)![[Pasted image 20261026111048.png]]
