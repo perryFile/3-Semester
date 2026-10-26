@@ -55,4 +55,4 @@ Så estimatedRTT = (1-0.125)* 0.1622+0.125*0.20434 = **0.1674675**
 De første 4 pakker sendt har en payload på 2476 bytes
 ![[Pasted image 20261026112957.png]]
 Vi har så en header længde på 32 bytes. Så 
-2476+8 = 2484
+2476+32 = 2508
