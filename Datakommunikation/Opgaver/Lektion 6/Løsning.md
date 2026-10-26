@@ -27,4 +27,16 @@ Vi har payload på 2476 bytes. Nej ikke alt dataen blev "fittet" i en segment. V
 
 ![[Pasted image 20261026111018.png]]
 
-1)![[Pasted image 20261026111048.png]]
+a.
+Tiden er 5.2546...![[Pasted image 20261026111048.png]]
+
+b. 
+![[Pasted image 20261026111555.png]]
+Den blev acket ved tiden 5.4268...
+
+c. 
+Den er 5.4268-5.2646 = 0.1622
+
+d.
+![[Pasted image 20261026111804.png]]
+5.
