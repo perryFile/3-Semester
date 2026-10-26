@@ -11,3 +11,9 @@ Vi sender ud fra min port 52042 og sender til destination port 80, som er http p
 
 ![[Pasted image 20261026105546.png]]
 
+Den har et sequence number på 0
+![[Pasted image 20261026105735.png]]
+
+At tcp pakken har en segment længde på 0 og sequence number på 0
+
+![[Pasted image 20261026105836.png]]
