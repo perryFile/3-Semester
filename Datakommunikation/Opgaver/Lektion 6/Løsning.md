@@ -56,3 +56,10 @@ De første 4 pakker sendt har en payload på 2476 bytes
 ![[Pasted image 20261026112957.png]]
 Vi har så en header længde på 32 bytes. Så 
 2476+32 = 2508
+
+![[Pasted image 20261026113758.png]]
+OBS ! skal være maksimum og ikke minimum
+
+![[Pasted image 20261026113828.png]]
+Vær obs på at vores maksimum window size er 69120.
+Vores window 540 bliver scalet med 128 som er vores scaling faktor. Den bliver sat i vores første handshake.
