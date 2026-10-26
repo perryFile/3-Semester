@@ -22,3 +22,5 @@ At tcp pakken har en segment længde på 0 og sequence number på 0
 Den sender en sequence number på 0 og en ack på 1
 
 ![[Pasted image 20261026110059.png]]
+![[Pasted image 20261026110813.png]]
+Vi har payload på 2476 bytes. Nej ikke alt dataen blev "fitt"
