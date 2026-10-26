@@ -17,3 +17,8 @@ Den har et sequence number på 0
 At tcp pakken har en segment længde på 0 og sequence number på 0
 
 ![[Pasted image 20261026105836.png]]
+![[Pasted image 20261026105955.png]]
+
+Den sender en sequence number på 0 og en ack på 1
+
+![[Pasted image 20261026110059.png]]
