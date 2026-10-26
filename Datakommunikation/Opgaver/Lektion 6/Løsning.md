@@ -63,3 +63,4 @@ OBS ! skal være maksimum og ikke minimum
 ![[Pasted image 20261026113828.png]]
 Vær obs på at vores maksimum window size er 69120.
 Vores window 540 bliver scalet med 128 som er vores scaling faktor. Den bliver sat i vores første handshake.
+Husk vores window size er hvor meget plads der er på serverens "kø"
