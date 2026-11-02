@@ -1,0 +1,2 @@
+Subnet kan dele ip adressen om i områder. Det kan være smart hvis man gerne vil give forskellige regler til nogle typer af clienter men ikke andre. Feks lærer og elever. I eksemplet under vil de første 24 bits læst fra venstre mod højre, være ip adressen, hvor så de sidste 8 bit, altså 256 forskellige tal kan være 
+![[Pasted image 20261102215747.png|431]]
