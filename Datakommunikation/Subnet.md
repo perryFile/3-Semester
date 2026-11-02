@@ -3,4 +3,9 @@ Subnet kan dele ip adressen om i områder. Det kan være smart hvis man gerne vi
 Hvis man feks har ip adressen som subnet 223.1.3.0/24 vil 223.1.3 være subnettet og antal af forskellige bruger vil nu være 223.1.3.0 - 223.1.3.256 
 Der vil altså ikke være andre steder i verden(hvis vi ser bort fra NAT opdeling) hvor disse ip adresser vil være eksisterende.
 
-En internetudbyder i danmark kan feks have subnettet 223.1.0.0/16 her vil 223.1
+## Videre forklaring
+En internetudbyder i danmark kan feks have subnettet 223.1.0.0/16 her vil 223.1.0.0 - 223.1.256.256 give dem 65.536 forskellige ip adresser som de feks kan tildele routere til hustande. Der vil ikke være andre steder hvor disse ip adresser mellem 223.1.0.0 - 223.1.256.256 vil eksisterer. 
+
+$$65.536\cdot 65.536 = 4.294.967.296$$
+
+Der vil stadig være over 4 milliarder forskellige ip adresser. 
