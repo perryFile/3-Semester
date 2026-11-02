@@ -155,6 +155,13 @@
         "id": "c577474e-4356-4f06-acbd-b50a3604b049",
         "drawing": "Signalbehandling/Slides/(noter) 8 Lecture - IIR (2).excalidraw.md"
       }
+    },
+    "Datakommunikation/Slides/07 - NetworkLayerDataPlane.pdf": {
+      "recoveries": {},
+      "project": {
+        "id": "8ba8c0df-fe22-4fad-b9ce-51f56a1442ea",
+        "drawing": "Datakommunikation/Slides/(noter) 07 - NetworkLayerDataPlane.excalidraw.md"
+      }
     }
   }
 }
