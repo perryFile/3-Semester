@@ -16,14 +16,9 @@ Min påstand var, at en router (f.eks. ens hjemmerouter) som udgangspunkt får t
 
 Enhederne på hjemmenetværket får derimod tildelt lokale IP-adresser, typisk via DHCP, mens NAT sørger for at oversætte mellem de private og offentlige adresser. Hvis man eksempelvis ønsker at tilgå sin stationære computer via SSH fra et andet sted i verden, kan man konfigurere port forwarding på sin router, så indgående trafik på en bestemt port videresendes til den pågældende computer.
 
-Det er dog ikke altid, at ens hjemmerouter har sin egen offentlige IP-adresse. Internetudbyderen kan nemlig benytte **CGNAT (Carrier-Grade NAT)**, hvilket betyder, at flere husstande og deres routere deler den samme offentlige IPv4-adresse.
+Det er dog ikke altid, at ens hjemmerouter har sin egen offentlige IP-adresse. Internetudbyderen kan nemlig benytte cgnat, hvilket betyder, at flere husstande og deres routere deler den samme offentlige IPv4-adresse.
 
 I dette tilfælde vil ens hjemmerouter være placeret bag internetudbyderens NAT. Det betyder, at man normalt ikke kan oprette en SSH-forbindelse udefra ved blot at konfigurere port forwarding på sin egen router. CGNAT-enheden ved nemlig ikke, hvilken af de interne routere en ny indgående forbindelse skal videresendes til.
 
-Her kan man muligvis benytte den løsning, du nævnte, Simon (RPS), eller lave en aftale med internetudbyderen om eksempelvis at få tildelt sin egen offentlige IP-adresse eller få konfigureret port forwarding.
-
-Min pointe var altså, at mange hjemmeroutere har deres egen offentlige IPv4-adresse, som gør det muligt at tilgå enheder på hjemmenetværket udefra via port forwarding. Men CGNAT er en vigtig undtagelse, som jeg ikke havde taget højde for i vores diskussion.
-
-Jeg fandt også denne tråd, som diskuterer netop spørgsmålet:
-
+Her kan man muligvis benytte den løsning, du nævnte, Simon (RPS), eller lave en aftale med internetudbyderen om eksempelvis at få tildelt sin egen offentlige IP-adresse eller få konfigureret port forwarding. Men som udgangspunkt kan severen ikke ligge bag en NAT, uden aftaler med udbyder eller andre løsninger som tailscape. Så vil man ikke kunne komme i kontakt med severen ude fra.
 [https://www.quora.com/Does-every-router-get-a-unique-public-IP-address](https://www.quora.com/Does-every-router-get-a-unique-public-IP-address)
