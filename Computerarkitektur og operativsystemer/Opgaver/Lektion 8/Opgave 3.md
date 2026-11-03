@@ -5,4 +5,4 @@
 Void ```*runner(void *param)``` vil lave en funktion som vil sætte en global variabel til at være 5. 
 
 Vi starter med at forke, nu har vi to processer. Vores child vil gå ind i det første if loop.
-Her vil 
+Her vil vi initialiserer en ny thread ```pthread_attr_init(&attr)```og derefter laver vi en ny thread med create ```pthread_create(&tid, &attr, runner, NULL)``` 
