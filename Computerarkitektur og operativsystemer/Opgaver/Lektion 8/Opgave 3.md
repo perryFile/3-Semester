@@ -10,4 +10,4 @@ Her vil vi initialiserer en ny thread ```pthread_attr_init(&attr)```og derefter 
 Hvis det er ikke er en child process skal den vente på child process er færdig og så printe vores værdi. 
 
 a) 
-Ud fra overstående vil både LINE C printe værdien 5 da det er en global variabel som vi ændre og derfor overleverog vores LINE P printe værdien 0 
+Ud fra overstående vil både LINE C printe værdien 5 da det er en global variabel som vi ændre og derfor overlever at vi har lavet en thread og joiner igen. Vores LINE P printe værdien 0 da når vi forke vi vil lave en kopi af hele vores kode og dermed også den globale variabel. 
