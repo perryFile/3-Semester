@@ -9,4 +9,4 @@ Der vil komme 6 unikke processer.
 b) 
 Der vil komme 8 unikke tråde.
 Husk hver process er også lig med en tråd. 
-- Inde i if lo
+- Inde i if loopet har vi 2 child som vil lave en thread hver. Vi har i alt 6 processor så dermed 6 tråde, plus de 2 ekstra tråde der er blevet lavet, så 8 tråde i det hele.
