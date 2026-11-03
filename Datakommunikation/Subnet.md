@@ -12,6 +12,9 @@ $$65.536\cdot 65.536 = 4.294.967.296$$
 
 Der vil stadig være over 4 milliarder forskellige ip adresser. 
 
+Hvis en udbyder har fået: 
+1.0.0.0/8 så råder de over 16.777.216 adresser, men derfor kan en anden udbyder godt få
+2.0.0.0/24 altså 256 adresser, disse vil stadig være tilgængelige. 
 
 ## Hvor?
-Der kan være subnets overalt. På din router, ved internetudbyder, på internettet
+Der kan være subnets overalt. På din router, ved internetudbyder, på internettet osv. 
