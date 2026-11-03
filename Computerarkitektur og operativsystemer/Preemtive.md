@@ -1,0 +1,1 @@
+Preemtive betyder bare at man kan lave et kontekst switch. Man må stoppe en process og udskifte den med en ny.
