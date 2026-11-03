@@ -5,6 +5,10 @@ a)
 
 
 b)
-Turnaround time er tiden forlader minus tiden den ankommer.(absolut værdi)
-P1: 0-15 = 15
-P2: 
+Turnaround time er tiden forlader minus tiden den ankommer.
+P1: 15-0 = 15
+P2: 95-0 = 95
+P3: 75-20 = 55
+P4: 80-25 = 55
+P5: 50-45 = 5
+P6: 70-55 = 15
