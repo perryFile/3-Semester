@@ -14,3 +14,6 @@ Pros and cons for type 2
 
 ## Cascade
 Vi kan dele vores systemer op i mindre bidder for at undgå round off error som akumelerer op til en større fejl
+
+## Cascade vs parallel
+![[Pasted image 20261105100035.png]]
