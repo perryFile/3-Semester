@@ -12,3 +12,5 @@ Pros and cons for type 2
 | Large signal swings              |
 | Error due to routing error       |
 
+## Cascade
+Vi kan dele vores systemer op i mindre bidder for at undgå round off error som akumelerer op til en større fejl
