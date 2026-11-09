@@ -1,5 +1,8 @@
 
-Husk når vi bruger traceroute prøver at vi at komme hen til vores end point som vi specificere. Hver gang tilføjer vi en til time to live. Vi sender ICMP pakker som vil lave en ping request og vil modtage med ICMP en  
+Husk når vi bruger traceroute prøver at vi at komme hen til vores end point som vi specificere. Hver gang tilføjer vi en til time to live. Vi sender ICMP pakker som vil lave en ping request og vil modtage med ICMP en echo ping recieve.
+
+På linux kan vi køre: sudo traceroute -I www.ust.hk 
+-I betyder at vi vil sende ICMP pakker ellers vil linux sende UDP pakker. Når vi modtager ICMP vil den pakke vores request ind i en ICMP payload. Så altå både vores IP protocol og vores UDP pakke pakket ind i endnu en ICMP pakke som ligger i en IP protocol.
 
 
 ![[Pasted image 20261109104342.png]]
