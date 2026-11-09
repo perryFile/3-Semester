@@ -17,7 +17,9 @@ Type er 0 som er en echo ping. Code er også 0.
 Vi har 2 hex numre af 2 så det er 32 bits som er 4 bytes
 
 
+![[Pasted image 20261109110518.png]]
 
+Så vil nummeret være 17 som 
 
 
 
