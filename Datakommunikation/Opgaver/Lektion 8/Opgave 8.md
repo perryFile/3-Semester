@@ -1,4 +1,7 @@
 
+Husk når vi bruger traceroute prøver at vi at komme hen til vores end point som vi specificere. Hver gang tilføjer vi en til time to live. Vi sender ICMP pakker som vil lave en ping request og vil modtage med ICMP en  
+
+
 ![[Pasted image 20261109104342.png]]
 
 Fordi den ikke skal op igennem transport laget, men holdes på netværks laget.
@@ -19,7 +22,9 @@ Vi har 2 hex numre af 2 så det er 32 bits som er 4 bytes
 
 ![[Pasted image 20261109110518.png]]
 
-Så vil nummeret være 17 som 
+Så vil nummeret være 17 som er en UDP pakke.
+
+
 
 
 
