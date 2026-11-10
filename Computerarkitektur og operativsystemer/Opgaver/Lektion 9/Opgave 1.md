@@ -11,3 +11,6 @@ Hvis pop og push køres samtidig og den ene tilføjer noget til stakken, mens de
 b) 
 Vi kunne lave en mutex lock rundt om dataen
 Så man låser variablen stack og top
+
+![[Pasted image 20261110140450.png|307]]
+
