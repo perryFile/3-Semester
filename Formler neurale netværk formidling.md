@@ -1,5 +1,5 @@
 
-$$ \sum_{i} Input^{i} \cdot Weight ^{i} = 2 \cdot 4 + 3 \cdot 4 = 20$$
+$$ \sum_{i} Input^{i} \cdot Weight ^{i} = 2 \cdot 4 - 3 \cdot 4 = -4 \rightarrow 0$$
 
 $$
 f(x) =
