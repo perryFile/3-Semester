@@ -13,4 +13,8 @@ FIR filter har altid Linear phase
 Det er en fourier transform.
 
 
-## 
+## Koefficenter
+![[Pasted image 20261112093704.png]]
+
+Husk at lave $c_{m}$ om til $a_{i}$
+$a_{i} = C_{m-i}$
