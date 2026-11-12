@@ -26,3 +26,4 @@ $a_{i} = C_{m-i}$
 - Calculate filter coefficent $a_{i} = C_{M-i}$
 
 Husk:
+![[Pasted image 20261112094824.png|490]]
