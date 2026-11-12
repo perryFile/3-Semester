@@ -18,3 +18,9 @@ Det er en fourier transform.
 
 Husk at lave $c_{m}$ om til $a_{i}$
 $a_{i} = C_{m-i}$
+
+
+## Design steps
+- Design Requirements - Filter types, cutoff frekvens ($f_{a}$), T ($\frac{1}{f_{s}}$)
+- 
+- 
