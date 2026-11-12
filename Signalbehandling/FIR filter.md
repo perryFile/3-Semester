@@ -11,3 +11,6 @@ FIR filter har altid Linear phase
 
 ## Design logic behind FIR
 Det er en fourier transform.
+
+
+## 
