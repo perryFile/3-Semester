@@ -22,5 +22,7 @@ $a_{i} = C_{m-i}$
 
 ## Design steps
 - Design Requirements - Filter types, cutoff frekvens ($f_{a}$), T ($\frac{1}{f_{s}}$)
-- 
-- 
+- Calculate the $C_{0}$ & $C_{m}$ 
+- Calculate filter coefficent $a_{i} = C_{M-i}$
+
+Husk:
