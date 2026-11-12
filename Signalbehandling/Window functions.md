@@ -28,3 +28,9 @@
 ## Matlab
 
 ![[Pasted image 20261112101618.png]]
+## Input parameter er Length L og ikke order N !!!
+
+
+
+## Design procedure
+![[Pasted image 20261112101801.png]]
