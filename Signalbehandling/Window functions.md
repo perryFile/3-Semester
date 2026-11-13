@@ -34,3 +34,4 @@
 
 ## Design procedure
 ![[Pasted image 20261112101801.png]]
+![[Pasted image 20261113154950.png]]
