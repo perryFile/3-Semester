@@ -15,3 +15,7 @@ $$
 
 
 $$s(x_{i}) = \frac{e^{x_{i}}}{\sum_{j=1}^{n}e^{x_{j}}}$$
+
+## MSE loss
+
+$$\frac{1}{n}$$
