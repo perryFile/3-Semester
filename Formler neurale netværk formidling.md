@@ -18,8 +18,7 @@ $$s(x_{i}) = \frac{e^{x_{i}}}{\sum_{j=1}^{n}e^{x_{j}}}$$
 
 ## MSE loss
 
-$$MSE = \frac{1}{n}\sum_{i=1}^{n}(\hat{y}_{i}-y_{i})²$$
+$$MSE = \frac{1}{n}\sum_{i=1}^{n}(y_{i}-\hat{y}_{i})²$$
+$$LOSS = \frac{1}{2}(\hat{y}-y)²$$
 
-
-$$MSE = (10-8)²$$
-
+$$LOSS = \frac{1}{2}(10-8)² = 2$$
