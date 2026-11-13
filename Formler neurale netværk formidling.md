@@ -22,3 +22,7 @@ $$MSE = \frac{1}{n}\sum_{i=1}^{n}(y_{i}-\hat{y}_{i})²$$
 $$LOSS = \frac{1}{2}(\hat{y}-y)²$$
 
 $$LOSS = \frac{1}{2}(10-8)² = 2$$
+
+## Chainrules
+
+$$\frac{\partial L}{\partial w_{3}} = \frac{\partial L}{\partial \hat{y}} \cdot\frac{\partial L}{\partial w_{3}}$$
