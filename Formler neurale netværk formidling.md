@@ -8,3 +8,10 @@ f(x) =
 0, & \text{if } \sum wx + b < 0
 \end{cases}
 $$
+
+## Softmax
+
+![[Pasted image 20261113180631.png]]
+
+
+$$s(x_{i}) = \frac{e^{x_{i}}}{\sum_{j=1}^{n}e^{x_{j}}}$$
