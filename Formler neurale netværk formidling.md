@@ -26,8 +26,5 @@ $$LOSS = \frac{1}{2}(10-8)² = 2$$
 ## Chainrules
 
 $$\frac{\partial L}{\partial w_{3}} = \frac{\partial L}{\partial \hat{y}} \cdot\frac{\partial \hat{y}}{\partial w_{3}} = \frac{1}{2}(10-8)^2 \cdot 5= 10$$
-
-
+$$\frac{\partial L}{\partial w_{2}} = \frac{\partial L}{\partial \hat{y}}\cdot \frac{\partial \hat{y}}{\partial h}\cdot \frac{\partial h}{\partial w_{2}}=2\cdot 2 \cdot 3 = 12$$
 $$\frac{\partial L}{\partial w_{1}} = \frac{\partial L}{\partial \hat{y}}\cdot \frac{\partial \hat{y}}{\partial h}\cdot \frac{\partial h}{\partial w_{1}} = 2\cdot 2 \cdot 2 =8$$
-
-$$\frac{\partial L}{\partial w_{2}} = \frac{\partial L}{\partial \hat{y}}{}$$
