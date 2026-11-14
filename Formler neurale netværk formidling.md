@@ -35,4 +35,7 @@ $$w_{ny} = w_{gammel}-\eta \cdot \frac{\partial L}{\partial w}$$
 
 $$w_{1} = 1-0.0125\cdot 8 = 0.9$$$$w_{2} = 1-0.0125\cdot 12 = 0.85$$$$w_{3} = 1-0.0125\cdot 10 = 1.875$$
 
-$$45 $$
+$$45 \rightarrow [0.2, 0.4,0.6]$$
+$$23 \rightarrow [0.9, 0.34,0.56]$$
+$$67 \rightarrow [0.12, 0.24,0.43]$$
+$$98 \rightarrow [0.11, 0.12,0.99]$$
