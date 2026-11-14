@@ -34,3 +34,5 @@ $$learningRate = \eta = 0.0125$$
 $$w_{ny} = w_{gammel}-\eta \cdot \frac{\partial L}{\partial w}$$
 
 $$w_{1} = 1-0.0125\cdot 8 = 0.9$$
+
+$$w_{2} = 1-0.0125\cdot 12 = 0.85$$
