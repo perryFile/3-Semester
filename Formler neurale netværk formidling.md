@@ -30,3 +30,7 @@ $$\frac{\partial L}{\partial w_{2}} = \frac{\partial L}{\partial \hat{y}}\cdot \
 $$\frac{\partial L}{\partial w_{1}} = \frac{\partial L}{\partial \hat{y}}\cdot \frac{\partial \hat{y}}{\partial h}\cdot \frac{\partial h}{\partial w_{1}} = 2\cdot 2 \cdot 2 =8$$
 
 $$learningRate = \eta = 0.0125$$
+
+$$w_{ny} = w_{gammel}-\eta \cdot \frac{\partial L}{\partial w}$$
+
+$$w_{1_{ny}} = w_{1}$$
