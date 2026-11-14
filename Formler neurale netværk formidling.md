@@ -42,3 +42,12 @@ $$98 \rightarrow [0.11, 0.12,0.99]$$
 $$\text{kost} = 899 = [0.2, 0.4, 0.5]$$
 $$\text{kost}_{mad} = 899 = [0.22, 0.86, 0.2]$$
 $$\text{kost}_{redskab} = 899 = [-0.32, 0.2, -0.9]$$
+
+$$ \operatorname{Attention}(Q,K,V) = \operatorname{softmax}\left( \frac{QK^T}{\sqrt{d_k}} \right)V$$
+
+
+**Query (Q):** Repræsenterer, hvilken information tokenet søger efter hos andre tokens.
+
+**Key (K):** Bruges til at vurdere, hvor relevant et andet token er for den pågældende query.
+
+**Value (V):** Indeholder den information, som bliver kombineret med information fra andre tokens.
