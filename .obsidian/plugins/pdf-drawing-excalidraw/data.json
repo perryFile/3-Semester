@@ -237,8 +237,16 @@
       "recoveries": {},
       "project": {
         "id": "44467f29-820a-493e-ac20-8377372a9db1",
-        "drawing": "Signalbehandling/Slides/11 Lecture - Multirate.excalidraw.md"
+        "drawing": "Signalbehandling/Slides/(noter) 11 Lecture - Multirate.excalidraw.md"
       }
+    },
+    "Signalbehandling/Slides/11 ikke eksamenLecture - Adaptive filter, detrend, envelop.pdf": {
+      "recoveries": {},
+      "project": {
+        "id": "6e4a5833-f216-4093-94de-b58a6ccd5f82",
+        "drawing": "Signalbehandling/Slides/(noter ikke eksamen) 11 Lecture - Adaptive filter, detrend, envelop.excalidraw.md"
+      },
+      "legacyDraftPath": ".obsidian/plugins/pdf-drawing-excalidraw/drafts/70263d5bcefdad519b296140c9c5e9841c18c8ba79fb9d699386d1786b41c4b9.json"
     }
   }
 }
