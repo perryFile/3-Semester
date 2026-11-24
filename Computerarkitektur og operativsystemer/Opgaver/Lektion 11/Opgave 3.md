@@ -21,4 +21,7 @@ $2^{19} = 524288$
 
 b) 
 Ved vores inverterede page, kan vi gøre det samme.
-Vores m er nu 30 da 1GB er 
+Vores m er nu 30 da vores fysiske hukommelse er 1GB er $1 \text{GB} =2^{30}$ 
+Så 30-13 = 17
+$2^{17} = 131072$
+Vi spare derfor lidt entries ved at bruge inverteret, men det er stadig mange bytes der skal bruges på pages som giver meget overhead feks page tabel der skal ligge i vores hukommelse og fylder.
