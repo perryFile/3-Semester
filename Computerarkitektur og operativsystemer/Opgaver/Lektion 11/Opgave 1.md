@@ -1,6 +1,7 @@
 
 ![[Pasted image 20261124140742.png]]
 
+Husk 1KB = 1024
 a)
 ![[Pasted image 20261124142052.png|345]]
 
