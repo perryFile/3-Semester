@@ -13,4 +13,11 @@ d = 21205%1024 = 725 (modulos)
 b)
 p = 164250/1024 = 160 (har taget resten fra)
 Finder rest efter
-d = 164250%1024 = 725 (modulos)
+d = 164250%1024 = 410 (modulos)
+
+c) 
+p = 121357/1024 = 118 (har taget resten fra)
+Finder rest efter
+d = 121357%1024 = 525 (modulos)
+
+**Opgave d og e er det samme.**
